@@ -1,0 +1,191 @@
+.pageWrapper {
+  padding-bottom: 80px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, rgba(121, 186, 110, 0.6) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  padding-left: 60px;
+  flex: 1;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: 'Outfit', serif;
+  font-weight: 800;
+  text-shadow: none;
+  margin: 0;
+}
+
+.heroImageWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 120%;
+  max-width: 45%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.heroImageWrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* Section Banners */
+.sectionBanner {
+  background-color: var(--color-primary);
+  padding: 18px 0;
+  margin: 40px auto 20px auto;
+  text-align: center;
+  max-width: 1200px;
+  border-radius: var(--radius-md);
+}
+
+.sectionBannerTitle {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Outfit', serif;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Common Grid Utilities */
+.introText {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  margin: 40px 0;
+}
+
+.subHeading {
+  font-family: 'Outfit', serif;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--color-secondary);
+  padding-left: 12px;
+}
+
+/* Executives Grid (3 Col) */
+.execGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px 30px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .execGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .execGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Board Grid (4 Col) */
+.boardGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px 20px;
+}
+
+@media (min-width: 600px) {
+  .boardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .boardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .boardGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Profile Card Profile styling */
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.profileCard:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #6ea454;
+  padding: 4px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease;
+}
+
+.profileCard:hover .imageWrapper {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-secondary);
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+}
+
+.profileName {
+  font-family: 'Outfit', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.profileTitle {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  max-width: 250px;
+}

@@ -1,0 +1,154 @@
+.pageWrapper {
+  background-color: #fff;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.topBanner {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  position: relative;
+}
+
+.backLink {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 60px;
+  position: relative;
+}
+
+.headerContent {
+  padding-right: 40px;
+}
+
+.providerName {
+  font-family: 'Outfit', serif;
+  font-size: 3.5rem;
+  color: #0b1a26;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.providerSubtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.photoColumn {
+  position: relative;
+}
+
+.photoWrapper {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #166e6c; /* Teal border matching reference */
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.providerPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.bodySection {
+  padding-top: 40px;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 60px;
+}
+
+.mainContent {
+  color: var(--color-text-main);
+}
+
+.sectionTitle {
+  font-family: 'Outfit', serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #0b1a26;
+}
+
+.quickFacts {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.detailBlock {
+  border-top: 1px solid #d1d1d1;
+  padding-top: 24px;
+  margin-bottom: 32px;
+}
+
+.detailBlock h4 {
+  font-family: 'Outfit', serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #0b1a26;
+}
+
+.detailList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.detailList li {
+  margin-bottom: 8px;
+}
+
+.detailText {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+  .layoutGrid, .bodyGrid {
+    grid-template-columns: 1fr;
+  }
+  .photoWrapper {
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+  }
+}

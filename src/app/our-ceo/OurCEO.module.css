@@ -1,0 +1,153 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.heroBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 117, 106, 0.75) 0%, rgba(121, 186, 110, 0.6) 100%);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: 'Outfit', serif;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: none;
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.profileWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .profileWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.imageSection {
+  flex: 0 0 350px;
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 4px solid white;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.nameBadge {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.title {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+.bioSection {
+  flex: 1;
+}
+
+.bioHeading {
+  font-size: 2rem;
+  color: var(--color-text-main);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.bioHeading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.bioParagraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.bioParagraph:last-child {
+  margin-bottom: 0;
+}
