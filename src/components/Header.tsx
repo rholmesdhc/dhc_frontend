@@ -81,6 +81,7 @@ const Header = () => {
                 <Link href="/dental-care">Dental Care</Link>
                 <Link href="/diabetes-clinic">Diabetes Clinic</Link>
                 <Link href="/family-medical-care">Family Medical Care</Link>
+
                 <Link href="/laboratory-x-rays">Laboratory & X-Rays</Link>
                 <Link href="/nutritional-counseling">Nutritional Counseling</Link>
                 <Link href="/pediatric-care">Pediatric Care</Link>
@@ -88,8 +89,7 @@ const Header = () => {
                 <Link href="/ryan-white-hiv-program">Ryan White HIV/AIDS</Link>
                 <Link href="/social-services">Social Services</Link>
                 <Link href="/wellness-exams">Wellness Exams</Link>
-                <Link href="/wic">WIC</Link>
-                <Link href="/womens-health">Womens Health</Link>
+                <Link href="/wic">Maternal Health & WIC</Link>
                 <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
                 <Link href="/behavior-health">Behavioral Health</Link>
                 <Link href="/referring_physicians">Referring Physicians</Link>

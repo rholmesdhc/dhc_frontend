@@ -1,0 +1,200 @@
+.pageWrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+/* Banner Styles (Matching CEO, Diabetes & Family Medical) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.heroBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 117, 106, 0.75) 0%, rgba(121, 186, 110, 0.6) 100%);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: 'Outfit', serif;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: none;
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Infant Cutout Graphic area */
+.topSection {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden; /* Added to contain the cropped image */
+}
+
+.heroCutout {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: -120px; /* Shift the image up to crop the top */
+  margin-bottom: -20px; /* Adjust bottom slightly if needed */
+}
+
+/* Dashed Blue Divider */
+.blueDivider {
+  border: 0;
+  border-bottom: 3px dashed #0a1f59;
+  max-width: 100%;
+  margin: 0 auto 50px auto;
+}
+
+/* Main Grid */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 2fr 1.2fr;
+  }
+}
+
+.leftColumn {
+  padding-right: 20px;
+}
+
+.textParagraph {
+  color: #0a1f59;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.orangeHeading {
+  color: var(--color-accent, #ffa500);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.servicesHeading {
+  color: var(--color-accent, #ffa500);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.servicesListContainer {
+  column-count: 1;
+  color: #0a1f59;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.servicesListContainer ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.servicesListContainer li {
+  margin-bottom: 8px;
+  break-inside: avoid;
+}
+
+@media (min-width: 600px) {
+  .servicesListContainer {
+    column-count: 1;
+  }
+}
+
+/* Right Detail Column */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+@media (min-width: 900px) {
+  .rightColumn {
+    align-items: flex-end;
+  }
+}
+
+.logoImage {
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+
+.contactBtn {
+  display: inline-block;
+  background-color: #0d2159;
+  color: white;
+  padding: 12px 24px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border: 4px solid #fec107;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(13, 33, 89, 0.3);
+}
+
+.contactBtn:hover {
+  background-color: #1a3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 33, 89, 0.4);
+}

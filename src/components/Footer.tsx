@@ -34,7 +34,7 @@ const Footer = () => {
               <li><Link href="/behavior-health">Behavioral Health</Link></li>
               <li><Link href="/dental-care">Dental Health</Link></li>
               <li><Link href="/family-medical-care">Family Medicine</Link></li>
-              <li><Link href="/womens-health">Obstetrics & Gynecology</Link></li>
+
               <li><Link href="/pediatric-care">Pediatrics</Link></li>
             </ul>
           </div>

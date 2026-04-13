@@ -1,0 +1,230 @@
+export const specialties = [
+  'All',
+  'Behavioral Health',
+  'Dentistry',
+  'Family Medicine',
+  'Obstetrics & Gynecology',
+  'Pediatrics'
+];
+
+export const providersData = [
+  { 
+    id: 1, 
+    name: 'Dr. Marketta Blue', 
+    title: 'Chief Medical Officer', 
+    certifications: 'Board Certified | Family Medicine', 
+    specialty: 'Family Medicine', 
+    image: '/images/Provider_CMO_Dr_Marketta_Blue.png',
+    slug: '1',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      'Born in Greenville, Mississippi, Dr. Marketta Blue is a proud native of the Mississippi Delta, a background that inspired her lifelong commitment to improving rural healthcare. She currently serves as the Chief Medical Officer for Delta Health Center, a leadership position she has held for over eight years. In this role, Dr. Blue combines strategic leadership with direct patient care, prioritizing the delivery of high-quality, accessible medical services to the community.',
+      'Dr. Blue is deeply dedicated to combating the "Mississippi Big 3" illnesses: diabetes, hypertension, and heart disease. Her clinical focus is on providing comprehensive, compassionate care and empowering her patients through education and proactive disease management. A steadfast advocate for reducing regional health disparities, Dr. Blue works tirelessly to ensure that all residents of the Delta receive the exceptional care they deserve to live healthier, fuller lives.'
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday',
+    education: [
+      'Doctor of Medicine',
+      'Bachelor of Science'
+    ],
+    associations: [
+      'American Board of Family Medicine',
+      'American Academy of Family Physicians'
+    ]
+  },
+  { 
+    id: 2, 
+    name: 'Dr. Simone Moore', 
+    title: 'MD Pediatrics', 
+    certifications: 'Board Certified', 
+    specialty: 'Pediatrics', 
+    image: '/images/Dr_Simone_Moore_MD_Pediatrics_Provider_Team_Photo_Box.png',
+    slug: '2',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Born and raised in the heart of New Orleans, Dr. Simone Moore brings the vibrant spirit and unwavering resilience of her hometown to her pediatric practice at the Delta Health Center. A board-certified pediatrician and the dedicated Director of the Delta Health Center Pediatric Ward, Dr. Moore has devoted her career to ensuring that the youngest members of the community receive world-class, compassionate healthcare.",
+      "Her medical journey began with a deep-rooted desire to serve underserved populations, leading her to specialize in pediatrics. At DHC, she leads a multidisciplinary team focused on early childhood development, preventative care, and chronic illness management. Known for her warm bedside manner and infectious energy, Dr. Moore treats every patient like family, working closely with parents to build strong, healthy foundations for their children.",
+      "When she's not walking the halls of the pediatric ward in her signature white coat, Dr. Moore is a diehard New Orleans Saints fan. Come football season, her office is often subtly decorated in black and gold, and she loves bonding with her patients over weekend game highlights. Dr. Moore is proud to serve the Delta region, combining her clinical expertise with a genuine, heartfelt commitment to the community's future."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine - Tulane University',
+      'Bachelor of Science - Xavier University of Louisiana'
+    ],
+    associations: [
+      'American Academy of Pediatrics',
+      'Mississippi State Medical Association'
+    ]
+  },
+  { 
+    id: 3, 
+    name: 'Dr. Braveen Ragunanthan M.D., MPH, FAAP', 
+    title: 'Board Certified Pediatrician', 
+    certifications: 'Pediatrics', 
+    specialty: 'Pediatrics', 
+    image: '/images/Braveen_Ragunanthan_M.D_Provider_Team_Photo_Box-1.png',
+    slug: '3',
+    gender: 'Male',
+    pronouns: 'He/Him',
+    languages: 'English',
+    bio: [
+      "Dr. Braveen Ragunanthan, M.D., MPH, FAAP, is a board-certified pediatrician deeply committed to providing comprehensive, compassionate care to children and families across the Delta region. A proud graduate of the Virginia Commonwealth University School of Medicine, Dr. Ragunanthan brings a wealth of specialized knowledge to the Delta Health Center in Mound Bayou. With a Master of Public Health degree alongside his medical doctorate, he approaches pediatric care holistically, focusing not just on treating illness, but on community health, preventative medicine, and healthy childhood development.",
+      "Dr. Ragunanthan has a profound clinical focus on developmental and behavioral health. He is highly experienced in guiding families through complex diagnoses such as autism spectrum disorder, sensory processing disorder, and speech and language delays. He understands that every child's developmental journey is unique, and he works tirelessly to ensure his patients have access to the early interventions and supportive care they need to thrive.",
+      "Known by his patients' families for his thorough communication and warm, reassuring bedside manner, Dr. Ragunanthan treats every child with the utmost dedication. Whether managing common pediatric conditions or supporting complex developmental needs, he is a steadfast advocate for the health, happiness, and future of his young patients."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine - Virginia Commonwealth University',
+      'Master of Public Health'
+    ],
+    associations: [
+      'Fellow of the American Academy of Pediatrics (FAAP)'
+    ]
+  },
+  { 
+    id: 4, 
+    name: 'Dr. Dominick Trinca', 
+    title: 'MD Family Medicine', 
+    certifications: 'Board Certified | Family Medicine', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/dr_trinca_ai_background.png',
+    slug: '4',
+    gender: 'Male',
+    pronouns: 'He/Him',
+    languages: 'English',
+    bio: [
+      "Dr. Dominick Trinca is a board-certified Family Medicine physician bringing years of comprehensive clinical experience to the Delta Health Center. Based in the heart of the Mississippi Delta, Dr. Trinca provides robust, full-spectrum primary care for patients of all ages, seamlessly integrating preventive screening with expert chronic disease management.",
+      "Known for his meticulous, patient-centered approach, Dr. Trinca is deeply committed to forming lasting partnerships with his patients. Whether guiding families through preventative health strategies or managing complex conditions like hypertension and diabetes, he treats every clinic visit as an opportunity to empower his patients toward long-term wellness and vitality."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine',
+      'Board Certification in Family Medicine'
+    ],
+    associations: [
+      'American Board of Family Medicine',
+      'American Academy of Family Physicians'
+    ]
+  },
+  { 
+    id: 5, 
+    name: 'Dr. Frank Brown', 
+    title: 'MD Family Medicine', 
+    certifications: 'Board Certified | Family Medicine', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/frank_brown_template.png',
+    slug: '5',
+    gender: 'Male',
+    pronouns: 'He/Him',
+    languages: 'English',
+    bio: [
+      "Dr. Frank Brown is a highly skilled Family Medicine physician dedicated to advancing the health outcomes of communities throughout the Mississippi Delta. Delivering expert primary care services at the Delta Health Center, Dr. Brown has built a strong reputation for his clinical thoroughness, warmth, and unyielding dedication to his patients.",
+      "Focusing on a broad continuum of care from acute disease intervention to long-term health maintenance, Dr. Brown emphasizes preventative medicine and patient education. He works tirelessly alongside his patients, creating personalized health plans that accommodate their unique lifestyles and goals."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine',
+      'Board Certification in Family Medicine'
+    ],
+    associations: [
+      'American Board of Family Medicine'
+    ]
+  },
+  { 
+    id: 11, 
+    name: 'Dr. George Stevens', 
+    title: 'DO Family Medicine', 
+    certifications: 'Board Certified', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/dr_stevens_ai_background.png',
+    slug: '11',
+    gender: 'Male',
+    pronouns: 'He/Him',
+    languages: 'English',
+    bio: [
+      "Dr. George Stevens is a dedicated Doctor of Osteopathic Medicine (DO), board-certified in Family Medicine, proudly serving the Delta Health Center community. With a deep foundational belief in treating the whole person rather than just specific symptoms, Dr. Stevens brings a highly comprehensive and integrative approach to primary care.",
+      "His clinical focus spans preventative care, acute illness triage, and proactive management of chronic conditions. His compassionate bedside manner and steadfast dedication to the Delta region continue to make him an invaluable advocate for the well-being and longevity of the families he treats."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Osteopathic Medicine (DO)',
+    ],
+    associations: [
+      'Board Certified in Family Medicine'
+    ]
+  },
+  { 
+    id: 12, 
+    name: 'Dr. Nadia Bethley', 
+    title: 'PhD Clinical Psychology', 
+    specialty: 'Behavioral Health', 
+    image: '/images/providers/Dr_Nadia_Bethley_template.png',
+    slug: '12',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Dr. Nadia Bethley, Ph.D., is an esteemed Clinical Psychologist at the Delta Health Center, where she plays a crucial role in expanding access to top-tier behavioral health services in the Mississippi Delta. Understanding the profound connection between mental and physical health, Dr. Bethley provides compassionate, evidence-based psychological assessments and therapeutic interventions.",
+      "Her clinical expertise covers a variety of areas including trauma-informed care, stress management, counseling therapies, and holistic behavioral health integration. A prominent advocate for mental wellness in rural communities, Dr. Bethley remains dedicated to fostering resilience, emotional healing, and mental well-being for all her patients."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Ph.D. in Clinical Psychology',
+    ],
+    associations: []
+  },
+  { 
+    id: 13, 
+    name: 'Dr. Inge Ford', 
+    title: 'DMD Doctor of Medicine in Dentistry', 
+    specialty: 'Dentistry', 
+    image: '/images/providers/Dr_Inge_Ford_template.png',
+    slug: '13',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Inge Ford, DMD, is a premier Doctor of Medicine in Dentistry and a distinguished member of both the clinical and executive teams at the Delta Health Center. Combining an extensive clinical background with robust strategic leadership, Dr. Ford ensures that patients across the Delta have access to modern, high-quality dental care and preventative oral hygiene services.",
+      "Beyond her time in the clinic restoring smiles and treating complex dental concerns, Dr. Ford acts as a key administrative leader within DHC's executive board. Her dual-role leadership drives forward the organization's mission to bridge the gap in oral health equity throughout the community."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine in Dentistry (DMD)'
+    ],
+    associations: []
+  },
+  { 
+    id: 14, 
+    name: 'Dr. Lauren Adams', 
+    title: 'PhD.', 
+    specialty: 'Behavioral Health', 
+    image: '/images/providers/Dr_Lauren_Adams_template.png',
+    slug: '14',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Dr. Lauren Adams is a highly specialized behavioral health clinician uniquely dedicated to integrating patient mobility, cognitive wellness, and whole-body rehabilitation. At the Delta Health Center, Dr. Adams leverages a profound interdisciplinary background to provide comprehensive therapeutic support for her patients.",
+      "She works meticulously to craft holistic care strategies that target the underlying drivers of distress, chronic pain, and behavioral constraints. Her empathetic guidance helps patients navigate complex recoveries, reclaim their functional independence, and achieve a robust standard of living."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Ph.D.'
+    ],
+    associations: []
+  },
+  { id: 15, name: 'Alyssa Simmons', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Alyssa_Simmons_template.png', slug: '15' },
+  { id: 16, name: 'Felicia Norris White', title: 'NP', specialty: 'Family Medicine', image: '/images/providers/Felicia_Norris_White_template.png', slug: '16' },
+  { id: 17, name: 'Sherrica Smith', title: 'PMHNP-BC, FNP-C', specialty: 'Behavioral Health', image: '/images/providers/Sherrica_Smith_template.png', slug: '17' },
+  { id: 18, name: 'Barbara Williams', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Barbara_Williams_template.png', slug: '18' },
+  { id: 19, name: 'Jennifer Kurts', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Jennifer_Kurts_template.png', slug: '19' },
+  { id: 20, name: 'Valerie Antici', title: 'FNP-BC', specialty: 'Family Medicine', image: '/images/providers/Valerie_Antici_template.png', slug: '20' },
+  { id: 21, name: 'Queeneice Ganison', title: 'NP', specialty: 'Family Medicine', image: '/images/providers/Queeneice_Ganison_template.png', slug: '21' },
+  { id: 22, name: 'Tara Davis', title: 'FNP-Pediatrics', specialty: 'Pediatrics', image: '/images/providers/Tara_Davis_template.png', slug: '22' },
+  { id: 23, name: 'Wyconda Thomas', title: 'PMHNP-C', specialty: 'Behavioral Health', image: '/images/providers/Wyconda_Thomas_template.png', slug: '23' },
+  { id: 24, name: 'Mary Bolden', title: 'FNP-BC', specialty: 'Family Medicine', image: '/images/providers/Mary_Bolden_template.png', slug: '24' },
+  { id: 25, name: 'Megan Mccoy', title: 'PA', specialty: 'Family Medicine', image: '/images/providers/Megan_Mccoy_template.png', slug: '25' }
+];

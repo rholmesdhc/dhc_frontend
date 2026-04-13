@@ -17,9 +17,10 @@ export default function OurHistory() {
         {/* Video Embed */}
         <section className={styles.videoWrapper}>
           <iframe 
-            src="https://player.vimeo.com/video/852163648?badge=0&autopause=0&player_id=0&app_id=58479" 
+            src="https://player.vimeo.com/video/852163648?h=2e7df6c21e&badge=0&autopause=0" 
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
             title="Delta Health Center History"
+            style={{ width: '100%', height: '100%' }}
           ></iframe>
         </section>
 
