@@ -109,8 +109,8 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Flat Link for Openings */}
-            <Link href="/our-history" className={styles.navLink}>History</Link>
+            {/* Careers Menu Item */}
+            <Link href="/careers" className={styles.navLink}>Careers</Link>
 
           </nav>
 

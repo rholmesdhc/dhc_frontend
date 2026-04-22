@@ -1,0 +1,129 @@
+.pageWrapper {
+  padding-bottom: 80px;
+}
+
+.hero {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 24px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.contentSection {
+  padding: 60px 0;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sectionCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconRights {
+  color: var(--color-tertiary);
+}
+
+.iconResponsibilities {
+  color: var(--color-accent);
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.listItem::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.listItemResponsibilities::before {
+  content: '!';
+  background-color: var(--color-primary-light);
+}
+
+.itemTitle {
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.itemDesc {
+  color: var(--color-text-muted);
+}

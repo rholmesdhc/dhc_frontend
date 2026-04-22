@@ -1,0 +1,248 @@
+.heroWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.heroBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 117, 106, 0.75) 0%, rgba(121, 186, 110, 0.6) 100%);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: none;
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.introSection {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.introText {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.jobCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+
+.jobCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-color: #bbdefb;
+}
+
+.jobTitle {
+  font-size: 1.4rem;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.jobDept {
+  font-size: 0.95rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.jobDesc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.applyBtn {
+  display: inline-block;
+  background: #00756a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+
+.applyBtn:hover {
+  background: #005c53;
+  color: white;
+}
+
+.divider {
+  height: 1px;
+  background: #eaeaea;
+  margin: 4rem 0;
+}
+
+.applicationInfo {
+  background: #f8faff;
+  border: 1px solid #bbdefb;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.infoTitle {
+  font-size: 1.8rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.infoText {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.emailLink {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.videoWrapper iframe {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.embedJobsHead {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentationDownload {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.presentationDownload img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.presentationDescription {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.downloadButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3;
+}
