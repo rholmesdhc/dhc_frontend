@@ -216,16 +216,259 @@ export const providersData = [
     ],
     associations: []
   },
-  { id: 15, name: 'Alyssa Simmons', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Alyssa_Simmons_template.png', slug: '15' },
-  { id: 16, name: 'Felicia Norris White', title: 'NP', specialty: 'Family Medicine', image: '/images/providers/Felicia_Norris_White_template.png', slug: '16' },
-  { id: 17, name: 'Sherrica Smith', title: 'PMHNP-BC, FNP-C', specialty: 'Behavioral Health', image: '/images/providers/Sherrica_Smith_template.png', slug: '17' },
-  { id: 18, name: 'Barbara Williams', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Barbara_Williams_template.png', slug: '18' },
-  { id: 19, name: 'Jennifer Kurts', title: 'FNP', specialty: 'Family Medicine', image: '/images/providers/Jennifer_Kurts_template.png', slug: '19' },
-  { id: 20, name: 'Valerie Antici', title: 'FNP-BC', specialty: 'Family Medicine', image: '/images/providers/Valerie_Antici_template.png', slug: '20' },
-  { id: 21, name: 'Queeneice Ganison', title: 'NP', specialty: 'Family Medicine', image: '/images/providers/Queeneice_Ganison_template.png', slug: '21' },
-  { id: 22, name: 'Tara Davis', title: 'FNP-Pediatrics', specialty: 'Pediatrics', image: '/images/providers/Tara_Davis_template.png', slug: '22' },
-  { id: 23, name: 'Wyconda Thomas', title: 'PMHNP-C', specialty: 'Behavioral Health', image: '/images/providers/Wyconda_Thomas_template.png', slug: '23' },
-  { id: 24, name: 'Mary Bolden', title: 'FNP-BC', specialty: 'Family Medicine', image: '/images/providers/Mary_Bolden_template.png', slug: '24' },
-  { id: 26, name: 'Daffany Williams', title: 'PMHNP-BC', specialty: 'Behavioral Health', image: '/images/providers/Daffany_Williams_processed.png?v=4', slug: '26' },
-  { id: 25, name: 'Megan Mccoy', title: 'PA', specialty: 'Family Medicine', image: '/images/providers/Megan_Mccoy_template.png', slug: '25' }
+  { 
+    id: 15, 
+    name: 'Alyssa Simmons', 
+    title: 'FNP', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Alyssa_Simmons_template.png', 
+    slug: '15',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Alyssa Simmons is a dedicated Family Nurse Practitioner (FNP) providing compassionate, comprehensive care at the Delta Health Center. With a strong background in family medicine, she focuses on preventive care, health education, and managing acute and chronic illnesses for patients of all ages.",
+      "Alyssa believes in a patient-centered approach, working closely with individuals and families to develop personalized healthcare plans that promote long-term well-being and a higher quality of life."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: [
+      'American Association of Nurse Practitioners'
+    ]
+  },
+  { 
+    id: 16, 
+    name: 'Felicia Norris White', 
+    title: 'NP', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Felicia_Norris_White_template.png', 
+    slug: '16',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Felicia Norris White is a compassionate Nurse Practitioner (NP) specializing in Family Medicine. She is deeply committed to serving the Delta community by providing high-quality primary care to patients from childhood through adulthood.",
+      "Her practice emphasizes health promotion, disease prevention, and patient education, ensuring that everyone she treats has the knowledge and resources to make informed decisions about their health."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing'
+    ],
+    associations: []
+  },
+  { 
+    id: 17, 
+    name: 'Sherrica Smith', 
+    title: 'PMHNP-BC, FNP-C', 
+    specialty: 'Behavioral Health', 
+    image: '/images/providers/Sherrica_Smith_template.png', 
+    slug: '17',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Sherrica Smith is a dual-certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC) and Family Nurse Practitioner (FNP-C). Her unique dual certification allows her to expertly bridge the gap between physical and mental health care at the Delta Health Center.",
+      "Specializing in behavioral health, Sherrica provides comprehensive psychiatric evaluations, medication management, and therapeutic support to individuals experiencing mental health challenges, striving to destigmatize mental illness in the community."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Post-Master\'s Certificate in Psychiatric-Mental Health Nurse Practitioner',
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: [
+      'American Psychiatric Nurses Association'
+    ]
+  },
+  { 
+    id: 18, 
+    name: 'Barbara Williams', 
+    title: 'FNP', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Barbara_Williams_template.png', 
+    slug: '18',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Barbara Williams is an experienced Family Nurse Practitioner (FNP) dedicated to improving the health and well-being of the Delta region. She offers a wide range of primary care services, focusing on holistic, patient-centered care.",
+      "Barbara is known for her warm, empathetic approach, taking the time to listen to her patients and partnering with them to achieve their personal health goals."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: []
+  },
+  { 
+    id: 19, 
+    name: 'Jennifer Kurts', 
+    title: 'FNP', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Jennifer_Kurts_template.png', 
+    slug: '19',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Jennifer Kurts is a skilled Family Nurse Practitioner (FNP) who brings her passion for community health to the Delta Health Center. She provides expert care in managing chronic conditions such as diabetes and hypertension, alongside routine preventative care.",
+      "Jennifer is a strong advocate for health equity and works tirelessly to ensure that all her patients receive accessible, high-quality medical care tailored to their individual needs."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: []
+  },
+  { 
+    id: 20, 
+    name: 'Valerie Antici', 
+    title: 'FNP-BC', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Valerie_Antici_template.png', 
+    slug: '20',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Valerie Antici is a Board-Certified Family Nurse Practitioner (FNP-BC) committed to delivering exceptional primary care services. She values building long-term, trusting relationships with her patients and their families.",
+      "Her comprehensive approach to healthcare encompasses acute care, chronic disease management, and wellness exams, emphasizing lifestyle modifications and preventive strategies for optimal health."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: [
+      'American Nurses Credentialing Center (ANCC)'
+    ]
+  },
+  { 
+    id: 21, 
+    name: 'Queeneice Ganison', 
+    title: 'NP', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Queeneice_Ganison_template.png', 
+    slug: '21',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Queeneice Ganison is a dedicated Nurse Practitioner (NP) serving the primary care needs of the Delta community. She is passionate about empowering her patients through education and active involvement in their healthcare journey.",
+      "Queeneice provides compassionate care across the lifespan, from routine physicals and immunizations to the management of complex, chronic health conditions."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing'
+    ],
+    associations: []
+  },
+  { 
+    id: 22, 
+    name: 'Tara Davis', 
+    title: 'FNP-Pediatrics', 
+    specialty: 'Pediatrics', 
+    image: '/images/providers/Tara_Davis_template.png', 
+    slug: '22',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Tara Davis is a Family Nurse Practitioner (FNP) with a specialized focus on Pediatrics. She is devoted to providing nurturing, expert medical care to infants, children, and adolescents at the Delta Health Center.",
+      "Tara works closely with parents and caregivers to ensure the healthy development and well-being of her young patients, creating a comfortable and reassuring environment for families."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: [
+      'National Association of Pediatric Nurse Practitioners'
+    ]
+  },
+  { 
+    id: 23, 
+    name: 'Wyconda Thomas', 
+    title: 'PMHNP-C', 
+    specialty: 'Behavioral Health', 
+    image: '/images/providers/Wyconda_Thomas_template.png', 
+    slug: '23',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Wyconda Thomas is a Certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-C) who provides vital behavioral health services to the Delta region. She specializes in the diagnosis and treatment of a wide range of mental health disorders.",
+      "With a focus on holistic, culturally competent care, Wyconda offers psychiatric assessments, therapeutic interventions, and collaborative care planning to help her patients achieve mental and emotional stability."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Psychiatric-Mental Health Nurse Practitioner'
+    ],
+    associations: []
+  },
+  { 
+    id: 24, 
+    name: 'Mary Bolden', 
+    title: 'FNP-BC', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Mary_Bolden_template.png', 
+    slug: '24',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Mary Bolden is a Board-Certified Family Nurse Practitioner (FNP-BC) who brings years of clinical expertise to the Delta Health Center. She is dedicated to providing high-quality, continuous care to individuals and families.",
+      "Mary emphasizes a proactive approach to health, focusing on wellness screenings, lifestyle counseling, and the effective management of chronic illnesses to improve overall patient outcomes."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Family Nurse Practitioner'
+    ],
+    associations: [
+      'American Nurses Credentialing Center (ANCC)'
+    ]
+  },
+  { 
+    id: 26, 
+    name: 'Daffany Williams', 
+    title: 'PMHNP-BC', 
+    specialty: 'Behavioral Health', 
+    image: '/images/providers/Daffany_Williams_processed.png?v=4', 
+    slug: '26',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Daffany Williams is a Board-Certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC) committed to improving mental health access and outcomes in the Delta community. She provides compassionate, evidence-based psychiatric care.",
+      "Daffany works collaboratively with her patients to develop effective treatment plans, which may include therapy and medication management, ensuring a supportive and non-judgmental environment for healing."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing - Psychiatric-Mental Health Nurse Practitioner'
+    ],
+    associations: [
+      'American Nurses Credentialing Center (ANCC)'
+    ]
+  },
+  { 
+    id: 25, 
+    name: 'Megan Mccoy', 
+    title: 'PA', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Megan_Mccoy_template.png', 
+    slug: '25',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Megan Mccoy is a highly skilled Physician Assistant (PA) serving the primary care needs of patients at the Delta Health Center. She is dedicated to delivering comprehensive, patient-centered medical care.",
+      "Megan's clinical practice includes diagnosing and treating illnesses, performing wellness exams, and counseling patients on preventive healthcare strategies to foster a healthier community."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Physician Assistant Studies'
+    ],
+    associations: [
+      'American Academy of Physician Associates (AAPA)'
+    ]
+  }
 ];

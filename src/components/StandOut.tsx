@@ -47,7 +47,7 @@ const StandOut = () => {
             </div>
           </div>
 
-          <a href="/our-services" className={`btn btn-primary ${styles.btn}`}>View our Services</a>
+          <a href="#services" className={`btn btn-primary ${styles.btn}`}>View our Services</a>
         </div>
 
         {/* Right Image */}
