@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
           <div className={styles.actions}>
             <a href="/find-a-provider" className="btn btn-primary">Find a Provider</a>
-            <a href="/our-services" className="btn btn-secondary">View Our Services</a>
+            <a href="#services" className="btn btn-secondary">View Our Services</a>
           </div>
         </div>
       </div>

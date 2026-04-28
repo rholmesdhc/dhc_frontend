@@ -12,7 +12,7 @@ const services = [
 
 const ServicesGrid = () => {
   return (
-    <section className={styles.section}>
+    <section id="services" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <h2 className={styles.title}>Our Services</h2>

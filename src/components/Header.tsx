@@ -108,6 +108,7 @@ const Header = () => {
                 <Link href="/pharmacy">Pharmacy</Link>
                 <Link href="/ryan-white-hiv-program">Ryan White HIV/AIDS</Link>
                 <Link href="/social-services">Social Services</Link>
+                <Link href="/food-bank">Hunger Relief Resources</Link>
                 <Link href="/wellness-exams">Wellness Exams</Link>
                 <Link href="/womens-health">Women's Health</Link>
                 <Link href="/wic">Maternal Health & WIC</Link>
