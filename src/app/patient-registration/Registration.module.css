@@ -6,7 +6,7 @@
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  margin-top: 24px;
+  margin-top: 0;
   min-height: 250px;
   display: flex;
   align-items: center;

@@ -9,7 +9,7 @@
   height: 250px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 

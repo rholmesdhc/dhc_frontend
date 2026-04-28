@@ -31,7 +31,7 @@ export default function MissionVisionValues() {
               </div>
               <h2 className={styles.cardTitle}>Our Mission</h2>
               <p className={styles.cardText}>
-                Delta Health Center provides high-quality, equitable, and accessible health services for our communities.
+                To provide comprehensive, high quality, primary healthcare in a respectful, culturally sensitive manner, regardless of ability to pay
               </p>
             </div>
 

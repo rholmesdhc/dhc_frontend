@@ -30,7 +30,7 @@
   z-index: 10;
   max-width: 600px;
   background: rgba(255, 255, 255, 0.7);
-  padding: 40px;
+  padding: 0 40px 40px 40px;
   border-radius: var(--radius-lg);
   backdrop-filter: blur(8px);
   text-align: left;

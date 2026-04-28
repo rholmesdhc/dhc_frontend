@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className="glass-header" style={{ display: 'flex', flexDirection: 'column', paddingTop: 0 }}>
+    <header className="glass-header" style={{ display: 'flex', flexDirection: 'column', paddingTop: 0, paddingBottom: 0 }}>
       
       {/* Top Utility Bar */}
       <div className={styles.topBar}>
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container" style={{ paddingTop: '12px', paddingBottom: '12px' }}>
+      <div className="container" style={{ paddingTop: '12px', paddingBottom: 0 }}>
         <div className={styles.header}>
           {/* Logo */}
           <Link href="/" aria-label="Home">
@@ -89,6 +89,7 @@ const Header = () => {
                 <Link href="/ryan-white-hiv-program">Ryan White HIV/AIDS</Link>
                 <Link href="/social-services">Social Services</Link>
                 <Link href="/wellness-exams">Wellness Exams</Link>
+                <Link href="/womens-health">Women's Health</Link>
                 <Link href="/wic">Maternal Health & WIC</Link>
                 <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
                 <Link href="/behavior-health">Behavioral Health</Link>
