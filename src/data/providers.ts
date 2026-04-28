@@ -226,5 +226,6 @@ export const providersData = [
   { id: 22, name: 'Tara Davis', title: 'FNP-Pediatrics', specialty: 'Pediatrics', image: '/images/providers/Tara_Davis_template.png', slug: '22' },
   { id: 23, name: 'Wyconda Thomas', title: 'PMHNP-C', specialty: 'Behavioral Health', image: '/images/providers/Wyconda_Thomas_template.png', slug: '23' },
   { id: 24, name: 'Mary Bolden', title: 'FNP-BC', specialty: 'Family Medicine', image: '/images/providers/Mary_Bolden_template.png', slug: '24' },
+  { id: 26, name: 'Daffany Williams', title: 'PMHNP-BC', specialty: 'Behavioral Health', image: '/images/providers/Daffany_Williams_processed.png?v=4', slug: '26' },
   { id: 25, name: 'Megan Mccoy', title: 'PA', specialty: 'Family Medicine', image: '/images/providers/Megan_Mccoy_template.png', slug: '25' }
 ];
