@@ -1,8 +1,14 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMobileMenuOpen(false);
+
   return (
     <header className="glass-header" style={{ display: 'flex', flexDirection: 'column', paddingTop: 0, paddingBottom: 0 }}>
       
@@ -34,8 +40,22 @@ const Header = () => {
             />
           </Link>
 
-          {/* Navigation with Dropdowns */}
-          <nav className={styles.nav}>
+          {/* Hamburger Menu Button */}
+          <button 
+            className={`${styles.mobileMenuBtn} ${isMobileMenuOpen ? styles.open : ''}`}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {/* Navigation and Actions Wrapper */}
+          <div className={`${styles.menuWrapper} ${isMobileMenuOpen ? styles.menuOpen : ''}`}>
+            {/* Navigation with Dropdowns */}
+            <nav className={styles.nav}>
 
             {/* About Dropdown */}
             <div className={styles.dropdown}>
@@ -111,15 +131,16 @@ const Header = () => {
             </div>
 
             {/* Careers Menu Item */}
-            <Link href="/careers" className={styles.navLink}>Careers</Link>
+            <Link href="/careers" className={styles.navLink} onClick={closeMenu}>Careers</Link>
 
           </nav>
 
           {/* Action Buttons */}
           <div className={styles.actions}>
-            <a href="/patient-payment" className={`btn btn-secondary ${styles.actionBtn}`}>Make A Payment</a>
-            <a href="https://pxpportal.nextgen.com/deltahealthcenter-27679/portal/#/user/login" target="_blank" rel="noopener noreferrer" className={`btn btn-primary ${styles.actionBtn}`}>Patient Portal</a>
-            <a href="https://www.deltahealthcenter.org/donate-today-to-the-patient-assistance-fund/" target="_blank" rel="noopener noreferrer" className={`btn ${styles.actionBtn}`} style={{ background: 'var(--color-accent)', color: 'var(--color-text-main)', boxShadow: '0 4px 14px rgba(255, 193, 7, 0.3)' }}>Donate Today</a>
+            <Link href="/patient-payment" className={`btn btn-secondary ${styles.actionBtn}`} onClick={closeMenu}>Make A Payment</Link>
+            <a href="https://pxpportal.nextgen.com/deltahealthcenter-27679/portal/#/user/login" target="_blank" rel="noopener noreferrer" className={`btn btn-primary ${styles.actionBtn}`} onClick={closeMenu}>Patient Portal</a>
+            <a href="https://www.deltahealthcenter.org/donate-today-to-the-patient-assistance-fund/" target="_blank" rel="noopener noreferrer" className={`btn ${styles.actionBtn}`} style={{ background: 'var(--color-accent)', color: 'var(--color-text-main)', boxShadow: '0 4px 14px rgba(255, 193, 7, 0.3)' }} onClick={closeMenu}>Donate Today</a>
+          </div>
           </div>
         </div>
       </div>

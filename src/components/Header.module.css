@@ -187,3 +187,139 @@
   background-color: rgba(0, 162, 184, 0.08); /* Light secondary color */
   color: var(--color-secondary);
 }
+
+/* Mobile Menu Button */
+.mobileMenuBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001; /* Keep above the menu */
+}
+
+.mobileMenuBtn span {
+  width: 30px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.mobileMenuBtn.open span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.mobileMenuBtn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileMenuBtn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Desktop Menu Wrapper */
+.menuWrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+  }
+
+  .mobileMenuBtn {
+    display: flex;
+  }
+
+  .menuWrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .menuWrapper.menuOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    padding: 24px 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropbtn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* On mobile, either rely on click or always show dropdown content if expanded. 
+     For a simpler approach, make dropdown content position: static so it pushes items down. */
+  .dropdownContent {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    min-width: 100%;
+    display: none; /* Hide by default on mobile, hover will show it */
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdownContent,
+  .dropdown:focus-within .dropdownContent {
+    display: block; /* Show on hover/focus */
+  }
+
+  .dropdownContent a {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+  }
+
+  .actions {
+    margin-left: 0;
+    margin-top: 24px;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .actionBtn {
+    text-align: center;
+    justify-content: center;
+  }
+}

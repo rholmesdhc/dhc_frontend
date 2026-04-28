@@ -29,11 +29,7 @@ const WhyChoose: React.FC = () => {
                         Listen to Pastor Darryl Johnson as he talks about the history of Delta Health Center 
                         and its long-lasting impact on the local community.
                     </p>
-                    <div className={styles.buttonContainer}>
-                        <a href="/testimonials" className={styles.button}>
-                            More Testimonials
-                        </a>
-                    </div>
+
                 </div>
                 <div className={styles.visualContent}>
                     <div className={styles.imageWrapper}>

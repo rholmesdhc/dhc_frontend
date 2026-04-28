@@ -65,7 +65,7 @@ export default function FamilyMedicalCarePage() {
               </ul>
             </div>
 
-            <Link href="/find-a-provider" className={styles.providerLink}>
+            <Link href="/find-a-provider?specialty=Family+Medicine" className={styles.providerLink}>
               CLICK HERE TO MEET OUR FAMILY MEDICAL PROVIDERS
             </Link>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Providers.module.css';
 
@@ -8,6 +8,18 @@ import { providersData, specialties } from '../../data/providers';
 
 export default function FindAProvider() {
   const [activeFilter, setActiveFilter] = useState('All');
+
+  useEffect(() => {
+    // Only run on client side
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const specialty = params.get('specialty');
+      if (specialty && specialties.includes(specialty)) {
+        setActiveFilter(specialty);
+      }
+    }
+  }, []);
+
   console.log("Rendering FindAProvider, activeFilter:", activeFilter);
 
   const filteredProviders = activeFilter === 'All' 
