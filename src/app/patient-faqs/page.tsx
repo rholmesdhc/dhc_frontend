@@ -80,7 +80,8 @@ export default function PatientFaqs() {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className={`${styles.faqItem} ${openIndex === index ? styles.active : ''}`}
+                className={styles.faqItem}
+                data-active={openIndex === index}
               >
                 <button 
                   className={styles.faqQuestion} 

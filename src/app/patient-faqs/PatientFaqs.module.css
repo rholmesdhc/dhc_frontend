@@ -84,7 +84,7 @@
   line-height: 1;
 }
 
-.faqItem.active .icon {
+.faqItem[data-active="true"] .icon {
   transform: rotate(45deg);
 }
 
@@ -97,7 +97,7 @@
   line-height: 1.6;
 }
 
-.faqItem.active .faqAnswer {
+.faqItem[data-active="true"] .faqAnswer {
   max-height: 500px;
   padding: 0 24px 24px 24px;
 }
