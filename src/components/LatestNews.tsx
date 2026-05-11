@@ -1,12 +1,32 @@
+import Link from 'next/link';
+import NewsCarouselClient from './NewsCarouselClient';
+
 const GET_LATEST_POSTS = `
   query GetLatestPosts {
-    posts(first: 3) {
+    posts(first: 15) {
       nodes {
         id
         title
         excerpt
         slug
         date
+        author {
+          node {
+            name
+            firstName
+            lastName
+          }
+        }
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
       }
     }
   }
@@ -17,11 +37,11 @@ export default async function LatestNews() {
   let error: string | null = null;
 
   try {
-    const endpoint = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || "https://dhc-website-backend-fgb7dqhqezcpc0ck.centralus-01.azurewebsites.net/graphql";
+    const endpoint = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || "http://dhc2.local/graphql";
     // We add a brief timeout using AbortController to prevent the request from hanging
     // if the endpoint is completely unresponsive locally.
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3000);
+    const timeoutId = setTimeout(() => controller.abort(), 8000);
     
     const res = await fetch(endpoint, {
       method: "POST",
@@ -53,44 +73,91 @@ export default async function LatestNews() {
 
     posts = json.data?.posts?.nodes || [];
   } catch (e: any) {
-    // Fallback mock data so the UI isn't empty/broken when the WordPress backend is unavailable
     console.warn("Failed to fetch from WordPress WPGraphQL endpoint, falling back to mock data. Error:", e?.message);
+    
+    // Expanded mock data with images and authors
     posts = [
+      {
+        id: "mock0",
+        title: "Why Delta Health Center?",
+        excerpt: "<p>Hear from community advocates, patients and providers on why you should choose Delta Health Center for your healthcare and wellness needs.</p><p>Delta Health Center prides itself on making sure we give our patients the attention they need when visiting one of our clinics. We make sure our providers have access to the technology and data needed to make sound decisions on the health of their patients.</p><p>Listen to Pastor Darryl Johnson as he talks about the history of Delta Health Center and its long-lasting impact on the local community.</p>",
+        slug: "why-delta-health-center",
+        date: new Date().toISOString(),
+        author: { node: { name: "Pastor Darryl Johnson" } },
+        featuredImage: { node: { sourceUrl: "/images/dhc_entrance.jpg" } },
+        categories: { nodes: [{ name: "Community" }] }
+      },
       {
         id: "mock1",
         title: "Delta Health Center Recognized for Community Excellence",
         excerpt: "<p>We are incredibly honored to receive this year's regional award for outstanding community health impact and expanded patient care services.</p>",
         slug: "recognized-community-excellence",
-        date: new Date().toISOString()
+        date: new Date().toISOString(),
+        author: { node: { name: "Marketta Blue" } },
+        featuredImage: { node: { sourceUrl: "/images/dhc_entrance_new.png" } },
+        categories: { nodes: [{ name: "Awards" }] }
       },
       {
         id: "mock2",
         title: "Upcoming Community Health Fair details",
         excerpt: "<p>Join us this weekend for our annual health fair! We will be providing complimentary health screenings, wellness consultations, and family activities.</p>",
         slug: "community-health-fair",
-        date: new Date(Date.now() - 86400000 * 5).toISOString() // 5 days ago
+        date: new Date(Date.now() - 86400000 * 5).toISOString(),
+        author: { node: { name: "Nadia Bethley" } },
+        featuredImage: { node: { sourceUrl: "/images/provider_hero.png" } },
+        categories: { nodes: [{ name: "Outreach" }] }
       },
       {
         id: "mock3",
         title: "Welcoming New Pediatricians to Our Team",
         excerpt: "<p>Delta Health Center is proud to introduce three new pediatric specialists who will help us continue providing top-tier medical care to youths.</p>",
         slug: "welcoming-new-pediatricians",
-        date: new Date(Date.now() - 86400000 * 14).toISOString() // 14 days ago
+        date: new Date(Date.now() - 86400000 * 14).toISOString(),
+        author: { node: { name: "John Smith" } },
+        featuredImage: { node: { sourceUrl: "/images/pediatric_care_child.png" } },
+        categories: { nodes: [{ name: "Announcements" }] }
+      },
+      {
+        id: "mock4",
+        title: "New Behavioral Health Clinic Opens",
+        excerpt: "<p>Our new dedicated behavioral health facility is now open to the public, offering expanded counseling and therapy services.</p>",
+        slug: "new-behavioral-health-clinic",
+        date: new Date(Date.now() - 86400000 * 20).toISOString(),
+        author: { node: { name: "Jane Doe" } },
+        categories: { nodes: [{ name: "News" }] }
+      },
+      {
+        id: "mock5",
+        title: "Nutrition Tips for the Summer",
+        excerpt: "<p>Stay healthy this summer with these top nutrition tips from our registered dietitians. Hydration and seasonal fruits are key!</p>",
+        slug: "nutrition-tips-summer",
+        date: new Date(Date.now() - 86400000 * 25).toISOString(),
+        author: { node: { name: "Alice Johnson" } },
+        categories: { nodes: [{ name: "Health Tips" }] }
+      },
+      {
+        id: "mock6",
+        title: "Understanding Your Patient Rights",
+        excerpt: "<p>Every patient deserves to know their rights and responsibilities. Here is a comprehensive guide to navigating your healthcare experience.</p>",
+        slug: "understanding-patient-rights",
+        date: new Date(Date.now() - 86400000 * 30).toISOString(),
+        author: { node: { name: "Legal Team" } },
+        categories: { nodes: [{ name: "Outreach" }] }
       }
     ];
   }
 
   return (
-    <section style={{ padding: '80px 0', backgroundColor: 'var(--color-bg-alt)' }}>
+    <section style={{ padding: '80px 0', backgroundColor: '#f5f7f9' }}>
       <div className="container">
-        <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '40px', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '40px', textAlign: 'center', fontFamily: "'Outfit', serif" }}>
           Latest News & Updates
         </h2>
         
         {error && (
-          <div style={{ padding: '16px', backgroundColor: 'rgba(255,0,0,0.1)', color: 'red', borderRadius: '8px', textAlign: 'center' }}>
+          <div style={{ padding: '16px', backgroundColor: 'rgba(255,0,0,0.1)', color: 'red', borderRadius: '8px', textAlign: 'center', marginBottom: '20px' }}>
             <p>Could not connect to WordPress backend: {error}</p>
-            <p style={{ fontSize: '0.875rem', marginTop: '8px' }}>Make sure WPGraphQL is active at http://www.dhc2.local</p>
+            <p style={{ fontSize: '0.875rem', marginTop: '8px' }}>Make sure WPGraphQL is active at http://dhc2.local</p>
           </div>
         )}
 
@@ -98,24 +165,12 @@ export default async function LatestNews() {
           <p style={{ textAlign: 'center', color: 'var(--color-text-muted)' }}>No posts found. Add some posts in WordPress!</p>
         )}
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
-          {posts.map((post: any) => (
-            <article key={post.id} style={{ background: '#fff', padding: '24px', borderRadius: '16px', boxShadow: 'var(--shadow-sm)' }}>
-              <div style={{ fontSize: '0.875rem', color: 'var(--color-tertiary)', marginBottom: '8px', fontWeight: 'bold' }}>
-                {new Date(post.date).toLocaleDateString()}
-              </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px', color: 'var(--color-primary)' }}>
-                {post.title}
-              </h3>
-              <div 
-                style={{ color: 'var(--color-text-muted)', marginBottom: '24px', fontSize: '0.95rem' }} 
-                dangerouslySetInnerHTML={{ __html: post.excerpt }} 
-              />
-              <a href={`/news/${post.slug}`} className="btn btn-secondary" style={{ padding: '8px 16px', fontSize: '0.875rem' }}>
-                Read More
-              </a>
-            </article>
-          ))}
+        {posts.length > 0 && <NewsCarouselClient posts={posts} />}
+
+        <div style={{ textAlign: 'center', marginTop: '40px' }}>
+          <Link href="/news" style={{ display: 'inline-block', backgroundColor: 'var(--color-primary)', color: 'white', padding: '12px 30px', borderRadius: '30px', textDecoration: 'none', fontWeight: 600, fontSize: '1.1rem', transition: 'opacity 0.3s ease' }}>
+            View All News
+          </Link>
         </div>
       </div>
     </section>

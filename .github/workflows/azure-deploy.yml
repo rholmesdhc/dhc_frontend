@@ -10,7 +10,7 @@ env:
   ACR_NAME: dhcfrontendregistry
   CONTAINER_APP_NAME: dhc-frontend-app # Replace with your Container App name
   RESOURCE_GROUP: DHC_Frontend # Updated resource group
-  WP_API_URL: https://dhc-website-backend-fgb7dqhqezcpc0ck.centralus-01.azurewebsites.net/graphql
+  WP_API_URL: https://dhc-website-backend2-a8gxe2ajdthnb0g9.centralus-01.azurewebsites.net/graphql
 
 jobs:
   build-and-deploy:

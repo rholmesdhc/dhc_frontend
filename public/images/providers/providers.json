@@ -26,7 +26,7 @@
   },
   {
     "name": "Dr. Frank Brown",
-    "title": "MD Family Medicine",
+    "title": "MD Internal Medicine",
     "image": "/images/providers/Frank_Brown_21s.png"
   },
   {
@@ -41,58 +41,54 @@
   },
   {
     "name": "Dr. Lauren Adams",
-    "title": "PhD.",
+    "title": "PhD Physical Therapy",
     "image": "/images/providers/LaurenAdams2.png"
   },
   {
     "name": "Alyssa Simmons",
-    "title": "FNP",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/Alyssa_Simmons_FNP_Family_Nurse_Practitioner_Provider_Team_Photo_Box.png"
   },
   {
     "name": "Felicia Norris White",
-    "title": "NP",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/Felicia_White_FNP_Provider_Team_Photo_Box.png"
   },
   {
     "name": "Sherrica Smith",
-    "title": "PMHNP-BC, FNP-C",
+    "title": "Nurse Practitioner | Behavioral Health",
     "image": "/images/providers/Sherrica_Smith_DNP_FNP-C_Provider_Team_Photo_Box.png"
   },
   {
     "name": "Barbara Williams",
-    "title": "FNP",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/Bwilliams_website_pic2.png"
   },
   {
     "name": "Jennifer Kurts",
-    "title": "FNP",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/Jennifer_Kurts_FNP_Family_Nurse_Practitioner_Provider_Team_Photo_Box.png"
   },
   {
     "name": "Valerie Antici",
-    "title": "FNP-BC",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/Valeri-Antici-1.png"
   },
   {
     "name": "Queeneice Ganison",
-    "title": "NP",
+    "title": "Nurse Practitioner | Family Medicine",
     "image": "/images/providers/QuieneseGannison1.png"
   },
   {
     "name": "Tara Davis",
-    "title": "FNP-Pediatrics",
+    "title": "Nurse Practitioner | Pediatrics",
     "image": "/images/providers/TaraDavis-FNP1ab-2.png"
   },
+
   {
-    "name": "Wyconda Thomas",
-    "title": "PMHNP-C",
-    "image": "/images/providers/Wyconda-Thomas1.png"
-  },
-  {
-    "name": "Mary Bolden",
-    "title": "FNP-BC",
-    "image": "/images/providers/MaryBolden-FNP1ab-3aa.png"
+    "name": "Remonica Jackson",
+    "title": "PharmD | Pharmacy",
+    "image": "/images/providers/Remonica_Jackson_template.png"
   },
   {
     "name": "Megan Mccoy",

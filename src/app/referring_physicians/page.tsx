@@ -21,7 +21,7 @@ export default function BehaviorHealth() {
           <img src="/images/provider_hero.png" alt="Behavioral Health Hero" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>Referring Physicians</h1>
+            <h1 className={styles.heroTitle}>Referring Internal Physicians</h1>
             <p className={styles.heroSubtitle}>
               Connecting you with the right specialists for exceptional, community-based care.
             </p>
@@ -31,13 +31,13 @@ export default function BehaviorHealth() {
 
       <div className={styles.container}>
         <div className={styles.formCard}>
-          <h2 className={styles.formTitle}>Referring Physicians Portal</h2>
+          <h2 className={styles.formTitle}>Referring Internal Physicians Portal</h2>
           <p className={styles.formSubtitle}>
             Please select the specific behavioral health, psychology, or women's health practitioner you wish to refer or consult with via our secure ZipRefer system.
           </p>
 
           <div className={styles.formGroup}>
-            <label htmlFor="referrer-select" className={styles.label}>SELECT A REFERRING PHYSICIAN</label>
+            <label htmlFor="referrer-select" className={styles.label}>SELECT A REFERRING INTERNAL PHYSICIAN</label>
             <select 
               id="referrer-select" 
               className={styles.select} 

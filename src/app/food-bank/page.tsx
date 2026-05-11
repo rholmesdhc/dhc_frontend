@@ -4,16 +4,16 @@ import React from 'react';
 import styles from './FoodBank.module.css';
 
 const pantriesByCity: Record<string, { name: string, phone: string, address: string, mapQuery: string, email?: string }[]> = {
+  "Cleveland": [
+    { name: "Covenant Presbyterian Church", phone: "662-719-1360", address: "110 Bishop Rd, Cleveland, MS 38732", mapQuery: "110+Bishop+Rd,+Cleveland,+MS+38732" },
+    { name: "Helping Hands of Cleveland", phone: "662-719-4875", address: "404 North MLK Dr, Cleveland, MS 38732", mapQuery: "404+North+MLK+Dr,+Cleveland,+MS+38732" }
+  ],
   "Greenville": [
     { name: "Ephesus SDA Church", phone: "662-347-7652", address: "1735 Spruce St, Greenville, MS 38704", mapQuery: "1735+Spruce+St,+Greenville,+MS+38704" },
     { name: "New Jerusalem MB Church", phone: "662-347-3621", address: "518 Gum St., Greenville, MS 38701", mapQuery: "518+Gum+St.,+Greenville,+MS+38701" },
     { name: "St. Vincent DePaul", phone: "662-335-5251", address: "711 Washington Ave, Greenville, MS 38701", mapQuery: "711+Washington+Ave,+Greenville,+MS+38701" },
     { name: "East Park Comm Outreach", phone: "662-820-4983", address: "2500 E. Alexander St., Greenville, MS 38704", mapQuery: "2500+E.+Alexander+St.,+Greenville,+MS+38704" },
     { name: "Hearty Helpings Food Pantry", phone: "662-335-5554", address: "310 Washington Ave, Greenville, MS 38704", mapQuery: "310+Washington+Ave,+Greenville,+MS+38704" }
-  ],
-  "Cleveland": [
-    { name: "Covenant Presbyterian Church", phone: "662-719-1360", address: "110 Bishop Rd, Cleveland, MS 38732", mapQuery: "110+Bishop+Rd,+Cleveland,+MS+38732" },
-    { name: "Helping Hands of Cleveland", phone: "662-719-4875", address: "404 North MLK Dr, Cleveland, MS 38732", mapQuery: "404+North+MLK+Dr,+Cleveland,+MS+38732" }
   ],
   "Leland": [
     { name: "Leland Food Pantry", phone: "662-686-9910", address: "202 N. Broad St, Leland, MS 38756", mapQuery: "202+N.+Broad+St,+Leland,+MS+38756" },

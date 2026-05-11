@@ -47,8 +47,10 @@ export default function FindAProvider() {
             {specialties.map(spec => (
               <button 
                 key={spec}
+                type="button"
                 className={`${styles.filterBtn} ${activeFilter === spec ? styles.active : ''}`}
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   console.log("Button clicked:", spec);
                   setActiveFilter(spec);
                 }}

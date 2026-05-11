@@ -41,8 +41,6 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
               <h2 className={styles.sectionTitle}>Getting to know {displayName}</h2>
               
               <div className={styles.quickFacts}>
-                <span>Gender Identity: {provider.gender || 'TBA'}</span>
-                <span>Pronouns: {provider.pronouns || 'TBA'}</span>
                 <span>Spoken Languages: {provider.languages || 'TBA'}</span>
               </div>
 
@@ -56,10 +54,7 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
                 )}
               </div>
 
-              <div className={styles.detailBlock}>
-                <h4>Workdays</h4>
-                <p className={styles.detailText}>{provider.workdays || 'TBA'}</p>
-              </div>
+
 
               <div className={styles.detailBlock}>
                 <h4>Education</h4>

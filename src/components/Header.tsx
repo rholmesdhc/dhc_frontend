@@ -65,9 +65,9 @@ const Header = () => {
               <div className={styles.dropdownContent} role="menu">
                 <Link href="/mission-vision-values">Mission, Vision, and Values</Link>
                 <Link href="/find-a-provider">Providers</Link>
-                <Link href="/our-ceo">Our CEO</Link>
                 <Link href="/leadership">Leadership</Link>
-                <Link href="/our-history">History</Link>
+                <Link href="/our-ceo">Our CEO</Link>
+                <Link href="/our-history">Our Legacy</Link>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ const Header = () => {
                 <Link href="/our-locations#indianola">Indianola</Link>
                 <Link href="/our-locations#cleveland">Cleveland</Link>
                 <Link href="/our-locations#hollandale">Hollandale</Link>
-                <Link href="/our-locations#ittabena">Itta Bena</Link>
+                <Link href="/our-locations#ittabena">Itta Bena (MVSU)</Link>
                 <Link href="/our-locations#leland">Leland</Link>
                 <Link href="/our-locations#moorhead">Moorhead</Link>
                 <Link href="/our-locations#rollingfork">Rolling Fork</Link>
@@ -99,22 +99,32 @@ const Header = () => {
               </button>
               <div className={styles.dropdownContent} role="menu">
                 <Link href="/dental-care">Dental Care</Link>
-                <Link href="/diabetes-clinic">Diabetes Clinic</Link>
                 <Link href="/family-medical-care">Family Medical Care</Link>
-
                 <Link href="/laboratory-x-rays">Laboratory & X-Rays</Link>
-                <Link href="/nutritional-counseling">Nutritional Counseling</Link>
                 <Link href="/pediatric-care">Pediatric Care</Link>
                 <Link href="/pharmacy">Pharmacy</Link>
-                <Link href="/ryan-white-hiv-program">Ryan White HIV/AIDS</Link>
-                <Link href="/social-services">Social Services</Link>
-                <Link href="/food-bank">Hunger Relief Resources</Link>
-                <Link href="/wellness-exams">Wellness Exams</Link>
-                <Link href="/womens-health">Women's Health</Link>
-                <Link href="/wic">Maternal Health & WIC</Link>
-                <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
                 <Link href="/behavior-health">Behavioral Health</Link>
-                <Link href="/referring_physicians">Referring Physicians</Link>
+                <Link href="/physical-therapy">Physical Therapy</Link>
+                <Link href="/referring_physicians">Referring Internal Physicians</Link>
+              </div>
+            </div>
+
+            {/* Programs Dropdown */}
+            <div className={styles.dropdown}>
+              <button className={styles.dropbtn} aria-haspopup="true" aria-expanded="false">
+                Programs <span className={styles.arrow}>▼</span>
+              </button>
+              <div className={styles.dropdownContent} role="menu">
+                <Link href="/social-services">Social Services</Link>
+                <Link href="/wellness-center">Wellness Center</Link>
+                <Link href="/nutritional-counseling">Nutritional Counseling</Link>
+                <Link href="/food-bank">Hunger Relief Resources</Link>
+                <Link href="/ryan-white-hiv-program">Ryan White HIV/AIDS</Link>
+                <Link href="/maternal-health">Maternal Health</Link>
+                <Link href="/wic">WIC</Link>
+                <Link href="/womens-health">Women's Health</Link>
+                <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
+                <Link href="/wellness-exams">Wellness Exams</Link>
               </div>
             </div>
 
@@ -125,14 +135,10 @@ const Header = () => {
               </button>
               <div className={styles.dropdownContent} role="menu">
                 <Link href="/patient-faqs">FAQs</Link>
-                <Link href="/patient-payment">Payment</Link>
                 <Link href="/patient-registration">Registration</Link>
                 <Link href="/patient-rights-and-responsibilities">Rights & Responsibilities</Link>
               </div>
             </div>
-
-            {/* Careers Menu Item */}
-            <Link href="/careers" className={styles.navLink} onClick={closeMenu}>Careers</Link>
 
           </nav>
 

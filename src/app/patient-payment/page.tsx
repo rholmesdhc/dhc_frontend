@@ -101,7 +101,7 @@ export default function PatientPayment() {
                 </li>
               </ul>
 
-              <a href="https://pay.phreesia.net/home" target="_blank" rel="noopener noreferrer" className={styles.button}>
+              <a href="https://z4-ppw.phreesia.net" target="_blank" rel="noopener noreferrer" className={styles.button}>
                 Click Here to Pay Now
               </a>
 

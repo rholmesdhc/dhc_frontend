@@ -7,8 +7,7 @@ export default function OurLocations() {
     'Dental Care',
     'Pediatric Care',
     'Behavioral Health',
-    'Womens Health',
-    'Pharmacy'
+    'Womens Health'
   ];
 
   return (
@@ -20,7 +19,7 @@ export default function OurLocations() {
           <div className={styles.infoCol}>
             <h1 className={styles.title}>Delta Health Center | Dr. H. Jack Geiger Medical Center</h1>
             <div className={styles.contactBlock}>
-              <p>702 Martin Luther King Road - Building B<br />Mound Bayou, MS 38762</p>
+              <p>Delta Health Center, Inc.<br />702 Martin Luther King Road<br />Post Office Box 900<br />Mound Bayou, MS 38762</p>
               <br />
               <p>
                 <strong>Phone:</strong> <a href="tel:6627418800">(662) 741-8800</a><br />
@@ -34,7 +33,8 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => <li key={index}>{service}</li>)}
+                {services.filter(s => s !== 'Dental Care').map((service, index) => <li key={index}>{service}</li>)}
+                <li>Pharmacy (Full Service)</li>
               </ul>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function OurLocations() {
           <div className={styles.infoCol}>
             <h1 className={styles.title}>Delta Health Center | Dr. Warren Inge Dental Center</h1>
             <div className={styles.contactBlock}>
-              <p>702 Martin Luther King Road - Building A<br />Mound Bayou, MS 38762</p>
+              <p>Delta Health Center, Inc.<br />702 Martin Luther King Road<br />Post Office Box 900<br />Mound Bayou, MS 38762</p>
               <br />
               <p>
                 <strong>Phone:</strong> <a href="tel:6627418857">(662) 741-8857</a><br />
@@ -62,7 +62,7 @@ export default function OurLocations() {
               <p><strong>Friday:</strong> 8:00am &ndash; 12:00pm</p>
             </div>
             <div className={styles.servicesBlock}>
-              <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
+              <h3 className={styles.servicesTitle}>Services Provided</h3>
               <ul className={styles.servicesList}>
                 <li>Dental Care</li>
               </ul>
@@ -98,7 +98,7 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => (
+                {services.filter(s => s !== 'Dental Care').map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
               </ul>
@@ -145,7 +145,7 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => (
+                {services.filter(s => s !== 'Dental Care').map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
               </ul>
@@ -192,9 +192,10 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => (
+                {services.filter(s => s !== 'Dental Care').map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Full Service)</li>
               </ul>
             </div>
           </div>
@@ -288,6 +289,7 @@ export default function OurLocations() {
                 {services.map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>

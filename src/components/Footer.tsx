@@ -34,20 +34,27 @@ const Footer = () => {
               <li><Link href="/behavior-health">Behavioral Health</Link></li>
               <li><Link href="/dental-care">Dental Health</Link></li>
               <li><Link href="/family-medical-care">Family Medicine</Link></li>
-
               <li><Link href="/pediatric-care">Pediatrics</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Badges */}
+          {/* Column 3: Careers */}
           <div className={styles.col3}>
+            <h3 className={styles.colTitle}>Careers at DHC</h3>
+            <Link href="/careers" className={styles.careerImageLink}>
+              <img src="/images/careers_marketta_blue.png" alt="Careers at DHC" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
+            </Link>
+          </div>
+
+          {/* Column 4: Badges */}
+          <div className={styles.col4}>
             <h3 className={styles.colTitle}>Federally Qualified Health Center</h3>
             <div className={styles.badgesGrid}>
               <img src="/images/badges/national-quality-leader.png" alt="National Quality Leader 2025" className={styles.badgeImage} />
               <img src="/images/badges/high-value-care.png" alt="High-Value Care 2025" className={styles.badgeImage} />
               <img src="/images/badges/advancing-hit.png" alt="Advancing HIT for Quality 2025" className={styles.badgeImage} />
               <img src="/images/badges/aha-gold.png" alt="AHA Check Change Control Cholesterol Gold 2023" className={styles.badgeImage} />
-              <img src="/images/badges/ftca-badge.png" alt="FTCA Deemed Health Center" className={styles.badgeImage} />
+              <img src="/images/badges/ftca-badge.png" alt="FTCA Deemed Health Center" className={styles.badgeImage} style={{ width: '123.75px' }} />
             </div>
           </div>
         </div>

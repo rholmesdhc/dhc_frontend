@@ -1,10 +1,11 @@
 export const specialties = [
   'All',
-  'Behavioral Health',
-  'Dentistry',
   'Family Medicine',
-  'Obstetrics & Gynecology',
-  'Pediatrics'
+  'Internal Medicine',
+  'Dentistry',
+  'Pediatrics',
+  'Pharmacy',
+  'Behavioral Health'
 ];
 
 export const providersData = [
@@ -112,25 +113,25 @@ export const providersData = [
   { 
     id: 5, 
     name: 'Dr. Frank Brown', 
-    title: 'MD Family Medicine', 
-    certifications: 'Board Certified | Family Medicine', 
-    specialty: 'Family Medicine', 
+    title: 'MD Internal Medicine', 
+    certifications: 'Board Certified | Internal Medicine', 
+    specialty: 'Internal Medicine', 
     image: '/images/providers/frank_brown_template.png',
     slug: '5',
     gender: 'Male',
     pronouns: 'He/Him',
     languages: 'English',
     bio: [
-      "Dr. Frank Brown is a highly skilled Family Medicine physician dedicated to advancing the health outcomes of communities throughout the Mississippi Delta. Delivering expert primary care services at the Delta Health Center, Dr. Brown has built a strong reputation for his clinical thoroughness, warmth, and unyielding dedication to his patients.",
+      "Dr. Frank Brown is a highly skilled Internal Medicine physician dedicated to advancing the health outcomes of communities throughout the Mississippi Delta. Delivering expert primary care services at the Delta Health Center, Dr. Brown has built a strong reputation for his clinical thoroughness, warmth, and unyielding dedication to his patients.",
       "Focusing on a broad continuum of care from acute disease intervention to long-term health maintenance, Dr. Brown emphasizes preventative medicine and patient education. He works tirelessly alongside his patients, creating personalized health plans that accommodate their unique lifestyles and goals."
     ],
     workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
     education: [
       'Doctor of Medicine',
-      'Board Certification in Family Medicine'
+      'Board Certification in Internal Medicine'
     ],
     associations: [
-      'American Board of Family Medicine'
+      'American Board of Internal Medicine'
     ]
   },
   { 
@@ -199,7 +200,7 @@ export const providersData = [
   { 
     id: 14, 
     name: 'Dr. Lauren Adams', 
-    title: 'PhD.', 
+    title: 'PhD Physical Therapy', 
     specialty: 'Behavioral Health', 
     image: '/images/providers/Dr_Lauren_Adams_template.png',
     slug: '14',
@@ -212,6 +213,7 @@ export const providersData = [
     ],
     workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
     education: [
+      'Doctor of Physical Therapy',
       'Ph.D.'
     ],
     associations: []
@@ -219,7 +221,8 @@ export const providersData = [
   { 
     id: 15, 
     name: 'Alyssa Simmons', 
-    title: 'FNP', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'FNP',
     specialty: 'Family Medicine', 
     image: '/images/providers/Alyssa_Simmons_template.png', 
     slug: '15',
@@ -241,7 +244,8 @@ export const providersData = [
   { 
     id: 16, 
     name: 'Felicia Norris White', 
-    title: 'NP', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'NP',
     specialty: 'Family Medicine', 
     image: '/images/providers/Felicia_Norris_White_template.png', 
     slug: '16',
@@ -261,7 +265,8 @@ export const providersData = [
   { 
     id: 17, 
     name: 'Sherrica Smith', 
-    title: 'PMHNP-BC, FNP-C', 
+    title: 'Nurse Practitioner | Behavioral Health', 
+    certifications: 'PMHNP-BC, FNP-C',
     specialty: 'Behavioral Health', 
     image: '/images/providers/Sherrica_Smith_template.png', 
     slug: '17',
@@ -284,7 +289,8 @@ export const providersData = [
   { 
     id: 18, 
     name: 'Barbara Williams', 
-    title: 'FNP', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'FNP',
     specialty: 'Family Medicine', 
     image: '/images/providers/Barbara_Williams_template.png', 
     slug: '18',
@@ -304,7 +310,8 @@ export const providersData = [
   { 
     id: 19, 
     name: 'Jennifer Kurts', 
-    title: 'FNP', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'FNP',
     specialty: 'Family Medicine', 
     image: '/images/providers/Jennifer_Kurts_template.png', 
     slug: '19',
@@ -324,7 +331,8 @@ export const providersData = [
   { 
     id: 20, 
     name: 'Valerie Antici', 
-    title: 'FNP-BC', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'DOT Medical Examiner Certified, FNP-C',
     specialty: 'Family Medicine', 
     image: '/images/providers/Valerie_Antici_template.png', 
     slug: '20',
@@ -340,13 +348,15 @@ export const providersData = [
       'Master of Science in Nursing - Family Nurse Practitioner'
     ],
     associations: [
-      'American Nurses Credentialing Center (ANCC)'
+      'American Nurses Credentialing Center (ANCC)',
+      'AANP, American Academy of Nurse Practitioners'
     ]
   },
   { 
     id: 21, 
     name: 'Queeneice Ganison', 
-    title: 'NP', 
+    title: 'Nurse Practitioner | Family Medicine', 
+    certifications: 'DNP, APRN, FNP-BC',
     specialty: 'Family Medicine', 
     image: '/images/providers/Queeneice_Ganison_template.png', 
     slug: '21',
@@ -359,14 +369,19 @@ export const providersData = [
     ],
     workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
     education: [
-      'Master of Science in Nursing'
+      'Masters in Nursing from Walden University',
+      'Doctor of Nursing Practice from the University of Tennessee Health Sciences Center'
     ],
-    associations: []
+    associations: [
+      'Mississippi Nurses’ Association',
+      'American Nurses’ Association'
+    ]
   },
   { 
     id: 22, 
     name: 'Tara Davis', 
-    title: 'FNP-Pediatrics', 
+    title: 'Nurse Practitioner | Pediatrics', 
+    certifications: 'FNP-Pediatrics',
     specialty: 'Pediatrics', 
     image: '/images/providers/Tara_Davis_template.png', 
     slug: '22',
@@ -379,58 +394,20 @@ export const providersData = [
     ],
     workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
     education: [
-      'Master of Science in Nursing - Family Nurse Practitioner'
+      'Master of Science in Nursing - Family Nurse Practitioner',
+      'Post Masters Science in Nursing, Pediatric Nurse Practitioner'
     ],
     associations: [
-      'National Association of Pediatric Nurse Practitioners'
+      'National Association of Pediatric Nurse Practitioners',
+      'American Association of Nurse Practitioners'
     ]
   },
-  { 
-    id: 23, 
-    name: 'Wyconda Thomas', 
-    title: 'PMHNP-C', 
-    specialty: 'Behavioral Health', 
-    image: '/images/providers/Wyconda_Thomas_template.png', 
-    slug: '23',
-    gender: 'Female',
-    pronouns: 'She/Her',
-    languages: 'English',
-    bio: [
-      "Wyconda Thomas is a Certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-C) who provides vital behavioral health services to the Delta region. She specializes in the diagnosis and treatment of a wide range of mental health disorders.",
-      "With a focus on holistic, culturally competent care, Wyconda offers psychiatric assessments, therapeutic interventions, and collaborative care planning to help her patients achieve mental and emotional stability."
-    ],
-    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
-    education: [
-      'Master of Science in Nursing - Psychiatric-Mental Health Nurse Practitioner'
-    ],
-    associations: []
-  },
-  { 
-    id: 24, 
-    name: 'Mary Bolden', 
-    title: 'FNP-BC', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Mary_Bolden_template.png', 
-    slug: '24',
-    gender: 'Female',
-    pronouns: 'She/Her',
-    languages: 'English',
-    bio: [
-      "Mary Bolden is a Board-Certified Family Nurse Practitioner (FNP-BC) who brings years of clinical expertise to the Delta Health Center. She is dedicated to providing high-quality, continuous care to individuals and families.",
-      "Mary emphasizes a proactive approach to health, focusing on wellness screenings, lifestyle counseling, and the effective management of chronic illnesses to improve overall patient outcomes."
-    ],
-    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
-    education: [
-      'Master of Science in Nursing - Family Nurse Practitioner'
-    ],
-    associations: [
-      'American Nurses Credentialing Center (ANCC)'
-    ]
-  },
+
   { 
     id: 26, 
     name: 'Daffany Williams', 
-    title: 'PMHNP-BC', 
+    title: 'Nurse Practitioner | Behavioral Health', 
+    certifications: 'PMHNP-BC',
     specialty: 'Behavioral Health', 
     image: '/images/providers/Daffany_Williams_processed.png?v=4', 
     slug: '26',
@@ -447,6 +424,29 @@ export const providersData = [
     ],
     associations: [
       'American Nurses Credentialing Center (ANCC)'
+    ]
+  },
+  { 
+    id: 27, 
+    name: 'Remonica Jackson', 
+    title: 'PharmD | Pharmacy', 
+    certifications: 'Pharm.D.',
+    specialty: 'Pharmacy', 
+    image: '/images/providers/Remonica_Jackson_template.png', 
+    slug: '27',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Remonica Jackson is the Director of Pharmacy at the Delta Health Center, where she leads a dedicated team of pharmacy professionals in providing safe, effective, and accessible medication therapies. With extensive clinical expertise and a passion for community health, she ensures that every patient receives comprehensive medication management tailored to their specific treatment plans.",
+      "A seasoned expert in clinical pharmacy operations, Remonica works closely with the medical and behavioral health providers at DHC to integrate pharmacy services directly into patient care. Her leadership emphasizes patient education, helping individuals understand their prescriptions, manage chronic conditions, and achieve optimal health outcomes."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Pharmacy (Pharm.D.)'
+    ],
+    associations: [
+      'American Pharmacists Association'
     ]
   },
   { 

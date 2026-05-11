@@ -49,15 +49,15 @@ export default function PediatricCarePage() {
               Our providers comprehensively care for infants, children, and adolescents. They make decisions daily that improve the health and lives of infants through adulthood, form relationships with parents, and diagnose and treat youth. Delta Health Center takes pride in providing the most compassionate care & services to children. Our goal is to improve the health of our state's children.
             </p>
 
-            <h3 className={styles.orangeHeading}>Immunizations Including Vaccines For Children Program</h3>
+            <h3 className={styles.orangeHeading}>Immunizations/Vaccinations Including Vaccines For Children Program</h3>
             <p className={styles.textParagraph}>
-              The Vaccines for Children program (VFC) is designed to allow children, zero through 18 years of age, to receive free vaccinations. Eligible children include those who receive Medicaid, Native Americans or Alaskan Natives, and children who have health insurance that does not cover vaccination. These underinsured children must be referred to a Federally Qualified Health Center, Community/Rural Health Center, or Public Health to receive their immunizations.
+              The Vaccines for Children program (VFC) is designed to allow children, zero through 18 years of age, to receive free vaccinations. Eligible children include those who receive Medicaid, Native Americans or Alaskan Natives, and children who have health insurance that does not cover vaccination. These underinsured children must be referred to a Federally Qualified Health Center, Community/Rural Health Center, or Public Health to receive their immunizations/vaccinations.
             </p>
             <p className={styles.textParagraph}>
-              This program promotes the creation of a medical home for children by inviting private provider participation. It can also reduce referrals to public health clinics and help raise awareness of childhood immunizations.
+              This program promotes the creation of a medical home for children by inviting private provider participation. It can also reduce referrals to public health clinics and help raise awareness of childhood immunizations/vaccinations.
             </p>
             <p className={styles.textParagraph}>
-              Health care providers may receive VFC vaccine and administer this vaccine at no charge if they are willing to enroll in the program and agree to follow the ACIP Recommended Immunization Schedule. There is no fee for enrolling and the provider is allowed to charge a $10 administration fee per vaccine if the parent is able to pay; otherwise the vaccination is provided at no cost. Providers may also elect to bill clients for a separate office visit. For any child who is Medicaid eligible, the provider must bill Medicaid for the administration fee. This fee is reimbursed in ADDITION to the reimbursement for the office visit; it does not replace it.
+              Health care providers may receive VFC vaccine and administer this vaccine at no charge if they are willing to enroll in the program and agree to follow the ACIP Recommended Immunization/Vaccination Schedule. There is no fee for enrolling and the provider is allowed to charge a $10 administration fee per vaccine if the parent is able to pay; otherwise the vaccination is provided at no cost. Providers may also elect to bill clients for a separate office visit. For any child who is Medicaid eligible, the provider must bill Medicaid for the administration fee. This fee is reimbursed in ADDITION to the reimbursement for the office visit; it does not replace it.
             </p>
 
             <h3 className={styles.orangeHeading}>American Academy of Pediatrics for Healthy Children website</h3>
@@ -78,7 +78,7 @@ export default function PediatricCarePage() {
                 <li>Asthma Treatment</li>
                 <li>Adolescent Counseling</li>
                 <li>Sex Education</li>
-                <li>Immunizations</li>
+                <li>Immunizations/Vaccinations</li>
                 <li>School & Physical Exams</li>
               </ul>
             </div>

@@ -41,8 +41,8 @@ export default function DentalCarePage() {
       {/* Top Hero Section */}
       <section className={styles.topSection}>
         <img 
-          src="/images/dental/Dentist_and_Patient_Inside_Page_Body_Photo-1.png" 
-          alt="Dentist working on patient" 
+          src="/images/dental/dentist_inge_ford_working.png" 
+          alt="Dr. Inge Ford working on patient" 
           className={styles.heroCutout} 
         />
         <hr className={styles.orangeDivider} />

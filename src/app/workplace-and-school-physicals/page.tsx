@@ -42,7 +42,7 @@ export default function WorkplaceAndSchoolPhysicals() {
           </ul>
 
           <p className={styles.paragraph}>
-            We also offer accompanying services such as drug screenings, alcohol testing, and necessary immunizations to complete your physical requirements.
+            We also offer accompanying services such as drug screenings, alcohol testing, and necessary immunizations/vaccinations to complete your physical requirements.
           </p>
 
           <p className={styles.paragraph}>

@@ -1,0 +1,169 @@
+.pageWrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+/* Banner Styles */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.heroBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(230, 81, 154, 0.8) 0%, rgba(30, 60, 114, 0.6) 100%);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: 'Outfit', serif;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: none;
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.leftColumn {
+  padding-right: 20px;
+}
+
+.textParagraph {
+  color: #1a2a50;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.servicesHeading {
+  color: var(--color-accent, #ffa500);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.servicesListContainer {
+  column-count: 1;
+  color: #1a2a50;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.servicesListContainer ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.servicesListContainer li {
+  margin-bottom: 4px;
+}
+
+.servicesListContainer li::marker {
+  color: #1a2a50;
+}
+
+@media (min-width: 600px) {
+  .servicesListContainer {
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoCard {
+  background: #f8f9fa;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid #e6519a; /* Pinkish accent for maternal health */
+}
+
+.infoCard h3 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.infoCard p {
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.callBtn {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-text-main);
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.callBtn:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
+}

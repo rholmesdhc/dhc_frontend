@@ -21,6 +21,8 @@ export default function OurHistory() {
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
             title="Delta Health Center History"
             style={{ width: '100%', height: '100%' }}
+            allowFullScreen
+            frameBorder="0"
           ></iframe>
         </section>
 
@@ -54,9 +56,7 @@ export default function OurHistory() {
               />
             </div>
             
-            <Link href="/contact" className={styles.contactBtn}>
-              Contact Us
-            </Link>
+
           </div>
 
         </section>

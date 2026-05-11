@@ -38,7 +38,7 @@ export default function WellnessExams() {
                 <ul className={styles.listItems}>
                   <li>Health and Developmental History</li>
                   <li>Complete Unclothed Physical Exam</li>
-                  <li>Appropriate Immunizations (ACIP guidelines)</li>
+                  <li>Appropriate Immunizations/Vaccinations (ACIP guidelines)</li>
                   <li>Laboratory Tests (including lead toxicity screening)</li>
                   <li>Health Education and Preventative Guidance</li>
                 </ul>
@@ -88,8 +88,12 @@ export default function WellnessExams() {
           <h2 className={styles.contactTitle}>Contact Us for an Appointment</h2>
           <div className={styles.contactDetails}>
             <p><strong>Primary Contact:</strong> 662.741.8800</p>
-            <p><strong>Location:</strong> 702 Martin Luther King Road, Mound Bayou, MS 38762</p>
-            <p><strong>Mailing:</strong> P.O. Box 900</p>
+            <p><strong>Location:</strong><br/>
+              Delta Health Center, Inc.<br/>
+              702 Martin Luther King Road<br/>
+              Post Office Box 900<br/>
+              Mound Bayou, MS 38762
+            </p>
           </div>
         </div>
 
