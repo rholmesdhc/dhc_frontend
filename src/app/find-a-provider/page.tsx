@@ -12,11 +12,22 @@ export default function FindAProvider() {
   useEffect(() => {
     // Only run on client side
     if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const specialty = params.get('specialty');
-      if (specialty && specialties.includes(specialty)) {
-        setActiveFilter(specialty);
-      }
+      const handlePopState = () => {
+        const params = new URLSearchParams(window.location.search);
+        const specialty = params.get('specialty');
+        if (specialty && specialties.includes(specialty)) {
+          setActiveFilter(specialty);
+        } else {
+          setActiveFilter('All');
+        }
+      };
+
+      // Set initial state
+      handlePopState();
+
+      // Listen for history changes
+      window.addEventListener('popstate', handlePopState);
+      return () => window.removeEventListener('popstate', handlePopState);
     }
   }, []);
 
@@ -24,7 +35,7 @@ export default function FindAProvider() {
 
   const filteredProviders = activeFilter === 'All' 
     ? providersData 
-    : providersData.filter(p => p.specialty === activeFilter);
+    : providersData.filter(p => p.specialty.includes(activeFilter));
 
   return (
     <main className={styles.pageWrapper}>
@@ -53,6 +64,13 @@ export default function FindAProvider() {
                   e.preventDefault();
                   console.log("Button clicked:", spec);
                   setActiveFilter(spec);
+                  const newUrl = new URL(window.location.href);
+                  if (spec === 'All') {
+                    newUrl.searchParams.delete('specialty');
+                  } else {
+                    newUrl.searchParams.set('specialty', spec);
+                  }
+                  window.history.pushState({}, '', newUrl);
                 }}
               >
                 {spec}

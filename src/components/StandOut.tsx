@@ -43,7 +43,7 @@ const StandOut = () => {
               <div className={styles.iconWrapper}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
               </div>
-              <span className={styles.featureText}>Full range of obstetrical and gynecology services for women in all stages of life.</span>
+              <span className={styles.featureText}>Full range of Women and Maternal Health services for women in all stages of life.</span>
             </div>
           </div>
 
