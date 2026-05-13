@@ -39,7 +39,7 @@ export default function RyanWhiteProgram() {
           </p>
 
           <p className={styles.paragraph}>
-            <strong>Medication Assistance:</strong> HIV medication is provided through the Ryan White ADAP program for those without a third-party payer. Financial assistance is also available for those with insurance who need help covering medication costs.
+            <strong>Medication Assistance:</strong> Under the Ryan White HIV/AIDS Program (RWHAP) Part B, ADAP provides FDA-approved medications to low-income people with HIV. These people have limited or no health insurance. Financial assistance is also available for those with insurance who need help covering medication costs.
           </p>
 
           <p className={styles.paragraph}>

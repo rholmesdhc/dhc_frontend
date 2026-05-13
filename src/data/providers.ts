@@ -35,6 +35,30 @@ export const providersData = [
     ]
   },
   { 
+    id: 15, 
+    name: 'Alyssa Simmons', 
+    title: 'Associate Deputy CEO, FNP | Family Medicine', 
+    specialty: 'Family Medicine', 
+    image: '/images/providers/Alyssa_Simmons_template.png', 
+    slug: '15',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Alyssa Simmons is a dedicated Family Nurse Practitioner (FNP) providing compassionate, comprehensive care at the Delta Health Center. With a strong background in family medicine, she focuses on preventive care, health education, and managing acute and chronic illnesses for patients of all ages.",
+      "Alyssa believes in a patient-centered approach, working closely with individuals and families to develop personalized healthcare plans that promote long-term well-being and a higher quality of life."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Master of Science in Nursing from Mississippi University for Women',
+      'Bachelor\'s of Science in Nursing from University of Mississippi',
+      'Bachelor\'s of Science from Mississippi State University'
+    ],
+    associations: [
+      'American Association of Nurse Practitioners'
+    ]
+  },
+  { 
     id: 2, 
     name: 'Dr. Simone Moore', 
     title: 'MD Pediatrics', 
@@ -160,7 +184,7 @@ export const providersData = [
   { 
     id: 12, 
     name: 'Dr. Nadia Bethley', 
-    title: 'PhD Clinical Psychology', 
+    title: 'PhD | Clinical Psychology', 
     specialty: 'Behavioral Health', 
     image: '/images/providers/Dr_Nadia_Bethley_template.png',
     slug: '12',
@@ -200,7 +224,7 @@ export const providersData = [
   { 
     id: 14, 
     name: 'Dr. Lauren Adams', 
-    title: 'PhD Physical Therapy', 
+    title: 'PhD | Physical Therapy', 
     specialty: 'Behavioral Health', 
     image: '/images/providers/Dr_Lauren_Adams_template.png',
     slug: '14',
@@ -219,31 +243,10 @@ export const providersData = [
     associations: []
   },
   { 
-    id: 15, 
-    name: 'Alyssa Simmons', 
-    title: 'FNP | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Alyssa_Simmons_template.png', 
-    slug: '15',
-    gender: 'Female',
-    pronouns: 'She/Her',
-    languages: 'English',
-    bio: [
-      "Alyssa Simmons is a dedicated Family Nurse Practitioner (FNP) providing compassionate, comprehensive care at the Delta Health Center. With a strong background in family medicine, she focuses on preventive care, health education, and managing acute and chronic illnesses for patients of all ages.",
-      "Alyssa believes in a patient-centered approach, working closely with individuals and families to develop personalized healthcare plans that promote long-term well-being and a higher quality of life."
-    ],
-    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
-    education: [
-      'Master of Science in Nursing - Family Nurse Practitioner'
-    ],
-    associations: [
-      'American Association of Nurse Practitioners'
-    ]
-  },
-  { 
     id: 16, 
     name: 'Felicia Norris White', 
-    title: 'NP | Family Medicine', 
+    title: 'MSN, FNP',
+    certifications: 'Board Certified | Family Medicine',
     specialty: 'Family Medicine', 
     image: '/images/providers/Felicia_Norris_White_template.png', 
     slug: '16',

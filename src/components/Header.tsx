@@ -124,7 +124,7 @@ const Header = () => {
                 <Link href="/wic">WIC</Link>
                 <Link href="/womens-health">Women's Health</Link>
                 <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
-                <Link href="/wellness-exams">Wellness Exams</Link>
+                <Link href="/wellness-exams">Annual Wellness Visits</Link>
               </div>
             </div>
 
