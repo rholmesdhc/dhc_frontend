@@ -22,8 +22,16 @@ if (Test-Path $OutputZip) {
     Remove-Item $OutputZip -Force
 }
 
+$WpressFiles = Get-ChildItem -Path "$ProjectRoot\wordpress-exports" -Filter *.wpress -ErrorAction SilentlyContinue
+
+$FilesToZip = @($TarFile, "docker-compose.uat.yml", ".env.uat")
+if ($WpressFiles.Count -gt 0) {
+    Write-Host "Found .wpress backup files, including them in package..."
+    $FilesToZip += "wordpress-exports"
+}
+
 # Compress the necessary files into a ZIP
-Compress-Archive -Path $TarFile, "docker-compose.uat.yml", ".env.uat" -DestinationPath $OutputZip -Force
+Compress-Archive -Path $FilesToZip -DestinationPath $OutputZip -Force
 
 Write-Host "Cleaning up tar file..."
 Remove-Item $TarFile -Force
@@ -37,4 +45,11 @@ Write-Host "2. SSH into the server: ssh your_username@10.4.0.30"
 Write-Host "3. Unzip the package: unzip deploy-uat-package.zip"
 Write-Host "4. Load the image: docker load -i dhc-frontend.tar"
 Write-Host "5. Start the stack: docker compose -f docker-compose.uat.yml --env-file .env.uat up -d"
+
+if ($WpressFiles.Count -gt 0) {
+    Write-Host "6. Copy the database backup to the WordPress container:"
+    Write-Host "   docker cp wordpress-exports/. dhc_uat_wordpress:/var/www/html/wp-content/ai1wm-backups/"
+    Write-Host "7. Log into WordPress Admin at http://10.4.0.30:8080/wp-admin, go to All-in-One WP Migration -> Backups, and click Restore."
+}
+
 Write-Host "=========================================================="

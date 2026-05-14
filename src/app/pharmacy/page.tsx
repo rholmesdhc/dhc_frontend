@@ -68,7 +68,7 @@ export default function PharmacyPage() {
               </ul>
             </div>
 
-            <Link href="/find-a-provider" className={styles.providerLink}>
+            <Link href="/find-a-provider?specialty=Pharmacy" className={styles.providerLink}>
               CLICK HERE TO MEET OUR PHARMACISTS
             </Link>
           </div>

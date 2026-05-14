@@ -67,9 +67,7 @@ export default function NutritionalCounselingPage() {
               </ul>
             </div>
 
-            <a href="/find-a-provider" className={styles.dieticianLink}>
-              CLICK HERE TO MEET OUR DIETICIAN.
-            </a>
+
           </div>
 
           {/* Right Polaroid Photo Column */}

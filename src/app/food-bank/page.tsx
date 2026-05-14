@@ -1,9 +1,21 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './FoodBank.module.css';
 
-const pantriesByCity: Record<string, { name: string, phone: string, address: string, mapQuery: string, email?: string }[]> = {
+function ObfuscatedEmail({ user, domain, style }: { user: string, domain: string, style?: React.CSSProperties }) {
+  const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    setEmail(`${user}@${domain}`);
+  }, [user, domain]);
+
+  if (!email) return <span style={style}>Loading email...</span>;
+
+  return <a href={`mailto:${email}`} style={style}>{email}</a>;
+}
+
+const pantriesByCity: Record<string, { name: string, phone: string, address: string, mapQuery: string, emailUser?: string, emailDomain?: string }[]> = {
   "Cleveland": [
     { name: "Covenant Presbyterian Church", phone: "662-719-1360", address: "110 Bishop Rd, Cleveland, MS 38732", mapQuery: "110+Bishop+Rd,+Cleveland,+MS+38732" },
     { name: "Helping Hands of Cleveland", phone: "662-719-4875", address: "404 North MLK Dr, Cleveland, MS 38732", mapQuery: "404+North+MLK+Dr,+Cleveland,+MS+38732" }
@@ -24,7 +36,7 @@ const pantriesByCity: Record<string, { name: string, phone: string, address: str
     { name: "Lampton Street Church of God", phone: "662-402-4798", address: "202 N. Edwards Ave., Mound Bayou, MS 38732", mapQuery: "202+N.+Edwards+Ave.,+Mound+Bayou,+MS+38732" }
   ],
   "Rosedale": [
-    { name: "Riverside United Baptist Church", phone: "662-719-4234", address: "408 Brown St, Rosedale, MS 38769", email: "marvinstro@yahoo.com", mapQuery: "408+Brown+St,+Rosedale,+MS+38769" }
+    { name: "Riverside United Baptist Church", phone: "662-719-4234", address: "408 Brown St, Rosedale, MS 38769", emailUser: "marvinstro", emailDomain: "yahoo.com", mapQuery: "408+Brown+St,+Rosedale,+MS+38769" }
   ],
   "Anguilla": [
     { name: "Anguilla Methodist Church", phone: "662-873-7167", address: "631 Front St, Anguilla, MS 38721", mapQuery: "631+Front+St,+Anguilla,+MS+38721" }
@@ -66,7 +78,7 @@ export default function FoodBank() {
             <div style={{ fontSize: '1.15rem', color: 'var(--color-text-main)', display: 'grid', gap: '5px' }}>
               <strong>Vatecia N. Spann</strong>
               <span>Director of Food is Medicine</span>
-              <a href="mailto:vspann@deltahealthcenter.org" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }}>vspann@deltahealthcenter.org</a>
+              <ObfuscatedEmail user="vspann" domain="deltahealthcenter.org" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }} />
               <a href="tel:6627418868" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }}>662.741.8868</a>
             </div>
           </div>
@@ -100,9 +112,9 @@ export default function FoodBank() {
                     </strong>
                     {pantry.address} <br />
                     <a href={`tel:${pantry.phone.replace(/-/g, '')}`} style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }}>{pantry.phone}</a>
-                    {pantry.email && (
+                    {pantry.emailUser && pantry.emailDomain && (
                       <span style={{ display: 'block' }}>
-                        <a href={`mailto:${pantry.email}`} style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }}>{pantry.email}</a>
+                        <ObfuscatedEmail user={pantry.emailUser} domain={pantry.emailDomain} style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 500 }} />
                       </span>
                     )}
                   </li>

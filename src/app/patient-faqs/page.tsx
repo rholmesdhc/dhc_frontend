@@ -1,12 +1,19 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import styles from './PatientFaqs.module.css';
 
 const faqs = [
   {
     question: "What are your hours of operation?",
-    answer: "Our main clinic is open Monday through Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 1:00 PM. We are closed on Sundays and major holidays."
+    answer: (
+      <>
+        Monday - Thursday: 8:00am – 6:00pm<br />
+        Friday: 8:00am – 12:00pm<br /><br />
+        Please check the <Link href="/our-locations" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>locations page</Link> for the business hours of the clinic closest to your location.
+      </>
+    )
   },
   {
     question: "Do I need an appointment or do you accept walk-ins?",

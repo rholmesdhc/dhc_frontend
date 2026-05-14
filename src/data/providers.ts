@@ -9,12 +9,12 @@ export const specialties = [
 ];
 
 export const providersData = [
-  { 
-    id: 1, 
-    name: 'Dr. Marketta Blue', 
-    title: 'Chief Medical Officer', 
-    certifications: 'Board Certified | Family Medicine', 
-    specialty: 'Family Medicine', 
+  {
+    id: 1,
+    name: 'Dr. Marketta Blue',
+    title: 'Chief Medical Officer',
+    certifications: 'Board Certified | Family Medicine',
+    specialty: 'Family Medicine',
     image: '/images/Provider_CMO_Dr_Marketta_Blue.png',
     slug: '1',
     gender: 'Female',
@@ -34,12 +34,12 @@ export const providersData = [
       'American Academy of Family Physicians'
     ]
   },
-  { 
-    id: 15, 
-    name: 'Alyssa Simmons', 
-    title: 'Associate Deputy CEO, FNP | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Alyssa_Simmons_template.png', 
+  {
+    id: 15,
+    name: 'Alyssa Simmons',
+    title: 'Associate Deputy CEO, FNP | Family Medicine',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Alyssa_Simmons_template.png',
     slug: '15',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -58,12 +58,12 @@ export const providersData = [
       'American Association of Nurse Practitioners'
     ]
   },
-  { 
-    id: 2, 
-    name: 'Dr. Simone Moore', 
-    title: 'MD Pediatrics', 
-    certifications: 'Board Certified | Pediatrics', 
-    specialty: 'Pediatrics', 
+  {
+    id: 2,
+    name: 'Dr. Simone Moore',
+    title: 'MD Pediatrics',
+    certifications: 'Board Certified | Pediatrics',
+    specialty: 'Pediatrics',
     image: '/images/Dr_Simone_Moore_MD_Pediatrics_Provider_Team_Photo_Box.png',
     slug: '2',
     gender: 'Female',
@@ -84,12 +84,12 @@ export const providersData = [
       'Mississippi State Medical Association'
     ]
   },
-  { 
-    id: 3, 
-    name: 'Dr. Braveen Ragunanthan M.D., MPH, FAAP', 
-    title: 'MD Pediatrics', 
-    certifications: 'Board Certified | Pediatrics', 
-    specialty: 'Pediatrics', 
+  {
+    id: 3,
+    name: 'Dr. Braveen Ragunanthan M.D., MPH, FAAP',
+    title: 'MD Pediatrics',
+    certifications: 'Board Certified | Pediatrics',
+    specialty: 'Pediatrics',
     image: '/images/Braveen_Ragunanthan_M.D_Provider_Team_Photo_Box-1.png',
     slug: '3',
     gender: 'Male',
@@ -109,12 +109,12 @@ export const providersData = [
       'Fellow of the American Academy of Pediatrics (FAAP)'
     ]
   },
-  { 
-    id: 4, 
-    name: 'Dr. Dominick Trinca', 
-    title: 'MD Family Medicine', 
-    certifications: 'Family Medicine', 
-    specialty: 'Family Medicine', 
+  {
+    id: 4,
+    name: 'Dr. Dominick Trinca',
+    title: 'MD Family Medicine',
+    certifications: 'Family Medicine',
+    specialty: 'Family Medicine',
     image: '/images/providers/dr_trinca_ai_background.png',
     slug: '4',
     gender: 'Male',
@@ -134,12 +134,12 @@ export const providersData = [
       'American Academy of Family Physicians'
     ]
   },
-  { 
-    id: 5, 
-    name: 'Dr. Frank Brown', 
-    title: 'MD Internal Medicine', 
-    certifications: 'Board Certified | Internal Medicine', 
-    specialty: 'Internal Medicine', 
+  {
+    id: 5,
+    name: 'Dr. Frank Brown',
+    title: 'MD Internal Medicine',
+    certifications: 'Board Certified | Internal Medicine',
+    specialty: 'Internal Medicine',
     image: '/images/providers/frank_brown_template.png',
     slug: '5',
     gender: 'Male',
@@ -158,12 +158,12 @@ export const providersData = [
       'American Board of Internal Medicine'
     ]
   },
-  { 
-    id: 11, 
-    name: 'Dr. George Stevens', 
-    title: 'DO Family Medicine', 
-    certifications: 'Board Certified', 
-    specialty: 'Family Medicine', 
+  {
+    id: 11,
+    name: 'Dr. George Stevens',
+    title: 'DO Family Medicine',
+    certifications: 'Board Certified',
+    specialty: 'Family Medicine',
     image: '/images/providers/dr_stevens_ai_background.png',
     slug: '11',
     gender: 'Male',
@@ -181,11 +181,11 @@ export const providersData = [
       'Board Certified in Family Medicine'
     ]
   },
-  { 
-    id: 12, 
-    name: 'Dr. Nadia Bethley', 
-    title: 'PhD | Clinical Psychology', 
-    specialty: 'Behavioral Health', 
+  {
+    id: 12,
+    name: 'Dr. Nadia Bethley',
+    title: 'PhD | Clinical Psychology',
+    specialty: 'Behavioral Health',
     image: '/images/providers/dr_nadia_bethley_business.png',
     slug: '12',
     gender: 'Female',
@@ -201,11 +201,11 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 13, 
-    name: 'Dr. Inge Ford', 
-    title: 'DMD Doctor of Medicine in Dentistry', 
-    specialty: 'Dentistry', 
+  {
+    id: 13,
+    name: 'Dr. Inge Ford',
+    title: 'DMD Doctor of Medicine in Dentistry',
+    specialty: 'Dentistry',
     image: '/images/providers/Dr_Inge_Ford_template.png',
     slug: '13',
     gender: 'Female',
@@ -221,11 +221,11 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 14, 
-    name: 'Dr. Lauren Adams', 
-    title: 'PhD | Physical Therapy', 
-    specialty: 'Behavioral Health', 
+  {
+    id: 14,
+    name: 'Dr. Lauren Adams',
+    title: 'PhD | Physical Therapy',
+    specialty: 'Behavioral Health',
     image: '/images/providers/Dr_Lauren_Adams_template.png',
     slug: '14',
     gender: 'Female',
@@ -242,13 +242,13 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 16, 
-    name: 'Felicia Norris White', 
+  {
+    id: 16,
+    name: 'Felicia Norris White',
     title: 'MSN, FNP',
     certifications: 'Board Certified | Family Medicine',
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Felicia_Norris_White_template.png', 
+    specialty: 'Family Medicine',
+    image: '/images/providers/Felicia_Norris_White_template.png',
     slug: '16',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -263,12 +263,12 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 17, 
-    name: 'Sherrica Smith', 
-    title: 'PMHNP-BC, FNP-C | Family Medicine & Behavioral Health', 
-    specialty: 'Family Medicine & Behavioral Health', 
-    image: '/images/providers/Sherrica_Smith_template.png', 
+  {
+    id: 17,
+    name: 'Sherrica Smith',
+    title: 'PMHNP-BC, FNP-C | Family Medicine & Behavioral Health',
+    specialty: 'Family Medicine & Behavioral Health',
+    image: '/images/providers/Sherrica_Smith_template.png',
     slug: '17',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -286,12 +286,12 @@ export const providersData = [
       'American Psychiatric Nurses Association'
     ]
   },
-  { 
-    id: 18, 
-    name: 'Barbara Williams', 
-    title: 'FNP | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Barbara_Williams_template.png', 
+  {
+    id: 18,
+    name: 'Barbara Williams',
+    title: 'FNP | Family Medicine',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Barbara_Williams_template.png',
     slug: '18',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -306,12 +306,12 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 19, 
-    name: 'Jennifer Kurts', 
-    title: 'FNP | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Jennifer_Kurts_template.png', 
+  {
+    id: 19,
+    name: 'Jennifer Kurts',
+    title: 'FNP | Family Medicine',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Jennifer_Kurts_template.png',
     slug: '19',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -326,12 +326,12 @@ export const providersData = [
     ],
     associations: []
   },
-  { 
-    id: 20, 
-    name: 'Valerie Antici', 
-    title: 'DOT Medical Examiner Certified, FNP-C | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Valerie_Antici_template.png', 
+  {
+    id: 20,
+    name: 'Valerie Antici',
+    title: 'DOT Medical Examiner Certified, FNP-C | Family Medicine',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Valerie_Antici_template.png',
     slug: '20',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -349,12 +349,12 @@ export const providersData = [
       'AANP, American Academy of Nurse Practitioners'
     ]
   },
-  { 
-    id: 21, 
-    name: 'Queeneice Ganison', 
-    title: 'DNP, APRN, FNP-BC | Family Medicine', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Queeneice_Ganison_template.png', 
+  {
+    id: 21,
+    name: 'Queeneice Ganison',
+    title: 'DNP, APRN, FNP-BC | Family Medicine',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Queeneice_Ganison_template.png',
     slug: '21',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -373,12 +373,12 @@ export const providersData = [
       'American Nurses’ Association'
     ]
   },
-  { 
-    id: 22, 
-    name: 'Tara Davis', 
-    title: 'FNP-Pediatrics | Pediatrics', 
-    specialty: 'Pediatrics', 
-    image: '/images/providers/Tara_Davis_template.png', 
+  {
+    id: 22,
+    name: 'Tara Davis',
+    title: 'FNP-Pediatrics | Pediatrics',
+    specialty: 'Pediatrics',
+    image: '/images/providers/Tara_Davis_template.png',
     slug: '22',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -398,12 +398,12 @@ export const providersData = [
     ]
   },
 
-  { 
-    id: 26, 
-    name: 'Daffany Williams', 
-    title: 'PMHNP-BC | Behavioral Health', 
-    specialty: 'Behavioral Health', 
-    image: '/images/providers/Daffany_Williams_processed.png?v=4', 
+  {
+    id: 26,
+    name: 'Daffany Williams',
+    title: 'PMHNP-BC | Behavioral Health',
+    specialty: 'Behavioral Health',
+    image: '/images/providers/Daffany_Williams_processed.png?v=4',
     slug: '26',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -420,13 +420,12 @@ export const providersData = [
       'American Nurses Credentialing Center (ANCC)'
     ]
   },
-  { 
-    id: 27, 
-    name: 'Remonica Jackson', 
-    title: 'PharmD | Pharmacy', 
-    certifications: 'Pharm.D.',
-    specialty: 'Pharmacy', 
-    image: '/images/providers/Remonica_Jackson_template.png', 
+  {
+    id: 27,
+    name: 'Remonica Jackson',
+    title: 'PharmD | Pharmacy',
+    specialty: 'Pharmacy',
+    image: '/images/providers/Remonica_Jackson_template.png',
     slug: '27',
     gender: 'Female',
     pronouns: 'She/Her',
@@ -443,12 +442,12 @@ export const providersData = [
       'American Pharmacists Association'
     ]
   },
-  { 
-    id: 25, 
-    name: 'Megan Mccoy', 
-    title: 'PA | Physician Assistant', 
-    specialty: 'Family Medicine', 
-    image: '/images/providers/Megan_Mccoy_template.png', 
+  {
+    id: 25,
+    name: 'Megan Mccoy',
+    title: 'PA | Physician Assistant',
+    specialty: 'Family Medicine',
+    image: '/images/providers/Megan_Mccoy_template.png',
     slug: '25',
     gender: 'Female',
     pronouns: 'She/Her',

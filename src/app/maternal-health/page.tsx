@@ -75,8 +75,8 @@ export default function MaternalHealthPage() {
                 Mound Bayou, MS 38762
               </p>
               <p style={{ marginBottom: 0 }}>
-                <strong>Monday - Friday</strong><br/>
-                8:00 AM - 5:00 PM
+                <strong>Monday - Thursday:</strong> 8:00am – 6:00pm<br/>
+                <strong>Friday:</strong> 8:00am – 12:00pm
               </p>
             </div>
           </div>
