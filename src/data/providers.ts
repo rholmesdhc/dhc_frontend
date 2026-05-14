@@ -37,7 +37,8 @@ export const providersData = [
   {
     id: 15,
     name: 'Alyssa Simmons',
-    title: 'Associate Deputy CEO, FNP | Family Medicine',
+    title: 'Associate Deputy CEO',
+    certifications: 'FNP | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Alyssa_Simmons_template.png',
     slug: '15',
@@ -162,7 +163,7 @@ export const providersData = [
     id: 11,
     name: 'Dr. George Stevens',
     title: 'DO Family Medicine',
-    certifications: 'Board Certified',
+    certifications: 'Board Certified | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/dr_stevens_ai_background.png',
     slug: '11',
@@ -222,6 +223,27 @@ export const providersData = [
     associations: []
   },
   {
+    id: 30,
+    name: 'Dr. Marquinet Hence',
+    title: 'DMD Doctor of Medicine in Dentistry',
+    specialty: 'Dentistry',
+    image: '/images/providers/Marquinet_Hence_template.png',
+    slug: '30',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Dr. Marquinet Hence is a highly skilled and compassionate dental professional dedicated to providing comprehensive oral healthcare. With a focus on both preventative and restorative dentistry, she works diligently to ensure that patients achieve and maintain optimal oral health.",
+      "Bringing a wealth of clinical expertise to the Delta Health Center, Dr. Hence is committed to delivering patient-centered care in a comfortable and welcoming environment. She believes in the importance of patient education and takes the time to help individuals understand their treatment options, empowering them to make informed decisions about their dental care.",
+      "Whether performing routine cleanings, complex restorations, or addressing acute dental concerns, Dr. Hence's gentle approach and attention to detail make her an invaluable asset to the community she serves."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine in Dentistry (DMD)'
+    ],
+    associations: []
+  },
+  {
     id: 14,
     name: 'Dr. Lauren Adams',
     title: 'PhD | Physical Therapy',
@@ -266,7 +288,8 @@ export const providersData = [
   {
     id: 17,
     name: 'Sherrica Smith',
-    title: 'PMHNP-BC, FNP-C | Family Medicine & Behavioral Health',
+    title: 'PMHNP-BC, FNP-C',
+    certifications: 'Board Certified | Fam Med & Behavioral Health',
     specialty: 'Family Medicine & Behavioral Health',
     image: '/images/providers/Sherrica_Smith_template.png',
     slug: '17',
@@ -329,7 +352,8 @@ export const providersData = [
   {
     id: 20,
     name: 'Valerie Antici',
-    title: 'DOT Medical Examiner Certified, FNP-C | Family Medicine',
+    title: 'FNP-C, DOT-MEC',
+    certifications: 'Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Valerie_Antici_template.png',
     slug: '20',
@@ -352,7 +376,8 @@ export const providersData = [
   {
     id: 21,
     name: 'Queeneice Ganison',
-    title: 'DNP, APRN, FNP-BC | Family Medicine',
+    title: 'DNP, APRN, FNP',
+    certifications: 'Board Certified | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Queeneice_Ganison_template.png',
     slug: '21',
@@ -401,7 +426,8 @@ export const providersData = [
   {
     id: 26,
     name: 'Daffany Williams',
-    title: 'PMHNP-BC | Behavioral Health',
+    title: 'PMHNP-BC',
+    certifications: 'Board Certified | Behavioral Health',
     specialty: 'Behavioral Health',
     image: '/images/providers/Daffany_Williams_processed.png?v=4',
     slug: '26',
@@ -441,6 +467,56 @@ export const providersData = [
     associations: [
       'American Pharmacists Association'
     ]
+  },
+  {
+    id: 29,
+    name: 'Harold Blakely',
+    title: 'R.Ph.',
+    certifications: 'Registered Pharmacist | Pharmacy',
+    specialty: 'Pharmacy',
+    image: '/images/providers/Harold_Blakely_template.png',
+    slug: '29',
+    gender: 'Male',
+    pronouns: 'He/Him',
+    languages: 'English',
+    bio: [
+      "Harold Blakely is an experienced and highly respected pharmacy professional serving the Mississippi Delta region. With a deep commitment to ensuring optimal medication therapies for patients, he brings decades of clinical and leadership experience to his practice.",
+      "Previously, Harold served as the Director of Pharmacy at the Delta Regional Medical Center for over ten years. He has also been a prominent voice in state-level healthcare policy, serving as a dedicated member of the Mississippi Medicaid Drug Utilization Review (DUR) Board, where he helped shape pharmacy program updates and drug utilization guidelines to improve patient outcomes.",
+      "At Delta Health Center, Harold continues his mission to provide safe, accessible, and high-quality pharmaceutical care, working closely with both patients and providers to deliver comprehensive medication management."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Registered Pharmacist (R.Ph.)'
+    ],
+    associations: [
+      'Mississippi Medicaid Drug Utilization Review (DUR) Board'
+    ]
+  },
+  {
+    id: 28,
+    name: 'Baylee Palasini',
+    title: 'PharmD | Pharmacy',
+    specialty: 'Pharmacy',
+    image: '/images/providers/Bailee_Palasini_template.png',
+    slug: '28',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Baylee Palasini is a proud Pharmacist at Delta Health Center, serving in the same rural community that helped shape her into the woman she is today.",
+      "Baylee is originally from Leland, Mississippi, and after earning her Bachelor of Science in Pharmaceutical Sciences and Doctor of Pharmacy degrees from the University of Tennessee Health Science Center, she knew her purpose was to return home and give back to her community.",
+      "Delta Health Center has provided care to some of the most vulnerable communities in the Mississippi Delta, ensuring that individuals and families have access to the health services they deserve.",
+      "Through our pharmacy, we work to make medications affordable and accessible, while educating patients on safe and effective use—because health care should never be out of reach.",
+      "For Baylee, being a pharmacist is more than a career—it’s a calling. She is passionate about helping others, building trust within the community, and making a difference in the lives of her patients. She is committed to providing individualized services, while treating every patient with the compassion, respect, and attention they deserve.",
+      "Serving at Delta Health Center allows her to be part of something bigger: improving lives, closing gaps in health care, and giving hope to the place she will always call home.",
+      "Outside of pharmacy, Baylee enjoys spending time with family and friends. She comes from a big sports family—so you can usually find her cheering on a game or making memories with the people she loves."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Pharmacy (Pharm.D.) - University of Tennessee Health Science Center',
+      'Bachelor of Science in Pharmaceutical Sciences - University of Tennessee Health Science Center'
+    ],
+    associations: []
   },
   {
     id: 25,
