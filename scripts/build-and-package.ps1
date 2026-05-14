@@ -23,7 +23,7 @@ if (Test-Path $OutputZip) {
 }
 
 # Compress the necessary files into a ZIP
-Compress-Archive -Path $TarFile, "docker-compose.uat.yml", ".env.uat.template" -DestinationPath $OutputZip -Force
+Compress-Archive -Path $TarFile, "docker-compose.uat.yml", ".env.uat" -DestinationPath $OutputZip -Force
 
 Write-Host "Cleaning up tar file..."
 Remove-Item $TarFile -Force
@@ -31,9 +31,10 @@ Remove-Item $TarFile -Force
 Write-Host "=========================================================="
 Write-Host "Package created successfully: $OutputZip"
 Write-Host "Deployment Instructions:"
-Write-Host "1. Transfer $OutputZip to your Linux UAT Server."
-Write-Host "2. Unzip the package: unzip deploy-uat-package.zip"
-Write-Host "3. Copy .env.uat.template to .env.uat and fill in your UAT IP address."
+Write-Host "1. Transfer the package to your Linux UAT Server using scp:"
+Write-Host "   scp deploy-uat-package.zip your_username@10.4.0.30:~/"
+Write-Host "2. SSH into the server: ssh your_username@10.4.0.30"
+Write-Host "3. Unzip the package: unzip deploy-uat-package.zip"
 Write-Host "4. Load the image: docker load -i dhc-frontend.tar"
 Write-Host "5. Start the stack: docker compose -f docker-compose.uat.yml --env-file .env.uat up -d"
 Write-Host "=========================================================="
