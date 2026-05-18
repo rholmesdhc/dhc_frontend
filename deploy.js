@@ -15,7 +15,7 @@ conn.on('ready', () => {
       if (err) throw err;
       console.log('Upload complete! Executing deployment commands...');
       
-      const cmd = "unzip -o deploy-uat-package.zip && docker load -i dhc-frontend.tar && docker compose -f docker-compose.uat.yml --env-file .env.uat up -d && docker cp wordpress-exports/. dhc_uat_wordpress:/var/www/html/wp-content/ai1wm-backups/";
+      const cmd = "python3 -m zipfile -e deploy-uat-package.zip . && docker load -i dhc-frontend.tar && docker compose -f docker-compose.uat.yml --env-file .env.uat up -d";
       
       conn.exec(cmd, (err, stream) => {
         if (err) throw err;
