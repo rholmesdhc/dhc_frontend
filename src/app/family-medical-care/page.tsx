@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './FamilyMedicalCare.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Family Medical Care | Delta Health Center',
@@ -23,6 +24,8 @@ export default function FamilyMedicalCarePage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>FAMILY MEDICAL CARE</h1>
             <p className={styles.heroSubtitle}>Uniquely Trained to Care.</p>
+            <br />
+            <p className={styles.heroSubtitle}>Chief Medical Officer: Dr. Marketta Blue</p>
           </div>
         </section>
       </div>
@@ -41,7 +44,7 @@ export default function FamilyMedicalCarePage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
@@ -70,15 +73,10 @@ export default function FamilyMedicalCarePage() {
             </Link>
           </div>
 
-          <div className={styles.rightColumn}>
-            <div className={styles.sidebarGraphic}>
-              <img 
-                src="/images/dhc_logo_official.png" 
-                alt="Delta Health Center Logo" 
-                className={styles.logoImage} 
-              />
-            </div>
-          </div>
+          <ProgramContactSidebar 
+            phoneDisplay="662-741-8800"
+            phoneHref="tel:6627418800"
+          />
 
         </section>
       </div>

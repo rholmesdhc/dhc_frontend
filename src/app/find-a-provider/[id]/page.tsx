@@ -26,7 +26,15 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
               </Link>
               <h1 className={styles.providerName}>{provider.name}</h1>
               <p className={styles.providerSubtitle}>
-                {provider.specialty} &bull; {provider.title}
+                {(() => {
+                  if (provider.name.includes('Marketta Blue') || provider.name.includes('Alyssa Simmons')) {
+                    return `${provider.specialty} \u2022 ${provider.title}`;
+                  }
+                  const credential = provider.title.includes('|') 
+                    ? provider.title.split('|')[0].trim() 
+                    : provider.title;
+                  return `${credential} | ${provider.specialty}`;
+                })()}
               </p>
             </div>
           </div>

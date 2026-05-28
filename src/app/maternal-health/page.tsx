@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './MaternalHealth.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Maternal Health | Delta Health Center',
@@ -21,12 +22,16 @@ export default function MaternalHealthPage() {
             <p className={styles.heroSubtitle}>
               Compassionate, comprehensive care for you and your baby—before, during, and after pregnancy.
             </p>
+            <br />
+            <p className={styles.heroSubtitle}>
+              Maternal Health Director - Sharrika Smith
+            </p>
           </div>
         </section>
       </div>
 
       <div className="container">
-        <div className={styles.contentGrid}>
+        <div className="program-layout-grid">
           
           {/* Left Content Column */}
           <div className={styles.leftColumn}>
@@ -56,30 +61,7 @@ export default function MaternalHealthPage() {
             </p>
           </div>
 
-          {/* Right Action Column */}
-          <div className={styles.rightColumn}>
-            <div className={styles.infoCard}>
-              <h3>Schedule an Appointment</h3>
-              <p>
-                Early prenatal care is one of the most important steps you can take for your baby’s future. Schedule your first prenatal consultation with our caring staff today.
-              </p>
-              <a href="tel:6627418800" className={styles.callBtn}>Call (662) 741-8800</a>
-            </div>
-
-            <div className={styles.infoCard} style={{ borderLeftColor: 'var(--color-secondary)' }}>
-              <h3>Location & Hours</h3>
-              <p>
-                Delta Health Center, Inc.<br/>
-                702 Martin Luther King Road<br/>
-                Post Office Box 900<br/>
-                Mound Bayou, MS 38762
-              </p>
-              <p style={{ marginBottom: 0 }}>
-                <strong>Monday - Thursday:</strong> 8:00am – 6:00pm<br/>
-                <strong>Friday:</strong> 8:00am – 12:00pm
-              </p>
-            </div>
-          </div>
+          <ProgramContactSidebar />
 
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './DentalCare.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export default function DentalCarePage() {
   const dentalServices = [
@@ -34,6 +35,8 @@ export default function DentalCarePage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Dental Care</h1>
             <p className={styles.heroSubtitle}>Preventative & Restorative</p>
+            <br />
+            <p className={styles.heroSubtitle}>Dental Services Director: Dr. Inge Ford</p>
           </div>
         </section>
       </div>
@@ -50,7 +53,7 @@ export default function DentalCarePage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
@@ -74,13 +77,19 @@ export default function DentalCarePage() {
 
           {/* Right Polaroid Photo Column */}
           <div className={styles.rightColumn}>
-            <div className={styles.polaroidWrapper}>
+            <div className={styles.polaroidWrapper} style={{ marginBottom: '30px' }}>
               <img 
                 src="/images/dental/Black_Dentist_and_Black_Child_in_Polaroid_Frame.png" 
                 alt="Child receiving dental care" 
                 className={styles.polaroidImage} 
               />
             </div>
+            <ProgramContactSidebar 
+              title="Schedule an Appointment" 
+              description="Ready to take control of your oral health? Schedule a dental consultation with our team today." 
+              phoneDisplay="662-741-8857" 
+              phoneHref="tel:6627418857" 
+            />
           </div>
 
         </section>

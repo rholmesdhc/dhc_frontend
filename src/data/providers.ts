@@ -62,7 +62,7 @@ export const providersData = [
   {
     id: 2,
     name: 'Dr. Simone Moore',
-    title: 'MD Pediatrics',
+    title: 'MD | Pediatrics',
     certifications: 'Board Certified | Pediatrics',
     specialty: 'Pediatrics',
     image: '/images/Dr_Simone_Moore_MD_Pediatrics_Provider_Team_Photo_Box.png',
@@ -88,7 +88,7 @@ export const providersData = [
   {
     id: 3,
     name: 'Dr. Braveen Ragunanthan M.D., MPH, FAAP',
-    title: 'MD Pediatrics',
+    title: 'MD | Pediatrics',
     certifications: 'Board Certified | Pediatrics',
     specialty: 'Pediatrics',
     image: '/images/Braveen_Ragunanthan_M.D_Provider_Team_Photo_Box-1.png',
@@ -113,8 +113,7 @@ export const providersData = [
   {
     id: 4,
     name: 'Dr. Dominick Trinca',
-    title: 'MD Family Medicine',
-    certifications: 'Family Medicine',
+    title: 'MD | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/dr_trinca_ai_background.png',
     slug: '4',
@@ -138,7 +137,7 @@ export const providersData = [
   {
     id: 5,
     name: 'Dr. Frank Brown',
-    title: 'MD Internal Medicine',
+    title: 'MD | Internal Medicine',
     certifications: 'Board Certified | Internal Medicine',
     specialty: 'Internal Medicine',
     image: '/images/providers/frank_brown_template.png',
@@ -160,32 +159,9 @@ export const providersData = [
     ]
   },
   {
-    id: 11,
-    name: 'Dr. George Stevens',
-    title: 'DO Family Medicine',
-    certifications: 'Board Certified | Family Medicine',
-    specialty: 'Family Medicine',
-    image: '/images/providers/dr_stevens_ai_background.png',
-    slug: '11',
-    gender: 'Male',
-    pronouns: 'He/Him',
-    languages: 'English',
-    bio: [
-      "Dr. George Stevens is a dedicated Doctor of Osteopathic Medicine (DO), board-certified in Family Medicine, proudly serving the Delta Health Center community. With a deep foundational belief in treating the whole person rather than just specific symptoms, Dr. Stevens brings a highly comprehensive and integrative approach to primary care.",
-      "His clinical focus spans preventative care, acute illness triage, and proactive management of chronic conditions. His compassionate bedside manner and steadfast dedication to the Delta region continue to make him an invaluable advocate for the well-being and longevity of the families he treats."
-    ],
-    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
-    education: [
-      'Doctor of Osteopathic Medicine (DO)',
-    ],
-    associations: [
-      'Board Certified in Family Medicine'
-    ]
-  },
-  {
     id: 12,
     name: 'Dr. Nadia Bethley',
-    title: 'PhD | Clinical Psychology',
+    title: 'PhD | Behavioral Health',
     specialty: 'Behavioral Health',
     image: '/images/providers/dr_nadia_bethley_business.png',
     slug: '12',
@@ -205,7 +181,7 @@ export const providersData = [
   {
     id: 13,
     name: 'Dr. Inge Ford',
-    title: 'DMD Doctor of Medicine in Dentistry',
+    title: 'DMD | Dentistry',
     specialty: 'Dentistry',
     image: '/images/providers/Dr_Inge_Ford_template.png',
     slug: '13',
@@ -225,7 +201,7 @@ export const providersData = [
   {
     id: 30,
     name: 'Dr. Marquinet Hence',
-    title: 'DMD Doctor of Medicine in Dentistry',
+    title: 'DMD | Dentistry',
     specialty: 'Dentistry',
     image: '/images/providers/Marquinet_Hence_template.png',
     slug: '30',
@@ -246,7 +222,7 @@ export const providersData = [
   {
     id: 14,
     name: 'Dr. Lauren Adams',
-    title: 'PhD | Physical Therapy',
+    title: 'PhD | Behavioral Health',
     specialty: 'Behavioral Health',
     image: '/images/providers/Dr_Lauren_Adams_template.png',
     slug: '14',
@@ -267,8 +243,7 @@ export const providersData = [
   {
     id: 16,
     name: 'Felicia Norris White',
-    title: 'MSN, FNP',
-    certifications: 'Board Certified | Family Medicine',
+    title: 'FNP | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Felicia_Norris_White_template.png',
     slug: '16',
@@ -289,7 +264,7 @@ export const providersData = [
     id: 17,
     name: 'Sherrica Smith',
     title: 'PMHNP-BC, FNP-C',
-    certifications: 'Board Certified | Fam Med & Behavioral Health',
+    certifications: 'Fam Med & Behavioral Health',
     specialty: 'Family Medicine & Behavioral Health',
     image: '/images/providers/Sherrica_Smith_template.png',
     slug: '17',
@@ -298,7 +273,8 @@ export const providersData = [
     languages: 'English',
     bio: [
       "Sherrica Smith is a dual-certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC) and Family Nurse Practitioner (FNP-C). Her unique dual certification allows her to expertly bridge the gap between physical and mental health care at the Delta Health Center.",
-      "Specializing in behavioral health, Sherrica provides comprehensive psychiatric evaluations, medication management, and therapeutic support to individuals experiencing mental health challenges, striving to destigmatize mental illness in the community."
+      "Specializing in behavioral health, Sherrica provides comprehensive psychiatric evaluations, medication management, and therapeutic support to individuals experiencing mental health challenges, striving to destigmatize mental illness in the community.",
+      "In addition to her behavioral health expertise, Sherrica's family practice background enables her to provide holistic primary care, focusing on wellness, disease prevention, and the management of acute and chronic physical health conditions for patients of all ages."
     ],
     workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
     education: [
@@ -306,7 +282,11 @@ export const providersData = [
       'Master of Science in Nursing - Family Nurse Practitioner'
     ],
     associations: [
-      'American Psychiatric Nurses Association'
+      'American Psychiatric Nurses Association',
+      'American Association of Nurse Practitioners (AANP)',
+      'American Nurses Credentialing Center (ANCC)',
+      'Mississippi Nurses Association (MNA)',
+      'Mississippi Association of Nurse Practitioners (MANP)'
     ]
   },
   {
@@ -352,7 +332,7 @@ export const providersData = [
   {
     id: 20,
     name: 'Valerie Antici',
-    title: 'FNP-C, DOT-MEC',
+    title: 'FNP-C, DOT-MEC | Family Medicine',
     certifications: 'Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Valerie_Antici_template.png',
@@ -377,7 +357,7 @@ export const providersData = [
     id: 21,
     name: 'Queeneice Ganison',
     title: 'DNP, APRN, FNP',
-    certifications: 'Board Certified | Family Medicine',
+    certifications: 'Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Queeneice_Ganison_template.png',
     slug: '21',
@@ -401,7 +381,7 @@ export const providersData = [
   {
     id: 22,
     name: 'Tara Davis',
-    title: 'FNP-Pediatrics | Pediatrics',
+    title: 'FNP | Pediatrics',
     specialty: 'Pediatrics',
     image: '/images/providers/Tara_Davis_template.png',
     slug: '22',
@@ -426,7 +406,7 @@ export const providersData = [
   {
     id: 26,
     name: 'Daffany Williams',
-    title: 'PMHNP-BC',
+    title: 'PMHNP-BC | Behavioral Health',
     certifications: 'Board Certified | Behavioral Health',
     specialty: 'Behavioral Health',
     image: '/images/providers/Daffany_Williams_processed.png?v=4',
@@ -471,7 +451,7 @@ export const providersData = [
   {
     id: 29,
     name: 'Harold Blakely',
-    title: 'R.Ph.',
+    title: 'R.Ph. | Pharmacy',
     certifications: 'Registered Pharmacist | Pharmacy',
     specialty: 'Pharmacy',
     image: '/images/providers/Harold_Blakely_template.png',
@@ -521,7 +501,7 @@ export const providersData = [
   {
     id: 25,
     name: 'Megan Mccoy',
-    title: 'PA | Physician Assistant',
+    title: 'PA | Family Medicine',
     specialty: 'Family Medicine',
     image: '/images/providers/Megan_Mccoy_template.png',
     slug: '25',

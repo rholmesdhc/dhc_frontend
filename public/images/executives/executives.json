@@ -2,7 +2,8 @@
   {
     "name": "John Fairman",
     "title": "CEO",
-    "image": "/images/executives/John_Fairman_CEO_Southwest_Region_Executive_Team_Photo_Box.png"
+    "image": "/images/executives/John_Fairman_CEO_Southwest_Region_Executive_Team_Photo_Box.png",
+    "link": "/our-ceo"
   },
   {
     "name": "Neuaviska Braugher",
@@ -12,7 +13,8 @@
   {
     "name": "Dr. Marketta Blue",
     "title": "Chief Medical Officer",
-    "image": "/images/executives/Marketta_Blue_MD_Chief_Medical_Officer_Executive_Team_Photo_Box-1.png"
+    "image": "/images/executives/Marketta_Blue_MD_Chief_Medical_Officer_Executive_Team_Photo_Box-1.png",
+    "link": "/find-a-provider/1"
   },
   {
     "name": "Myrtis Small",
@@ -32,7 +34,8 @@
   {
     "name": "Alyssa Simmons",
     "title": "Associate Deputy CEO, FNP",
-    "image": "/images/executives/asimmons.png"
+    "image": "/images/executives/asimmons.png",
+    "link": "/find-a-provider/15"
   },
   {
     "name": "Amanda Lacaze",
@@ -42,7 +45,8 @@
   {
     "name": "Dr. Inge Ford",
     "title": "Director of Dentistry Services",
-    "image": "/images/executives/DrFord1-1.png"
+    "image": "/images/executives/DrFord1-1.png",
+    "link": "/find-a-provider/13"
   },
   {
     "name": "Stephanie Goss",

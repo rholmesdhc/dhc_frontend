@@ -98,9 +98,10 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.filter(s => s !== 'Dental Care').map((service, index) => (
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -145,9 +146,10 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.filter(s => s !== 'Dental Care').map((service, index) => (
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -192,7 +194,7 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.filter(s => s !== 'Dental Care').map((service, index) => (
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
                 <li>Pharmacy (Full Service)</li>
@@ -240,9 +242,10 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => (
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -335,9 +338,10 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => (
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => (
                   <li key={index}>{service}</li>
                 ))}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -379,7 +383,8 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => <li key={index}>{service}</li>)}
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => <li key={index}>{service}</li>)}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -409,7 +414,8 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => <li key={index}>{service}</li>)}
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => <li key={index}>{service}</li>)}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -439,7 +445,8 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => <li key={index}>{service}</li>)}
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => <li key={index}>{service}</li>)}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>
@@ -469,7 +476,8 @@ export default function OurLocations() {
             <div className={styles.servicesBlock}>
               <h3 className={styles.servicesTitle}>Medical Services Provided</h3>
               <ul className={styles.servicesList}>
-                {services.map((service, index) => <li key={index}>{service}</li>)}
+                {services.filter(s => !['Dental Care', 'Pediatric Care', 'Behavioral Health', 'Womens Health'].includes(s)).map((service, index) => <li key={index}>{service}</li>)}
+                <li>Pharmacy (Pick-up Only)</li>
               </ul>
             </div>
           </div>

@@ -23,6 +23,8 @@ export default function PharmacyPage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>PHARMACY</h1>
             <p className={styles.heroSubtitle}>Dispensing needed Medications.</p>
+            <br />
+            <p className={styles.heroSubtitle}>Pharmacy Director - Dr. Remonica Jackson</p>
           </div>
         </section>
       </div>

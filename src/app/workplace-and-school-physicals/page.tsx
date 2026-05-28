@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WorkplacePhysicals.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Workplace & School Physicals | Delta Health Center',
@@ -20,8 +21,10 @@ export default function WorkplaceAndSchoolPhysicals() {
         </section>
       </div>
 
-      <section className={styles.container}>
-        <div className={styles.contentSection}>
+      <section className="container">
+        <div className="program-layout-grid">
+          <div>
+            <div className={styles.contentSection}>
           <p className={styles.paragraph}>
             Whether you are starting a new job, going back to school, or preparing for the sports season, Delta Health Center provides comprehensive physical examinations to ensure you are healthy and ready to go. Our experienced providers offer a variety of physicals tailored to meet specific requirements.
           </p>
@@ -48,6 +51,9 @@ export default function WorkplaceAndSchoolPhysicals() {
           <p className={styles.paragraph}>
             <strong>Action Step:</strong> Please contact your nearest Delta Health Center clinic to schedule your physical. Be sure to bring any specific forms provided by your employer, school, or organization.
           </p>
+        </div>
+          </div>
+          <ProgramContactSidebar />
         </div>
       </section>
     </>

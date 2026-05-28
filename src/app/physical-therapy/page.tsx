@@ -23,6 +23,8 @@ export default function PhysicalTherapy() {
             <p className={styles.heroSubtitle}>
               Restoring mobility, reducing pain, and empowering you to live an active, fulfilling life through expert, personalized care.
             </p>
+            <br />
+            <p className={styles.heroSubtitle}>Physical Therapy Director - Dr. Lauren Adams</p>
           </div>
         </section>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WellnessExams.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Annual Wellness Visits | Delta Health Center',
@@ -22,8 +23,8 @@ export default function WellnessExams() {
         </section>
       </div>
 
-      <div className={styles.container}>
-        <div className={styles.contentSplit}>
+      <div className="container" style={{ marginTop: '40px', marginBottom: '60px' }}>
+        <div className="program-layout-grid">
           <div className={styles.textContent}>
             <h2 className={styles.mainHeading}>EPSDT Services</h2>
             <p className={styles.introText}>
@@ -75,28 +76,8 @@ export default function WellnessExams() {
             </div>
           </div>
 
-          <div className={styles.imageContent}>
-            <img 
-              src="/images/provider_hero.png" 
-              alt="Medical Professional and Family" 
-              className={styles.featuredImage}
-            />
-          </div>
+          <ProgramContactSidebar />
         </div>
-
-        <div className={styles.contactBanner}>
-          <h2 className={styles.contactTitle}>Contact Us for an Appointment</h2>
-          <div className={styles.contactDetails}>
-            <p><strong>Primary Contact:</strong> 662.741.8800</p>
-            <p><strong>Location:</strong><br/>
-              Delta Health Center, Inc.<br/>
-              702 Martin Luther King Road<br/>
-              Post Office Box 900<br/>
-              Mound Bayou, MS 38762
-            </p>
-          </div>
-        </div>
-
       </div>
     </main>
   );

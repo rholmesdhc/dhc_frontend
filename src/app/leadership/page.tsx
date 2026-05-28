@@ -46,11 +46,23 @@ export default function LeadershipPage() {
           <div className={styles.execGrid}>
             {executivesData.map((e, index) => (
               <div key={index} className={styles.profileCard}>
-                <div className={styles.imageWrapper}>
-                  <img src={e.image} alt={e.name} className={styles.profileImg} />
-                </div>
-                <h4 className={styles.profileName}>{e.name}</h4>
-                <p className={styles.profileTitle}>{e.title}</p>
+                {e.link ? (
+                  <Link href={e.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <div className={styles.imageWrapper}>
+                      <img src={e.image} alt={e.name} className={styles.profileImg} />
+                    </div>
+                    <h4 className={styles.profileName}>{e.name}</h4>
+                    <p className={styles.profileTitle}>{e.title}</p>
+                  </Link>
+                ) : (
+                  <>
+                    <div className={styles.imageWrapper}>
+                      <img src={e.image} alt={e.name} className={styles.profileImg} />
+                    </div>
+                    <h4 className={styles.profileName}>{e.name}</h4>
+                    <p className={styles.profileTitle}>{e.title}</p>
+                  </>
+                )}
               </div>
             ))}
           </div>

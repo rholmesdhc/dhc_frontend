@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SocialServices.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Social Services | Delta Health Center',
@@ -16,12 +17,17 @@ export default function SocialServices() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Social Services</h1>
             <p className={styles.heroSubtitle}>Advocating for Patients and Improving Quality of Life</p>
+            <p className={styles.heroSubtitle} style={{ marginTop: '1rem', fontWeight: 'bold' }}>
+              Director of Social Services - LaTonya Thompson
+            </p>
           </div>
         </section>
       </div>
 
-      <section className={styles.container}>
-        <div className={styles.contentSection}>
+      <section className="container">
+        <div className="program-layout-grid">
+          <div>
+            <div className={styles.contentSection}>
           <p className={styles.paragraph}>
             Social workers at Delta Health Center (DHC) serve as patient advocates. The licensed social workers aim to improve the quality of life for individuals, couples, and families by:
           </p>
@@ -53,6 +59,9 @@ export default function SocialServices() {
             <li>Crisis Intervention</li>
             <li>Case Management Services</li>
           </ul>
+        </div>
+          </div>
+          <ProgramContactSidebar />
         </div>
       </section>
     </>

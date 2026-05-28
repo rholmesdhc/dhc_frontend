@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './WellnessCenter.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Wellness Center | Delta Health Center',
@@ -21,12 +22,14 @@ export default function WellnessCenterPage() {
             <p className={styles.heroSubtitle}>
               Empowering you to live a healthier, longer, and more vibrant life through holistic care and active lifestyle management.
             </p>
+            <br />
+            <p className={styles.heroSubtitle}>Wellness Center Director - Ryan Matthews</p>
           </div>
         </section>
       </div>
 
       <div className="container">
-        <div className={styles.contentGrid}>
+        <div className="program-layout-grid">
           
           {/* Left Content Column */}
           <div className={styles.leftColumn}>
@@ -56,30 +59,7 @@ export default function WellnessCenterPage() {
             </p>
           </div>
 
-          {/* Right Action Column */}
-          <div className={styles.rightColumn}>
-            <div className={styles.infoCard}>
-              <h3>Start Your Journey</h3>
-              <p>
-                Ready to take control of your health? Schedule a comprehensive wellness consultation with our team today. We will assess your current health status and work with you to create a personalized action plan.
-              </p>
-              <a href="tel:6627418800" className={styles.callBtn}>Call (662) 741-8800</a>
-            </div>
-
-            <div className={styles.infoCard} style={{ borderLeftColor: 'var(--color-secondary)' }}>
-              <h3>Location & Hours</h3>
-              <p>
-                Delta Health Center, Inc.<br/>
-                702 Martin Luther King Road<br/>
-                Post Office Box 900<br/>
-                Mound Bayou, MS 38762
-              </p>
-              <p style={{ marginBottom: 0 }}>
-                <strong>Monday - Friday</strong><br/>
-                8:00 AM - 5:00 PM
-              </p>
-            </div>
-          </div>
+          <ProgramContactSidebar />
 
         </div>
       </div>

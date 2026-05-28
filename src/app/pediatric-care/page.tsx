@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './PediatricCare.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Pediatric Care | Delta Health Center',
@@ -23,6 +24,8 @@ export default function PediatricCarePage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>PEDIATRIC CARE</h1>
             <p className={styles.heroSubtitle}>Improving the Health and Lives of Infants.</p>
+            <br />
+            <p className={styles.heroSubtitle}>Pediatric Care Director: Dr. Simone Moore</p>
           </div>
         </section>
       </div>
@@ -41,7 +44,7 @@ export default function PediatricCarePage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
@@ -84,20 +87,10 @@ export default function PediatricCarePage() {
             </div>
           </div>
 
-          {/* Right Detailed Sidebar Column */}
-          <div className={styles.rightColumn}>
-            <div className={styles.sidebarGraphic}>
-              <img 
-                src="/images/dhc_logo_official.png" 
-                alt="Delta Health Center Logo" 
-                className={styles.logoImage} 
-              />
-            </div>
-            
-            <Link href="/contact-us" className={styles.contactBtn}>
-              CONTACT US
-            </Link>
-          </div>
+          <ProgramContactSidebar 
+            phoneDisplay="662-741-8800"
+            phoneHref="tel:6627418800"
+          />
 
         </section>
       </div>

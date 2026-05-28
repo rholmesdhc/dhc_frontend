@@ -105,7 +105,6 @@ const Header = () => {
                 <Link href="/pharmacy">Pharmacy</Link>
                 <Link href="/behavior-health">Behavioral Health</Link>
                 <Link href="/physical-therapy">Physical Therapy</Link>
-                <Link href="/referring_physicians">Referring Internal Physicians</Link>
               </div>
             </div>
 

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './NutritionalCounseling.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export default function NutritionalCounselingPage() {
   const nutritionalServices = [
@@ -46,7 +47,7 @@ export default function NutritionalCounselingPage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
@@ -72,13 +73,14 @@ export default function NutritionalCounselingPage() {
 
           {/* Right Polaroid Photo Column */}
           <div className={styles.rightColumn}>
-            <div className={styles.polaroidWrapper}>
+            <div className={styles.polaroidWrapper} style={{ marginBottom: '30px' }}>
               <img 
                 src="/images/nutritional-counseling/polaroid_salad.png" 
                 alt="Nutritional Plate" 
                 className={styles.polaroidImage} 
               />
             </div>
+            <ProgramContactSidebar />
           </div>
 
         </section>

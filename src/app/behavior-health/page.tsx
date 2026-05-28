@@ -23,6 +23,8 @@ export default function BehaviorHealth() {
             <p className={styles.heroSubtitle}>
               Compassionate mental wellness care dedicated to supporting and healing our community.
             </p>
+            <br />
+            <p className={styles.heroSubtitle}>Behavior Health Director: Dr. Nadia Bethley</p>
           </div>
         </section>
       </div>

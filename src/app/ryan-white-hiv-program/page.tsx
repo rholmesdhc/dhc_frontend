@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './RyanWhite.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Ryan White HIV/AIDS Program | Delta Health Center',
@@ -20,8 +21,10 @@ export default function RyanWhiteProgram() {
         </section>
       </div>
 
-      <section className={styles.container}>
-        <div className={styles.contentSection}>
+      <section className="container">
+        <div className="program-layout-grid">
+          <div>
+            <div className={styles.contentSection}>
           <div className={styles.headingWrapper}>
              <h2 className={styles.heading}>Providing STD and HIV Testing</h2>
           </div>
@@ -45,6 +48,9 @@ export default function RyanWhiteProgram() {
           <p className={styles.paragraph}>
             <strong>Action Step:</strong> Patients are encouraged to call any Delta Health Center clinic to schedule an appointment.
           </p>
+        </div>
+          </div>
+          <ProgramContactSidebar />
         </div>
       </section>
     </>

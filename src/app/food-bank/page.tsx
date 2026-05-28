@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from './FoodBank.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 function ObfuscatedEmail({ user, domain, style }: { user: string, domain: string, style?: React.CSSProperties }) {
   const [email, setEmail] = useState('');
@@ -53,11 +54,15 @@ export default function FoodBank() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Hunger Relief Resources</h1>
             <p className={styles.heroSubtitle}>Connecting our community with essential nutrition and hope.</p>
+            <br />
+            <p className={styles.heroSubtitle}>Director of Food is Medicine - Vatecia N. Spann</p>
           </div>
         </section>
 
-        {/* DHC Blessing Boxes Feature */}
-        <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)', marginBottom: '60px', borderTop: '4px solid var(--color-secondary)' }}>
+        <div className="program-layout-grid">
+          <div>
+            {/* DHC Blessing Boxes Feature */}
+            <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)', marginBottom: '60px', borderTop: '4px solid var(--color-secondary)' }}>
           <h2 style={{ fontFamily: "'Outfit', serif", color: 'var(--color-primary)', fontSize: '2.5rem', marginBottom: '15px' }}>
             DHC Blessing Boxes
           </h2>
@@ -128,6 +133,9 @@ export default function FoodBank() {
           <a href="/documents/Food pantries with locations.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'inline-block', padding: '12px 24px', textDecoration: 'none' }}>
             View / Download Original Directory (PDF)
           </a>
+        </div>
+          </div>
+          <ProgramContactSidebar />
         </div>
       </div>
     </main>

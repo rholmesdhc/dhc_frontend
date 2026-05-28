@@ -142,3 +142,17 @@ a:hover {
 .mb-8 { margin-bottom: 32px; }
 .py-16 { padding-top: 64px; padding-bottom: 64px; }
 .py-24 { padding-top: 96px; padding-bottom: 96px; }
+
+/* Program Layout Grid */
+.program-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .program-layout-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}

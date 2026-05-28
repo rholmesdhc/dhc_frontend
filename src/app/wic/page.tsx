@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WIC.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'WIC Services | Delta Health Center',
@@ -40,7 +41,7 @@ export default function WICPage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text Column */}
           <div className={styles.leftColumn}>
@@ -53,16 +54,7 @@ export default function WICPage() {
             </p>
           </div>
 
-          {/* Right Logo Column */}
-          <div className={styles.rightColumn}>
-            <div className={styles.sidebarGraphic}>
-              <img 
-                src="/images/dhc_logo_official.png" 
-                alt="Delta Health Center Logo" 
-                className={styles.logoImage} 
-              />
-            </div>
-          </div>
+          <ProgramContactSidebar />
 
         </section>
       </div>
