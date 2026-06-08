@@ -402,6 +402,34 @@ export const providersData = [
       'American Association of Nurse Practitioners'
     ]
   },
+  {
+    id: 31,
+    name: 'Dr. Waynesha Blaylock',
+    title: 'PMHNP-BC, FNP-C',
+    certifications: 'Fam Med & Behavioral Health',
+    specialty: 'Family Medicine & Behavioral Health',
+    image: '/images/providers/Dr_Waynesha_Blaylock_template.png',
+    slug: '31',
+    gender: 'Female',
+    pronouns: 'She/Her',
+    languages: 'English',
+    bio: [
+      "Originally from Mississippi, Dr. Waynesha Blaylock is excited to return home and provide compassionate, patient-centered care to individuals and families across all stages of life as an Internal Medicine and Pediatrics provider. She is passionate about preventive medicine, health equity, and helping patients feel empowered to make informed decisions about their health. Dr. Blaylock looks forward to serving the Delta community and building lasting partnerships with her patients to support their long-term health and well-being.",
+      "Dr. Blaylock earned her bachelor's degree from Tougaloo College in 2016 and went on to receive both her Doctor of Medicine (MD) degree and a Master of Science in Population Medicine from Brown University in 2022. She completed her Internal Medicine-Pediatrics residency at the University of Pittsburgh Medical Center in 2026, where she also served as Chief Resident. She is a member of the American Medical Association (AMA), the American College of Physicians (ACP), and the American Academy of Pediatrics (AAP), and is a proud member of Delta Sigma Theta Sorority, Inc. Outside of medicine, she enjoys traveling to new places, spending time with family and friends, and exploring new restaurants as a self-proclaimed foodie."
+    ],
+    workdays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+    education: [
+      'Doctor of Medicine (MD) - Brown University',
+      'Master of Science in Population Medicine - Brown University',
+      'Bachelor\'s degree - Tougaloo College'
+    ],
+    associations: [
+      'American Medical Association (AMA)',
+      'American College of Physicians (ACP)',
+      'American Academy of Pediatrics (AAP)',
+      'Delta Sigma Theta Sorority, Inc.'
+    ]
+  },
 
   {
     id: 26,
