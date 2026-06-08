@@ -10,11 +10,8 @@ export default function DentalCarePage() {
     "Gum Disease Treatment",
     "Education",
     "Oral Hygiene",
-    "Oral Health Conditions",
     "Oral Exams",
     "Fluoridation",
-    "Age Specific Products",
-    "Dental Procedure Techniques",
     "Sealants",
     "Varnishes",
     "Dentures",
@@ -85,10 +82,44 @@ export default function DentalCarePage() {
               />
             </div>
             <ProgramContactSidebar 
-              title="Schedule an Appointment" 
+              title="Schedule An Appointment" 
               description="Ready to take control of your oral health? Schedule a dental consultation with our team today." 
               phoneDisplay="662-741-8857" 
               phoneHref="tel:6627418857" 
+              customLocations={[
+                {
+                  name: "Mound Bayou - Dr. Warren Inge Dental Center",
+                  address: (
+                    <>
+                      Delta Health Center<br />
+                      702 Martin Luther King Road<br />
+                      Mound Bayou, MS 38762
+                    </>
+                  ),
+                  hours: (
+                    <>
+                      <strong>Monday - Thursday:</strong> 8:00am &ndash; 6:00pm<br />
+                      <strong>Friday:</strong> 8:00am &ndash; 12:00pm
+                    </>
+                  )
+                },
+                {
+                  name: "Hollandale Clinic",
+                  address: (
+                    <>
+                      Delta Health Center<br />
+                      100 E. Washington St.<br />
+                      Hollandale, MS 38748
+                    </>
+                  ),
+                  hours: (
+                    <>
+                      <strong>Monday - Thursday:</strong> 7:30am &ndash; 5:30pm<br />
+                      <strong>Friday:</strong> 7:30am &ndash; 11:30am
+                    </>
+                  )
+                }
+              ]}
             />
           </div>
 

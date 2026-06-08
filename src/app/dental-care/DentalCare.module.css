@@ -48,7 +48,7 @@
 .heroTitle {
   color: #fff;
   font-size: 3.5rem;
-  font-family: 'Outfit', serif;
+  font-family: 'Lora', serif;
   font-weight: 800;
   margin-bottom: 8px;
   text-shadow: none;
@@ -111,7 +111,7 @@
 
 .servicesHeading {
   color: var(--color-accent, #ffa500);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.6rem;
   font-weight: 800;
   text-transform: uppercase;

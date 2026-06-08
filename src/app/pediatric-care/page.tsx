@@ -23,9 +23,9 @@ export default function PediatricCarePage() {
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>PEDIATRIC CARE</h1>
-            <p className={styles.heroSubtitle}>Improving the Health and Lives of Infants.</p>
+            <p className={styles.heroSubtitle}>Improving the Health and Lives of Children.</p>
             <br />
-            <p className={styles.heroSubtitle}>Pediatric Care Director: Dr. Simone Moore</p>
+            <p className={styles.heroSubtitle}>Pediatric Care Providers: Simone Moore MD, Tara Davis FNP</p>
           </div>
         </section>
       </div>
@@ -49,23 +49,12 @@ export default function PediatricCarePage() {
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
             <p className={styles.textParagraph}>
-              Our providers comprehensively care for infants, children, and adolescents. They make decisions daily that improve the health and lives of infants through adulthood, form relationships with parents, and diagnose and treat youth. Delta Health Center takes pride in providing the most compassionate care & services to children. Our goal is to improve the health of our state's children.
+              Our providers comprehensively care for infants, children, and adolescents. They make decisions daily that improve the overall health of infants and children of all ages. Delta Health Center takes pride in providing the most compassionate care & services to our pediatric patients. Our goal is to improve the health outcomes of children in the Mississippi Delta and surrounding areas.
             </p>
 
-            <h3 className={styles.orangeHeading}>Immunizations/Vaccinations Including Vaccines For Children Program</h3>
+            <h3 className={styles.orangeHeading}>Immunizations/Vaccinations Including the Vaccines For Children Program</h3>
             <p className={styles.textParagraph}>
-              The Vaccines for Children program (VFC) is designed to allow children, zero through 18 years of age, to receive free vaccinations. Eligible children include those who receive Medicaid, Native Americans or Alaskan Natives, and children who have health insurance that does not cover vaccination. These underinsured children must be referred to a Federally Qualified Health Center, Community/Rural Health Center, or Public Health to receive their immunizations/vaccinations.
-            </p>
-            <p className={styles.textParagraph}>
-              This program promotes the creation of a medical home for children by inviting private provider participation. It can also reduce referrals to public health clinics and help raise awareness of childhood immunizations/vaccinations.
-            </p>
-            <p className={styles.textParagraph}>
-              Health care providers may receive VFC vaccine and administer this vaccine at no charge if they are willing to enroll in the program and agree to follow the ACIP Recommended Immunization/Vaccination Schedule. There is no fee for enrolling and the provider is allowed to charge a $10 administration fee per vaccine if the parent is able to pay; otherwise the vaccination is provided at no cost. Providers may also elect to bill clients for a separate office visit. For any child who is Medicaid eligible, the provider must bill Medicaid for the administration fee. This fee is reimbursed in ADDITION to the reimbursement for the office visit; it does not replace it.
-            </p>
-
-            <h3 className={styles.orangeHeading}>American Academy of Pediatrics for Healthy Children website</h3>
-            <p className={styles.textParagraph}>
-              For trusted information by the American Academy of Pediatrics by pediatricians for parents, please click here.
+              The Vaccines for Children program (VFC) is designed to allow children, zero through 18 years of age, to receive immunizations funded and provided by the Mississippi Department of Health. VFC eligible children include those who have Medicaid or CHIPs as active insurance, children who do not have insurance, children with insurance that does not cover immunizations or those of Alaskan or Native American heritage. This program promotes and encourages vaccinations in children. Please feel free to contact our Mound Bayou, Moorhead or Leland clinic today for more information.
             </p>
 
             <h2 className={styles.servicesHeading}>PEDIATRIC SERVICES</h2>
@@ -73,23 +62,23 @@ export default function PediatricCarePage() {
             <div className={styles.servicesListContainer}>
               <ul>
                 <li>Preventive Health</li>
-                <li>Well-Child Care</li>
+                <li>Annual Wellness Exams</li>
                 <li>Early Periodic Screening Diagnostic & Treatment (EPSDT) (This service is provided at the Mound Bayou, Moorhead, and Leland clinics only.)</li>
-                <li>Vaccinations</li>
-                <li>HPV Injections</li>
                 <li>Vision & Hearing Screenings</li>
-                <li>Asthma Treatment</li>
                 <li>Adolescent Counseling</li>
-                <li>Sex Education</li>
+                <li>Reproductive & Sex Education</li>
                 <li>Immunizations/Vaccinations</li>
-                <li>School & Physical Exams</li>
+                <li>Physical Examinations</li>
+                <li>Management of Acute & Chronic Health Conditions</li>
               </ul>
             </div>
           </div>
 
           <ProgramContactSidebar 
+            description="Your child's health is our priority. From routine checkups and immunizations to sick visits and preventive care, our pediatric team is here to support your family every step of the way."
             phoneDisplay="662-741-8800"
             phoneHref="tel:6627418800"
+            hideLocationHours={true}
           />
 
         </section>

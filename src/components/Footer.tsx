@@ -42,7 +42,7 @@ const Footer = () => {
           <div className={styles.col3}>
             <h3 className={styles.colTitle}>Careers at DHC</h3>
             <Link href="/careers" className={styles.careerImageLink}>
-              <img src="/images/careers_marketta_blue.png" alt="Careers at DHC" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
+              <img src="/images/executives/Myrtis_Small_Human_Resources_and_Credentialing_Director_Officer_Team_Photo_Box.png" alt="Careers at DHC" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
             </Link>
           </div>
 
@@ -54,7 +54,7 @@ const Footer = () => {
               <img src="/images/badges/high-value-care.png" alt="High-Value Care 2025" className={styles.badgeImage} />
               <img src="/images/badges/advancing-hit.png" alt="Advancing HIT for Quality 2025" className={styles.badgeImage} />
               <img src="/images/badges/aha-gold.png" alt="AHA Check Change Control Cholesterol Gold 2023" className={styles.badgeImage} />
-              <img src="/images/badges/ftca-badge.png" alt="FTCA Deemed Health Center" className={styles.badgeImage} style={{ width: '123.75px' }} />
+              <img src="/images/badges/ftca-badge.png" alt="FTCA Deemed Health Center" className={styles.badgeImage} />
             </div>
           </div>
         </div>

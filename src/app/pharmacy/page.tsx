@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Pharmacy.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Pharmacy | Delta Health Center',
@@ -24,7 +25,7 @@ export default function PharmacyPage() {
             <h1 className={styles.heroTitle}>PHARMACY</h1>
             <p className={styles.heroSubtitle}>Dispensing needed Medications.</p>
             <br />
-            <p className={styles.heroSubtitle}>Pharmacy Director - Dr. Remonica Jackson</p>
+            <p className={styles.heroSubtitle}>Pharmacy Director - Remonica Jackson PharmD</p>
           </div>
         </section>
       </div>
@@ -75,15 +76,46 @@ export default function PharmacyPage() {
             </Link>
           </div>
 
-          <div className={styles.rightColumn}>
-            <div className={styles.sidebarGraphic}>
-              <img 
-                src="/images/dhc_logo_official.png" 
-                alt="Delta Health Center Logo" 
-                className={styles.logoImage} 
-              />
-            </div>
-          </div>
+          <ProgramContactSidebar 
+            title="Prescription Refills & Appointments" 
+            description="Need to request a prescription refill or have questions about your medication? Contact our pharmacy department directly or schedule a consultation." 
+            phoneDisplay="662-741-8800" 
+            phoneHref="tel:6627418800" 
+            customLocations={[
+              {
+                name: "Mound Bayou Clinic (Pharmacy)",
+                address: (
+                  <>
+                    Delta Health Center<br />
+                    702 Martin Luther King Road<br />
+                    Mound Bayou, MS 38762
+                  </>
+                ),
+                hours: (
+                  <>
+                    <strong>Monday - Thursday:</strong> 8:00 AM - 6:00 PM<br />
+                    <strong>Friday:</strong> 8:00 AM - 12:00 PM
+                  </>
+                )
+              },
+              {
+                name: "Indianola Clinic (Pharmacy)",
+                address: (
+                  <>
+                    Delta Health Center<br />
+                    118 Front Avenue<br />
+                    Indianola, MS 38751
+                  </>
+                ),
+                hours: (
+                  <>
+                    <strong>Monday - Thursday:</strong> 7:30 AM - 5:30 PM<br />
+                    <strong>Friday:</strong> 7:30 AM - 11:30 AM
+                  </>
+                )
+              }
+            ]}
+          />
 
         </section>
       </div>

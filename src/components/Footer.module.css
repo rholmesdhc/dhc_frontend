@@ -98,8 +98,8 @@
 }
 
 .badgeImage {
-  width: 112.5px;
-  height: auto;
+  width: 140.625px;
+  height: 120.3px;
   object-fit: contain;
   transition: transform var(--transition-fast);
 }

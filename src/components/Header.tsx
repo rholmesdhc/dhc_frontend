@@ -136,6 +136,7 @@ const Header = () => {
                 <Link href="/patient-faqs">FAQs</Link>
                 <Link href="/patient-registration">Registration</Link>
                 <Link href="/patient-rights-and-responsibilities">Rights & Responsibilities</Link>
+                <Link href="/news">Events and News</Link>
               </div>
             </div>
 
