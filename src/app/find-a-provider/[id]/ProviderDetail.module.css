@@ -152,3 +152,66 @@
     margin-top: 40px;
   }
 }
+
+.buttonStack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 8px 4px 4px 4px;
+}
+
+.btnFindProvider,
+.btnLocations,
+.btnAppointment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnFindProvider {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btnFindProvider:hover {
+  background-color: #00899c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 162, 184, 0.2);
+  color: #fff;
+}
+
+.btnLocations {
+  background-color: #f4f4f4;
+  color: var(--color-primary);
+  border: 1px solid #ccc;
+}
+
+.btnLocations:hover {
+  background-color: #e9e9e9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: var(--color-primary);
+}
+
+.btnAppointment {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #fff;
+}
+
+.btnAppointment:hover {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 75, 135, 0.2);
+  color: #fff;
+}

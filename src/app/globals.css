@@ -156,3 +156,9 @@ a:hover {
     grid-template-columns: 1.5fr 1fr;
   }
 }
+
+/* Custom font overrides for banner titles and directors/subtitles */
+[class*="heroTitle"],
+[class*="heroSubtitle"] {
+  font-family: 'Times New Roman', Times, serif !important;
+}

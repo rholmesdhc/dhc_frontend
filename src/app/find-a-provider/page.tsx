@@ -84,20 +84,46 @@ export default function FindAProvider() {
       <section className={styles.gridSection}>
         <div className="container">
           <div className={styles.grid}>
-            {filteredProviders.map(provider => (
-              <Link key={provider.id} href={`/find-a-provider/${provider.id}`} className={styles.card}>
-                <div className={styles.imageWrapper}>
-                  <img src={provider.image} alt={provider.name} className={styles.providerImg} />
-                </div>
-                <h3 className={styles.providerName}>{provider.name}</h3>
-                <p className={styles.providerTitle}>{provider.title}</p>
-                {provider.certifications && (
-                  <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
-                    {provider.certifications}
+            {filteredProviders.map(provider => {
+              let credential = '';
+              if (provider.title.includes('|')) {
+                credential = provider.title.split('|')[0].trim();
+              } else if (provider.name.includes('Marketta Blue')) {
+                credential = 'MD';
+              } else if (provider.name.includes('Alyssa Simmons')) {
+                credential = 'FNP';
+              } else {
+                const credentialPatterns = ['FNP', 'NP', 'PMHNP', 'DNP', 'MD', 'PhD', 'PharmD', 'PA', 'R.Ph.'];
+                if (credentialPatterns.some(pat => provider.title.includes(pat))) {
+                  credential = provider.title;
+                }
+              }
+
+              return (
+                <div key={provider.id} className={styles.card}>
+                  <Link href={`/find-a-provider/${provider.id}`} className={styles.cardLink}>
+                    <div className={styles.imageWrapper}>
+                      <img src={provider.image} alt={provider.name} className={styles.providerImg} />
+                    </div>
+                    <h3 className={styles.providerName}>
+                      {provider.name.replace(/^Dr\.\s+/, '')}{credential ? `, ${credential}` : ''}
+                    </h3>
+                  </Link>
+                  <p className={styles.providerTitle}>
+                    <strong style={{ color: '#6ea454' }}>Specialty:</strong> {provider.specialty}
                   </p>
-                )}
-              </Link>
-            ))}
+                  
+                  <div className={styles.cardButtons}>
+                    <Link href={`/find-a-provider/${provider.id}`} className={styles.btnViewProfile}>
+                      View Profile
+                    </Link>
+                    <Link href="/request-appointment" className={styles.btnSchedule}>
+                      Schedule an Appointment
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           {filteredProviders.length === 0 && (
             <p className={styles.noResults}>No providers found for this specialty.</p>

@@ -59,7 +59,26 @@ export default function WellnessCenterPage() {
             </p>
           </div>
 
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            customLocations={[
+              {
+                name: "Location & Hours",
+                address: (
+                  <>
+                    Delta Health Center<br />
+                    702 Martin Luther King Road<br />
+                    Mound Bayou, MS 38762
+                  </>
+                ),
+                hours: (
+                  <>
+                    <strong>Monday - Friday:</strong><br />
+                    7:00 AM &ndash; 7:00 PM
+                  </>
+                )
+              }
+            ]}
+          />
 
         </div>
       </div>

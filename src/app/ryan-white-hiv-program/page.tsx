@@ -17,6 +17,8 @@ export default function RyanWhiteProgram() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Ryan White HIV/AIDS Program</h1>
             <p className={styles.heroSubtitle}>Providing Comprehensive STD and HIV Testing and Care</p>
+            <br />
+            <p className={styles.heroSubtitle}>Ryan White Program Director - Joanna Cannon</p>
           </div>
         </section>
       </div>

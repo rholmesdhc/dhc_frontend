@@ -153,3 +153,63 @@
   color: var(--color-text-muted);
   padding: 40px;
 }
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cardLink:hover .providerName {
+  color: var(--color-primary-light);
+}
+
+.cardButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.btnViewProfile,
+.btnSchedule {
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  border-radius: 10px;
+  font-size: 0.45rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.btnViewProfile {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btnViewProfile:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btnSchedule {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+}
+
+.btnSchedule:hover {
+  background-color: #00899c;
+  color: #fff;
+  transform: translateY(-1px);
+}

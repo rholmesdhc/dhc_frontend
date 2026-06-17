@@ -62,145 +62,139 @@
   margin: 0;
 }
 
+.directorLabel {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 80px 20px;
 }
 
-.introSection {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 4rem auto;
-}
-
-.introTitle {
-  font-size: 2.5rem;
-  color: #0d47a1;
-  font-family: 'Lora', serif;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.introText {
-  font-size: 1.15rem;
-  color: #555;
-  line-height: 1.7;
-}
-
-.grid {
+.contentGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 50px;
 }
 
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 992px) {
+  .contentGrid {
+    grid-template-columns: 1.5fr 1fr;
   }
 }
 
-.conditionCard {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 2.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-top: 6px solid #00756a;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.mainContent {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
-.conditionCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-color: #1976d2;
+.textParagraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
 }
 
-.conditionTitle {
-  font-size: 1.6rem;
-  color: #2c3e50;
+.orangeHeading {
   font-family: 'Lora', serif;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-.conditionDesc {
-  font-size: 1.05rem;
-  color: #555;
+.infoCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid var(--color-primary);
+}
+
+.infoCard h3 {
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  font-family: 'Lora', serif;
+}
+
+.infoCard p {
+  color: var(--color-text-muted);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
-.treatmentList {
-  list-style-type: none;
+.featuresList {
+  list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.treatmentList li {
+.featuresList li {
   position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #444;
-  font-size: 1rem;
+  padding-left: 30px;
+  font-size: 1.05rem;
+  color: var(--color-text-main);
+  line-height: 1.5;
 }
 
-.treatmentList li::before {
-  content: "✓";
+.featuresList li::before {
+  content: '✓';
   position: absolute;
   left: 0;
-  color: #00756a;
+  top: 0;
+  color: var(--color-secondary);
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .ctaSection {
-  margin-top: 5rem;
-  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
-  border-radius: 16px;
-  padding: 4rem 2rem;
   text-align: center;
-  color: white;
-  box-shadow: 0 10px 30px rgba(13, 71, 161, 0.2);
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin-top: 60px;
 }
 
 .ctaTitle {
-  font-size: 2.2rem;
   font-family: 'Lora', serif;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  margin-bottom: 20px;
 }
 
 .ctaText {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 2.5rem auto;
-  line-height: 1.5;
-  opacity: 0.9;
-}
-
-.contactBtn {
-  display: inline-block;
-  background-color: #fff;
-  color: #0d47a1;
-  font-weight: 700;
   font-size: 1.1rem;
-  padding: 1rem 2.5rem;
-  border-radius: 50px;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s, background-color 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(67, 181, 129, 0.3);
 }
 
-.contactBtn:hover {
-  background-color: #f8faff;
-  transform: scale(1.05);
+.ctaButton:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 48, 135, 0.2);
 }
 
-.crisisLine {
-  margin-top: 2rem;
-  font-size: 1.05rem;
-  opacity: 0.8;
+@media (max-width: 768px) {
+  .orangeHeading {
+    font-size: 1.5rem;
+  }
 }

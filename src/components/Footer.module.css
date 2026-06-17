@@ -20,8 +20,50 @@
   transition: transform var(--transition-fast);
 }
 
+.contactBtnWrapper {
+  margin-top: 24px;
+}
+
+.contactFormBtn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 48, 135, 0.15);
+}
+
+.contactFormBtn:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(67, 181, 129, 0.25);
+}
+
 .careerImageLink:hover {
   transform: scale(1.03);
+}
+
+.careerInfo {
+  margin-top: 12px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.careerName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.careerTitle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
 .logo {

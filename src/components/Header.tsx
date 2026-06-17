@@ -84,7 +84,6 @@ const Header = () => {
                 <Link href="/our-locations#indianola">Indianola</Link>
                 <Link href="/our-locations#cleveland">Cleveland</Link>
                 <Link href="/our-locations#hollandale">Hollandale</Link>
-                <Link href="/our-locations#ittabena">Itta Bena (MVSU)</Link>
                 <Link href="/our-locations#leland">Leland</Link>
                 <Link href="/our-locations#moorhead">Moorhead</Link>
                 <Link href="/our-locations#rollingfork">Rolling Fork</Link>
@@ -122,8 +121,8 @@ const Header = () => {
                 <Link href="/maternal-health">Maternal Health</Link>
                 <Link href="/wic">WIC</Link>
                 <Link href="/womens-health">Women's Health</Link>
-                <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
                 <Link href="/wellness-exams">Annual Wellness Visits</Link>
+                <Link href="/workplace-and-school-physicals">Workplace & School Physicals</Link>
               </div>
             </div>
 

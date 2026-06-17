@@ -47,7 +47,7 @@ const ActionCards = () => {
               </h3>
               <p className={styles.desc}>Our team is ready to help you book your appointment. Contact us today.</p>
               <div className={styles.btnWrapper}>
-                <a href="/our-locations" className={styles.btn}>Make an Appointment</a>
+                <a href="/request-appointment" className={styles.btn}>Make an Appointment</a>
               </div>
             </div>
           </div>

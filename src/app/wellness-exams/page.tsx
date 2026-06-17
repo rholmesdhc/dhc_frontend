@@ -16,9 +16,8 @@ export default function WellnessExams() {
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Annual Wellness Visits</h1>
-            <p className={styles.heroSubtitle}>
-              Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) services dedicated to comprehensive preventative care.
-            </p>
+            <br />
+            <p className={styles.heroSubtitle}>Annual Wellness Program Director - Tara Gallion</p>
           </div>
         </section>
       </div>

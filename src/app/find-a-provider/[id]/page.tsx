@@ -12,7 +12,21 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
     notFound();
   }
 
-  const displayName = provider.name.replace('Dr. ', '');
+  const displayName = provider.name.replace(/^Dr\.\s+/, '');
+
+  let credential = '';
+  if (provider.title.includes('|')) {
+    credential = provider.title.split('|')[0].trim();
+  } else if (provider.name.includes('Marketta Blue')) {
+    credential = 'MD';
+  } else if (provider.name.includes('Alyssa Simmons')) {
+    credential = 'FNP';
+  } else {
+    const credentialPatterns = ['FNP', 'NP', 'PMHNP', 'DNP', 'MD', 'PhD', 'PharmD', 'PA', 'R.Ph.'];
+    if (credentialPatterns.some(pat => provider.title.includes(pat))) {
+      credential = provider.title;
+    }
+  }
 
   return (
     <main className={styles.pageWrapper}>
@@ -24,17 +38,11 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
               <Link href="/find-a-provider" className={styles.backLink}>
                 &larr; Find a Doctor
               </Link>
-              <h1 className={styles.providerName}>{provider.name}</h1>
+              <h1 className={styles.providerName}>
+                {displayName}{credential ? `, ${credential}` : ''}
+              </h1>
               <p className={styles.providerSubtitle}>
-                {(() => {
-                  if (provider.name.includes('Marketta Blue') || provider.name.includes('Alyssa Simmons')) {
-                    return `${provider.specialty} \u2022 ${provider.title}`;
-                  }
-                  const credential = provider.title.includes('|') 
-                    ? provider.title.split('|')[0].trim() 
-                    : provider.title;
-                  return `${credential} | ${provider.specialty}`;
-                })()}
+                <strong style={{ color: '#6ea454' }}>Specialty:</strong> {provider.specialty}
               </p>
             </div>
           </div>
@@ -83,6 +91,18 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
             <div className={styles.photoColumn}>
               <div className={styles.photoWrapper}>
                 <img src={provider.image} alt={provider.name} className={styles.providerPhoto} />
+                
+                <div className={styles.buttonStack}>
+                  <Link href="/request-appointment" className={styles.btnAppointment}>
+                    Request an Appointment
+                  </Link>
+                  <Link href="/find-a-provider" className={styles.btnFindProvider}>
+                    Find a Provider
+                  </Link>
+                  <Link href="/our-locations" className={styles.btnLocations}>
+                    Our Locations
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
