@@ -274,7 +274,7 @@ export const providersData = [
     name: 'Felicia Norris White',
     title: 'FNP | Family Medicine',
     specialty: 'Family Medicine',
-    image: '/images/providers/Felicia_Norris_White_template.png',
+    image: '/images/Delta_Health_Center_Providers/Felicia_White_Provider_2.png',
     slug: '16',
     gender: 'Female',
     pronouns: 'She/Her',
