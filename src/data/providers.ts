@@ -141,7 +141,7 @@ export const providersData = [
     title: 'MD | Internal Medicine',
     certifications: 'Board Certified | Internal Medicine',
     specialty: 'Internal Medicine',
-    image: '/images/providers/frank_brown_template.png',
+    image: '/images/Delta_Health_Center_Providers/Frank_Brown_Provider_2.png',
     slug: '5',
     gender: 'Male',
     pronouns: 'He/Him',
