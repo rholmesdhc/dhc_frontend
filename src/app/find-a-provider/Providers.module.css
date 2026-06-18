@@ -181,9 +181,9 @@
 .btnSchedule {
   display: block;
   width: 100%;
-  padding: 5px 8px;
+  padding: 6.25px 10px;
   border-radius: 10px;
-  font-size: 0.45rem;
+  font-size: 0.5625rem;
   font-weight: 600;
   text-align: center;
   transition: all var(--transition-fast);
@@ -205,13 +205,13 @@
 }
 
 .btnSchedule {
-  background-color: var(--color-secondary);
+  background-color: #6ea454;
   color: #fff;
   border: none;
 }
 
 .btnSchedule:hover {
-  background-color: #00899c;
+  background-color: #55873d;
   color: #fff;
   transform: translateY(-1px);
 }
