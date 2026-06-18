@@ -88,7 +88,7 @@ export const providersData = [
   },
   {
     id: 3,
-    name: 'Dr. Braveen Ragunanthan M.D., MPH, FAAP',
+    name: 'Dr. Braveen Ragunanthan',
     title: 'MD | Pediatrics',
     certifications: 'Board Certified | Pediatrics',
     specialty: 'Pediatrics',
