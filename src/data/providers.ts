@@ -295,7 +295,7 @@ export const providersData = [
     title: 'PMHNP-BC, FNP-C',
     certifications: 'Fam Med & Behavioral Health',
     specialty: 'Family Medicine & Behavioral Health',
-    image: '/images/providers/Sherrica_Smith_template.png',
+    image: '/images/Delta_Health_Center_Providers/Sherrica_Smith_Provider_2.png',
     slug: '17',
     gender: 'Female',
     pronouns: 'She/Her',
