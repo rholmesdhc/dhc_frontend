@@ -89,7 +89,7 @@ export const providersData = [
   {
     id: 3,
     name: 'Dr. Braveen Ragunanthan',
-    title: 'MD | Pediatrics',
+    title: 'MD, MPH, FAAP | Pediatrics',
     certifications: 'Board Certified | Pediatrics',
     specialty: 'Pediatrics',
     image: '/images/Delta_Health_Center_Providers/Braveen_Ragunanthan_Provider_2.png',
