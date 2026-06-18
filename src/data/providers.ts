@@ -292,7 +292,7 @@ export const providersData = [
   {
     id: 17,
     name: 'Sherrica Smith',
-    title: 'PMHNP-BC, FNP-C',
+    title: 'PMHNP-BC | Family Medicine & Behavioral Health',
     certifications: 'Fam Med & Behavioral Health',
     specialty: 'Family Medicine & Behavioral Health',
     image: '/images/Delta_Health_Center_Providers/Sherrica_Smith_Provider_2.png',
