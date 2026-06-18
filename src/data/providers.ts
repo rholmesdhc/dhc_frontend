@@ -323,7 +323,7 @@ export const providersData = [
     name: 'Barbara Williams',
     title: 'FNP | Family Medicine',
     specialty: 'Family Medicine',
-    image: '/images/providers/Barbara_Williams_template.png',
+    image: '/images/Delta_Health_Center_Providers/Barbara_Williams_Provider_2.png',
     slug: '18',
     gender: 'Female',
     pronouns: 'She/Her',
