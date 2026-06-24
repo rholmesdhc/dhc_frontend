@@ -40,7 +40,7 @@ const Footer = () => {
               <li><Link href="/pediatric-care">Pediatrics</Link></li>
               <li><Link href="/pharmacy">Pharmacy</Link></li>
               <li><Link href="/physical-therapy">Physical Therapy</Link></li>
-              <li><Link href="/behavior-health">Behavioral Health</Link></li>
+              <li><Link href="/behavioral-health">Behavioral Health</Link></li>
             </ul>
           </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
           <div className={styles.col3}>
             <h3 className={styles.colTitle}>Careers at DHC</h3>
             <Link href="/careers" className={styles.careerImageLink}>
-              <img src="/images/executives/Myrtis_Small_Human_Resources_and_Credentialing_Director_Officer_Team_Photo_Box.png" alt="Careers at DHC" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
+              <img src="/images/Delta_Health_Center_Exec_Staff/Myrtis_Small_Exec_Staff_2.png" alt="Careers at DHC" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
             </Link>
             <div className={styles.careerInfo}>
               <div className={styles.careerName}>Myrtis Small</div>

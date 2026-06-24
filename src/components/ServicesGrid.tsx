@@ -5,7 +5,7 @@ const services = [
   { title: 'Family Medical Care', desc: 'Comprehensive healthcare for individuals and families across all ages.', link: '/family-medical-care', image: '/images/medical_care_family.png' },
   { title: 'Dental Care', desc: 'Full-range dental services to keep your smile healthy and bright.', link: '/dental-care', image: '/images/dental_care_clinic.png' },
   { title: 'Pediatric Care', desc: 'Expert care for your little ones, from newborns to adolescents.', link: '/pediatric-care', image: '/images/pediatric_care_child.png' },
-  { title: 'Behavioral Health', desc: 'Accredited mental health services providing support and counseling.', link: '/behavior-health', image: '/images/behavioral_health_therapy.png' },
+  { title: 'Behavioral Health', desc: 'Accredited mental health services providing support and counseling.', link: '/behavioral-health', image: '/images/behavioral_health_therapy.png' },
   { title: 'Womens Health', desc: 'Obstetrical and gynecology services for women in all stages of life.', link: '/womens-health', image: '/images/womens_health_clinic.png' },
   { title: 'Pharmacy', desc: 'Convenient on-site pharmacy for patients to easily pick up medications.', link: '/pharmacy', image: '/images/pharmacy_counter.png' },
 ];

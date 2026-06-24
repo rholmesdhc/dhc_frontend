@@ -4,7 +4,7 @@ import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Annual Wellness Visits | Delta Health Center',
-  description: 'Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) wellness exams and services.',
+  description: 'Annual wellness exams and preventative health services for the whole family.',
 };
 
 export default function WellnessExams() {
@@ -16,8 +16,6 @@ export default function WellnessExams() {
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Annual Wellness Visits</h1>
-            <br />
-            <p className={styles.heroSubtitle}>Annual Wellness Program Director - Tara Gallion</p>
           </div>
         </section>
       </div>
@@ -25,10 +23,10 @@ export default function WellnessExams() {
       <div className="container" style={{ marginTop: '40px', marginBottom: '60px' }}>
         <div className="program-layout-grid">
           <div className={styles.textContent}>
-            <h2 className={styles.mainHeading}>EPSDT Services</h2>
+            <h2 className={styles.mainHeading}>Annual Wellness Services</h2>
             <p className={styles.introText}>
-              Delta Health Center provides comprehensive Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) services for Medicaid enrollees. 
-              Our medically necessary care ensures your family&apos;s physical and developmental health across the following essential categories:
+              Delta Health Center provides comprehensive annual wellness exams and preventative health services. 
+              Our care ensures your family&apos;s physical and developmental health across the following essential categories:
             </p>
 
             <div className={styles.serviceGrid}>
@@ -42,20 +40,6 @@ export default function WellnessExams() {
                   <li>Laboratory Tests (including lead toxicity screening)</li>
                   <li>Health Education and Preventative Guidance</li>
                 </ul>
-              </div>
-
-              <div className={styles.serviceCard}>
-                <h3 className={styles.serviceTitle}>Vision Services</h3>
-                <p className={styles.serviceText}>
-                  We only provide basic vision screenings. We do not perform diagnostic or therapeutic vision exams. Patients needing intensive testing are referred to specialists for further evaluation or eyeglasses if needed.
-                </p>
-              </div>
-
-              <div className={styles.serviceCard}>
-                <h3 className={styles.serviceTitle}>Dental Services</h3>
-                <p className={styles.serviceText}>
-                  Comprehensive dental access including the relief of pain, restoration, and routine maintenance elements—not limited strictly to emergencies.
-                </p>
               </div>
 
               <div className={styles.serviceCard}>
@@ -75,7 +59,16 @@ export default function WellnessExams() {
             </div>
           </div>
 
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="Annual Wellness Visits"
+            description={
+              <>
+                <strong>Program Director:</strong> Tara Gallion<br/><br/>
+                Ready to take control of your health? Schedule a comprehensive wellness consultation with our team today. We will assess your current health status and work with you to create a personalized action plan.
+              </>
+            }
+            hideLocationHours={true}
+          />
         </div>
       </div>
     </main>

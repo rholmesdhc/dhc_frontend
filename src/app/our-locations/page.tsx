@@ -44,6 +44,36 @@ export default function OurLocations() {
         </div>
       </div>
 
+      {/* Mound Bayou Dental Section */}
+      <div className="container" id="moundbayou-dental" style={{ marginTop: '80px', paddingTop: '80px', borderTop: '1px solid #eaeaea' }}>
+        <div className={styles.grid}>
+          <div className={styles.infoCol}>
+            <h1 className={styles.title}>Delta Health Center | Dr. Warren Inge Dental Center</h1>
+            <div className={styles.contactBlock}>
+              <p>702 Martin Luther King Road - Building A<br />Mound Bayou, MS 38762</p>
+              <br />
+              <p>
+                <strong>Phone:</strong> <a href="tel:6627418857">(662) 741-8857</a><br />
+                <strong>Fax:</strong> (662) 741-8806
+              </p>
+            </div>
+            <div className={styles.hoursBlock}>
+              <p><strong>Monday - Thursday:</strong> 8:00am &ndash; 6:00pm</p>
+              <p><strong>Friday:</strong> 8:00am &ndash; 12:00pm</p>
+            </div>
+            <div className={styles.servicesBlock}>
+              <h3 className={styles.servicesTitle}>Services Provided</h3>
+              <ul className={styles.servicesList}>
+                <li>Dental Care</li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.mapCol}>
+            <iframe src="https://maps.google.com/maps?q=702%20Martin%20Luther%20King%20Road,%20Mound%20Bayou,%20MS%2038762&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, minHeight: '450px', display: 'block' }} loading="lazy" title="Google Maps displaying Dr. Warren Inge Dental Center"></iframe>
+          </div>
+        </div>
+      </div>
+
       {/* Cleveland Section (Searcy Medical Clinic) */}
       <div className="container" id="cleveland" style={{ marginTop: '80px', paddingTop: '80px', borderTop: '1px solid #eaeaea' }}>
         <div className={styles.grid}>

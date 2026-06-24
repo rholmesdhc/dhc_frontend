@@ -1,6 +1,15 @@
 const { Client } = require('ssh2');
 const fs = require('fs');
 
+// Load SSH credentials from .env.uat — never hardcode credentials in source
+fs.readFileSync('.env.uat', 'utf8').split('\n').forEach(line => {
+  const trimmed = line.trim();
+  if (!trimmed || trimmed.startsWith('#')) return;
+  const eq = trimmed.indexOf('=');
+  if (eq === -1) return;
+  process.env[trimmed.slice(0, eq).trim()] = trimmed.slice(eq + 1).trim();
+});
+
 const conn = new Client();
 
 console.log('Connecting to UAT server...');
@@ -31,8 +40,8 @@ conn.on('ready', () => {
     });
   });
 }).connect({
-  host: '10.4.0.30',
+  host: process.env.UAT_SSH_HOST,
   port: 22,
-  username: 'rholmes',
-  password: 'R!sc1969'
+  username: process.env.UAT_SSH_USER,
+  password: process.env.UAT_SSH_PASS,
 });

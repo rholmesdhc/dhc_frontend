@@ -23,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "ssh2": "^1.17.0",
     "typescript": "^5"
   }
 }

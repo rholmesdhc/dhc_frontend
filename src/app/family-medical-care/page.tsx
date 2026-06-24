@@ -76,6 +76,7 @@ export default function FamilyMedicalCarePage() {
           <ProgramContactSidebar 
             phoneDisplay="662-741-8800"
             phoneHref="tel:6627418800"
+            hideLocationHours={true}
           />
 
         </section>

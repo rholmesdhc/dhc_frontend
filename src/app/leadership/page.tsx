@@ -3,8 +3,17 @@ import Link from 'next/link';
 import styles from './Leadership.module.css';
 
 // Load Data
-import executivesData from '../../../public/images/executives/executives.json';
+import executivesDataRaw from '../../../public/images/executives/executives.json';
 import boardData from '../../../public/images/board/board.json';
+
+interface LeaderItem {
+  name: string;
+  title: string;
+  image: string;
+  link?: string;
+}
+
+const executivesData = executivesDataRaw as LeaderItem[];
 
 export const metadata = {
   title: 'Leadership | Delta Health Center',
