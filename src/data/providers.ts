@@ -549,3 +549,54 @@ export const providersData = [
     ]
   }
 ];
+
+export function getProviderLocation(id: number): { name: string; anchor: string } | null {
+  switch (id) {
+    case 1: // Dr. Marketta Blue
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 15: // Alyssa Simmons
+      return { name: 'Indianola', anchor: 'indianola' };
+    case 2: // Dr. Simone Moore
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 3: // Dr. Braveen Ragunanthan
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 4: // Dr. Dominick Trinca
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 5: // Dr. Frank Brown
+      return { name: 'Hollandale', anchor: 'hollandale' };
+    case 12: // Dr. Nadia Bethley
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 13: // Dr. Inge Ford
+      return { name: 'Mound Bayou', anchor: 'moundbayou-dental' };
+    case 30: // Dr. Marquinet Hence
+      return { name: 'Mound Bayou', anchor: 'moundbayou-dental' };
+    case 14: // Dr. Lauren Adams
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 16: // Felicia Norris White
+      return { name: 'Greenville', anchor: 'greenville-central' };
+    case 17: // Sherrica Smith
+      return { name: 'Moorhead', anchor: 'moorhead' };
+    case 18: // Barbara Williams
+      return { name: 'Moorhead', anchor: 'moorhead' };
+    case 19: // Jennifer Kurts
+      return { name: 'Cleveland', anchor: 'cleveland' };
+    case 20: // Valerie Antici
+      return { name: 'Rosedale', anchor: 'rosedale' };
+    case 21: // Queeneice Ganison
+      return { name: 'Greenville', anchor: 'greenville-central' };
+    case 22: // Tara Davis
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 26: // Daffany Williams
+      return { name: 'Leland', anchor: 'leland' };
+    case 27: // Remonica Jackson
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 29: // Harold Blakely
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    case 28: // Baylee Palasini
+      return { name: 'Indianola', anchor: 'indianola' };
+    case 25: // Megan Mccoy
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+    default:
+      return { name: 'Mound Bayou', anchor: 'moundbayou' };
+  }
+}

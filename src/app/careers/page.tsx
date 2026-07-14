@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Careers.module.css';
+import CareersForm from '@/components/CareersForm';
 
 export const metadata = {
   title: 'Careers | Delta Health Center',
@@ -123,9 +124,13 @@ export default function Careers() {
           </p>
           <p className={styles.infoText}>
             If you have questions regarding the application process or require accommodations, please 
-            contact our Human Resources department at <a href="mailto:hr@deltahealthcenter.org" className={styles.emailLink}>hr@deltahealthcenter.org</a>.
+            fill out the <strong>Careers & HR Inquiry Form</strong> below to get in touch with our Human Resources department.
           </p>
         </section>
+
+        <div className={styles.divider}></div>
+
+        <CareersForm jobOpenings={jobOpenings} />
       </div>
     </main>
   );

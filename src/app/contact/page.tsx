@@ -5,6 +5,8 @@ import styles from './Contact.module.css';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,10 +15,33 @@ export default function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', subject: 'General Inquiry', message: '' });
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', subject: 'General Inquiry', message: '' });
+    } catch (err: any) {
+      setError(err.message || 'Failed to send message. Please check your connection.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -37,6 +62,11 @@ export default function ContactPage() {
         </div>
       ) : (
         <form className={styles.formCard} onSubmit={handleSubmit}>
+          {error && (
+            <div style={{ color: '#d9534f', backgroundColor: '#fdf7f7', border: '1px solid #d9534f', padding: '12px', borderRadius: '4px', marginBottom: '20px' }}>
+              {error}
+            </div>
+          )}
           <div className={styles.formGroup}>
             <label htmlFor="name" className={styles.label}>Full Name</label>
             <input 
@@ -103,7 +133,9 @@ export default function ContactPage() {
             />
           </div>
 
-          <button type="submit" className={styles.submitBtn}>Send Message</button>
+          <button type="submit" className={styles.submitBtn} disabled={submitting}>
+            {submitting ? 'Sending...' : 'Send Message'}
+          </button>
         </form>
       )}
     </main>

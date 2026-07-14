@@ -1,7 +1,7 @@
-.heroWrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+.pageWrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .hero {
@@ -10,7 +10,7 @@
   height: 250px;
   border-radius: 20px;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 

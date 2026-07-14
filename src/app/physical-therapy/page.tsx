@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PhysicalTherapy.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export const metadata = {
   title: 'Physical Therapy & Rehabilitation | Delta Health Center',
@@ -8,7 +9,7 @@ export const metadata = {
 
 export default function PhysicalTherapy() {
   return (
-    <main>
+    <main className={styles.pageWrapper}>
       {/* Hero Section */}
       <div className="container">
         <section className={styles.hero}>
@@ -30,11 +31,11 @@ export default function PhysicalTherapy() {
       </div>
 
       {/* Main Content */}
-      <div className={styles.container}>
-        <div className={styles.contentGrid}>
+      <div className="container" style={{ marginTop: '40px', marginBottom: '60px' }}>
+        <section className="program-layout-grid">
           
           {/* Left Column: Description & Services */}
-          <div className={styles.mainContent}>
+          <div className={styles.leftColumn}>
             <h2 className={styles.orangeHeading}>Comprehensive Rehabilitation Care</h2>
             <p className={styles.textParagraph}>
               At Delta Health Center, our Physical Therapy department is dedicated to helping you regain your strength, mobility, and independence. Whether you are recovering from a recent surgery, managing a chronic condition, or overcoming a sports injury, our expert team provides compassionate, evidence-based care tailored to your unique goals.
@@ -63,44 +64,14 @@ export default function PhysicalTherapy() {
             </ul>
           </div>
 
-          {/* Right Column: Info Cards */}
-          <div>
-            <div className={styles.infoCard}>
-              <h3>What to Expect</h3>
-              <p>
-                Your journey begins with a comprehensive, one-on-one evaluation. Our physical therapists will assess your strength, flexibility, balance, and pain levels to accurately diagnose your physical limitations. 
-              </p>
-              <p>
-                Based on this assessment, we will develop a personalized treatment plan that may include manual therapy, guided exercises, and education on home-care strategies.
-              </p>
-            </div>
-
-            <div className={styles.infoCard} style={{ marginTop: '30px', borderLeftColor: 'var(--color-secondary)' }}>
-              <h3>Location & Hours</h3>
-              <p>
-                Delta Health Center, Inc.<br/>
-                702 Martin Luther King Road<br/>
-                Post Office Box 900<br/>
-                Mound Bayou, MS 38762
-              </p>
-              <p style={{ marginBottom: 0 }}>
-                <strong>Monday - Thursday:</strong> 8:00am - 6:00pm<br/>
-                <strong>Friday:</strong> 8:00am - 12:00pm
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className={styles.ctaSection}>
-          <h2 className={styles.ctaTitle}>Ready to Move Better?</h2>
-          <p className={styles.ctaText}>
-            Don't let pain or limited mobility hold you back. Schedule an evaluation with our expert physical therapy team today and take the first step toward recovery.
-          </p>
-          <a href="/patient-registration" className={styles.ctaButton}>
-            Request an Appointment
-          </a>
-        </div>
+          {/* Right Column: Sidebar */}
+          <ProgramContactSidebar 
+            title="Referral Required"
+            description="In order to see our physical therapist you must have a referral from one of the DHC providers."
+            phoneDisplay="662-741-8800"
+            phoneHref="tel:6627418800"
+          />
+        </section>
       </div>
     </main>
   );

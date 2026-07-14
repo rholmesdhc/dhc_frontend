@@ -129,13 +129,8 @@ export default function FoodBank() {
           ))}
         </div>
 
-        <div style={{ marginTop: '50px', textAlign: 'center' }}>
-          <a href="/documents/Food pantries with locations.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'inline-block', padding: '12px 24px', textDecoration: 'none' }}>
-            View / Download Original Directory (PDF)
-          </a>
-        </div>
           </div>
-          <ProgramContactSidebar />
+          <ProgramContactSidebar hideLocationHours={true} />
         </div>
       </div>
     </main>

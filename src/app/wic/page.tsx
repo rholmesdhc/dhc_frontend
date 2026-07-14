@@ -54,7 +54,10 @@ export default function WICPage() {
             </p>
           </div>
 
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our WIC services, nutritional counseling, and eligibility requirements, please contact our team directly." 
+          />
 
         </section>
       </div>

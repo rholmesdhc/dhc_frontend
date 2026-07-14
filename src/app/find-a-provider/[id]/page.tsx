@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './ProviderDetail.module.css';
 
-import { providersData } from '../../../data/providers';
+import { providersData, getProviderLocation } from '../../../data/providers';
 
 export default async function ProviderDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
@@ -36,7 +36,7 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
           <div className={styles.layoutGrid}>
             <div className={styles.headerContent}>
               <Link href="/find-a-provider" className={styles.backLink}>
-                &larr; Find a Doctor
+                &larr; Find a Provider
               </Link>
               <h1 className={styles.providerName}>
                 {displayName}{credential ? `, ${credential}` : ''}
@@ -44,6 +44,17 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
               <p className={styles.providerSubtitle}>
                 <strong style={{ color: '#6ea454' }}>Specialty:</strong> {provider.specialty}
               </p>
+              {(() => {
+                const loc = getProviderLocation(provider.id);
+                return loc ? (
+                  <p className={styles.providerSubtitle} style={{ marginTop: '6px' }}>
+                    <strong style={{ color: '#007791' }}>Location:</strong>{' '}
+                    <Link href={`/our-locations#${loc.anchor}`} style={{ color: '#007791', textDecoration: 'underline' }}>
+                      {loc.name}
+                    </Link>
+                  </p>
+                ) : null;
+              })()}
             </div>
           </div>
         </div>
@@ -57,6 +68,17 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
               <h2 className={styles.sectionTitle}>Getting to know {displayName}</h2>
               
               <div className={styles.quickFacts}>
+                {(() => {
+                  const loc = getProviderLocation(provider.id);
+                  return loc ? (
+                    <span>
+                      Location:{' '}
+                      <Link href={`/our-locations#${loc.anchor}`} style={{ color: '#007791', textDecoration: 'underline' }}>
+                        {loc.name}
+                      </Link>
+                    </span>
+                  ) : null;
+                })()}
                 <span>Spoken Languages: {provider.languages || 'TBA'}</span>
               </div>
 
@@ -93,9 +115,6 @@ export default async function ProviderDetail({ params }: { params: Promise<{ id:
                 <img src={provider.image} alt={provider.name} className={styles.providerPhoto} />
                 
                 <div className={styles.buttonStack}>
-                  <Link href="/request-appointment" className={styles.btnAppointment}>
-                    Request an Appointment
-                  </Link>
                   <Link href="/find-a-provider" className={styles.btnFindProvider}>
                     Find a Provider
                   </Link>

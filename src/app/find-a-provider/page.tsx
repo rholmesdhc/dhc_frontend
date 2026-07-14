@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Providers.module.css';
 
-import { providersData, specialties } from '../../data/providers';
+import { providersData, specialties, getProviderLocation } from '../../data/providers';
 
 export default function FindAProvider() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -112,13 +112,21 @@ export default function FindAProvider() {
                   <p className={styles.providerTitle}>
                     <strong style={{ color: '#6ea454' }}>Specialty:</strong> {provider.specialty}
                   </p>
+                  {(() => {
+                    const loc = getProviderLocation(provider.id);
+                    return loc ? (
+                      <p className={styles.providerTitle} style={{ marginTop: '4px' }}>
+                        <strong style={{ color: '#007791' }}>Location:</strong>{' '}
+                        <Link href={`/our-locations#${loc.anchor}`} style={{ color: '#007791', textDecoration: 'underline' }}>
+                          {loc.name}
+                        </Link>
+                      </p>
+                    ) : null;
+                  })()}
                   
                   <div className={styles.cardButtons}>
                     <Link href={`/find-a-provider/${provider.id}`} className={styles.btnViewProfile}>
                       View Profile
-                    </Link>
-                    <Link href="/request-appointment" className={styles.btnSchedule}>
-                      Schedule an Appointment
                     </Link>
                   </div>
                 </div>

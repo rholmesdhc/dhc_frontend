@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function BehaviorHealth() {
   return (
-    <main>
-      <div className={styles.heroWrapper}>
+    <main className={styles.pageWrapper}>
+      <div className="container">
         <section className={styles.hero}>
           <img 
             src="/images/behavior_health_hero_woman.png" 

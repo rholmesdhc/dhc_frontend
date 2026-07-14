@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" aria-label="Home">
             <img 
-              src="https://www.deltahealthcenter.org/wp-content/uploads/2024/11/deltahealthcenter_logo.png" 
+              src="/images/dhc_logo_official.png" 
               alt="Delta Health Center Logo" 
               className={styles.logo}
             />

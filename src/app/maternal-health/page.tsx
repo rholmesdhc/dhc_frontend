@@ -61,7 +61,10 @@ export default function MaternalHealthPage() {
             </p>
           </div>
 
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our maternal health services, prenatal care, and parenting support programs, please contact our team." 
+          />
 
         </div>
       </div>

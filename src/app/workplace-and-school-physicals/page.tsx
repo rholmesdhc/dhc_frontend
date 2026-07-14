@@ -53,7 +53,7 @@ export default function WorkplaceAndSchoolPhysicals() {
           </p>
         </div>
           </div>
-          <ProgramContactSidebar />
+          <ProgramContactSidebar hideLocationHours={true} />
         </div>
       </section>
     </>

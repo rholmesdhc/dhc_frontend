@@ -1,7 +1,6 @@
-"use client";
-
 import React from 'react';
 import styles from './WomensHealth.module.css';
+import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
 export default function WomensHealthPage() {
   const womensServices = [
@@ -36,7 +35,7 @@ export default function WomensHealthPage() {
 
       {/* Main Content Grid */}
       <div className="container">
-        <section className={styles.contentGrid}>
+        <section className="program-layout-grid">
           
           {/* Left Text & Services Column */}
           <div className={styles.leftColumn}>
@@ -58,22 +57,8 @@ export default function WomensHealthPage() {
             </div>
           </div>
 
-          {/* Right Info Column */}
-          <div className={styles.rightColumn}>
-            <div className={styles.infoCard}>
-              <h3 className={styles.infoCardTitle}>Preventative Screenings</h3>
-              <p className={styles.infoCardText}>
-                Regular screenings such as Pap smears and clinical breast exams are essential for early detection of potential health issues. We recommend discussing a personalized screening schedule with your provider based on your age, family history, and risk factors.
-              </p>
-            </div>
-            
-            <div className={styles.infoCard} style={{ borderTopColor: 'var(--color-primary)' }}>
-              <h3 className={styles.infoCardTitle}>Family Planning</h3>
-              <p className={styles.infoCardText}>
-                We offer confidential counseling and access to a variety of birth control options to help you choose the method that best fits your lifestyle and health needs. Our goal is to empower you to plan your family on your own terms.
-              </p>
-            </div>
-          </div>
+          {/* Right Column: Sidebar */}
+          <ProgramContactSidebar />
 
         </section>
       </div>

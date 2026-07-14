@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import styles from './RequestAppointment.module.css';
 
-export default function RequestAppointmentPage() {
+function RequestAppointmentForm() {
   const [submitted, setSubmitted] = useState(false);
+  const searchParams = useSearchParams();
+  const initialProvider = searchParams.get('provider') || '';
+  const initialLocation = searchParams.get('location') || '';
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -18,8 +23,19 @@ export default function RequestAppointmentPage() {
     patientType: '',
     appointmentType: '',
     desiredDate: '',
-    desiredTime: ''
+    desiredTime: '',
+    preferredProvider: '',
+    preferredLocation: ''
   });
+
+  // Update preferredProvider and preferredLocation when parameters load
+  useEffect(() => {
+    setFormData(prev => ({
+      ...prev,
+      preferredProvider: initialProvider,
+      preferredLocation: initialLocation
+    }));
+  }, [initialProvider, initialLocation]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +90,9 @@ export default function RequestAppointmentPage() {
                       patientType: '',
                       appointmentType: '',
                       desiredDate: '',
-                      desiredTime: ''
+                      desiredTime: '',
+                      preferredProvider: '',
+                      preferredLocation: ''
                     });
                   }} 
                   className={styles.submitBtn} 
@@ -283,6 +301,48 @@ export default function RequestAppointmentPage() {
                   </div>
                 </div>
 
+                {/* Preferred Location & Provider */}
+                <div className={`${styles.row} ${styles.row2}`}>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="preferredLocation" className={styles.label}>
+                      Preferred Location
+                    </label>
+                    <select
+                      id="preferredLocation"
+                      name="preferredLocation"
+                      value={formData.preferredLocation}
+                      onChange={handleChange}
+                      className={styles.select}
+                    >
+                      <option value="Mound Bayou">Mound Bayou Geiger Clinic</option>
+                      <option value="Mound Bayou Dental">Mound Bayou Dental Clinic</option>
+                      <option value="Cleveland">Cleveland (Searcy Medical)</option>
+                      <option value="Greenville">Greenville Central Clinic</option>
+                      <option value="Greenville South">Greenville South Clinic</option>
+                      <option value="Hollandale">Hollandale Clinic</option>
+                      <option value="Indianola">Indianola Clinic</option>
+                      <option value="Leland">Leland Clinic</option>
+                      <option value="Moorhead">Moorhead Clinic</option>
+                      <option value="Rolling Fork">Rolling Fork Clinic</option>
+                      <option value="Rosedale">Rosedale Clinic</option>
+                    </select>
+                  </div>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="preferredProvider" className={styles.label}>
+                      Preferred Provider
+                    </label>
+                    <input
+                      type="text"
+                      id="preferredProvider"
+                      name="preferredProvider"
+                      placeholder="e.g. Dr. Marketta Blue"
+                      value={formData.preferredProvider}
+                      onChange={handleChange}
+                      className={styles.input}
+                    />
+                  </div>
+                </div>
+
                 {/* Desired Date & Time */}
                 <div className={`${styles.row} ${styles.row2}`}>
                   <div className={styles.formGroup}>
@@ -362,5 +422,13 @@ export default function RequestAppointmentPage() {
       </div>
 
     </main>
+  );
+}
+
+export default function RequestAppointmentPage() {
+  return (
+    <Suspense fallback={<div className="container" style={{ padding: '80px 0', textAlign: 'center' }}>Loading appointment scheduler...</div>}>
+      <RequestAppointmentForm />
+    </Suspense>
   );
 }

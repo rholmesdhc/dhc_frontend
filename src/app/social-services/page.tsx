@@ -61,7 +61,10 @@ export default function SocialServices() {
           </ul>
         </div>
           </div>
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our social services, resource navigation, and assistance programs, please contact our team." 
+          />
         </div>
       </section>
     </>

@@ -163,3 +163,16 @@ next-env.d.ts
 /public/vercel.svg
 /public/window.svg
 # END UNUSED IMAGES EXCLUDED FROM DEPLOYMENT
+
+# Build archives and docker temps
+*.zip
+*.tar
+.docker_temp_*
+build.log
+out.html
+scratch/
+run_remote.js
+deploy_remote_build.js
+deploy-wp.js
+__pycache__/
+zip_src.py
