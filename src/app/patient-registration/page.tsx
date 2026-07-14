@@ -1,6 +1,11 @@
 import React from 'react';
 import styles from './Registration.module.css';
 
+export const metadata = {
+  title: 'Patient Registration | Delta Health Center',
+  description: 'Register as a new patient at Delta Health Center. Access patient registration forms, check accepted insurance plans, and view registration guidelines.',
+};
+
 export default function PatientRegistration() {
   return (
     <main className={styles.pageWrapper}>

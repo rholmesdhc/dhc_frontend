@@ -1,6 +1,11 @@
 import React from 'react';
 import styles from './Rights.module.css';
 
+export const metadata = {
+  title: 'Patient Rights & Responsibilities | Delta Health Center',
+  description: 'Understand your rights and responsibilities as a patient at Delta Health Center. We are dedicated to providing culturally sensitive, respectful, and high-quality healthcare to all individuals.',
+};
+
 const patientRights = [
   {
     title: "Respect and Non-Discrimination",

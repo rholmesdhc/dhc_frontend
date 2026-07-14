@@ -1,6 +1,11 @@
 import React from 'react';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: 'Clinic Locations & Hours | Delta Health Center',
+  description: 'Find a Delta Health Center clinic near you in the Mississippi Delta. View office addresses, contact phone numbers, hours of operation, and healthcare services offered at each facility.',
+};
+
 export default function OurLocations() {
   const services = [
     'Family Medical Care',

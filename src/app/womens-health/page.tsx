@@ -2,6 +2,11 @@ import React from 'react';
 import styles from './WomensHealth.module.css';
 import ProgramContactSidebar from '../../components/ProgramContactSidebar';
 
+export const metadata = {
+  title: "Women's Health Services | Delta Health Center",
+  description: "Comprehensive women's healthcare services in the Mississippi Delta, including well-woman exams, prenatal care, mammogram referrals, family planning, and gynecological care.",
+};
+
 export default function WomensHealthPage() {
   const womensServices = [
     "Well-Woman Exams",
