@@ -19,14 +19,14 @@ const Hero = () => {
               <p className={styles.description}>
                 Caring. Experienced. Knowledgeable. Delta Health Center continues to build a world-class primary health care system committed to caring for vulnerable populations, from newborns to the elderly.
               </p>
-              <div className={styles.actions}>
+              {/* <div className={styles.actions}>
                 <Link href="/find-a-provider" className="btn btn-primary">
                   Find a Provider
                 </Link>
                 <Link href="#services" className="btn btn-secondary">
                   View Our Services
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
