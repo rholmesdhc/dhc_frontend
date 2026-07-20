@@ -12,7 +12,7 @@ export default function WellnessExams() {
     <main className={styles.pageWrapper}>
       <div className="container">
         <section className={styles.hero}>
-          <img src="/images/provider_hero.png" alt="Wellness Exams Hero" className={styles.heroBg} />
+          <img src="/images/wellness_exams_hero.png" alt="Wellness Exams Hero" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Annual Wellness Visits</h1>

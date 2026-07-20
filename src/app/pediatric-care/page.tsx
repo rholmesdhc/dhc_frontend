@@ -22,7 +22,7 @@ export default function PediatricCarePage() {
           />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>PEDIATRIC CARE</h1>
+            <h1 className={styles.heroTitle}>Pediatric Care</h1>
             <p className={styles.heroSubtitle}>Improving the Health and Lives of Children.</p>
             <br />
             <p className={styles.heroSubtitle}>Pediatric Care Providers: Simone Moore MD, Tara Davis FNP</p>

@@ -12,7 +12,7 @@ export default function WorkplaceAndSchoolPhysicals() {
     <>
       <div className="container">
         <section className={styles.hero}>
-          <img src="/images/provider_hero.png" alt="Workplace & School Physicals Hero" className={styles.heroBg} />
+          <img src="/images/physicals_hero.png" alt="Workplace & School Physicals Hero" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Workplace & School Physicals</h1>
@@ -53,7 +53,11 @@ export default function WorkplaceAndSchoolPhysicals() {
           </p>
         </div>
           </div>
-          <ProgramContactSidebar hideLocationHours={true} />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our workplace and school physicals, employer services, or to schedule an exam, please contact our team." 
+            hideLocationHours={true} 
+          />
         </div>
       </section>
     </>

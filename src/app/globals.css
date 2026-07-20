@@ -158,7 +158,11 @@ a:hover {
 }
 
 /* Custom font overrides for banner titles and directors/subtitles */
-[class*="heroTitle"],
+[class*="heroTitle"] {
+  font-family: 'Times New Roman', Times, serif !important;
+  text-transform: none !important;
+}
+
 [class*="heroSubtitle"] {
   font-family: 'Times New Roman', Times, serif !important;
 }

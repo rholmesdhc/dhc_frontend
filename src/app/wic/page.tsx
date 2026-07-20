@@ -15,7 +15,7 @@ export default function WICPage() {
       <div className="container">
         <section className={styles.hero}>
           <img 
-            src="/images/provider_hero.png" 
+            src="/images/wic_hero.png" 
             alt="WIC Banner" 
             className={styles.heroBg} 
           />

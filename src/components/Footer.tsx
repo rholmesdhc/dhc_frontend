@@ -1,10 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import GoogleAnalytics from './GoogleAnalytics';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <GoogleAnalytics />
       <div className="container">
         <div className={styles.grid}>
           
@@ -72,7 +74,9 @@ const Footer = () => {
       </div>
       
       <div className={styles.bottomBar}>
-        <p className="container">&copy; {new Date().getFullYear()} Delta Health Center. All Rights Reserved.</p>
+        <p className="container">
+          &copy; {new Date().getFullYear()} Delta Health Center. All Rights Reserved. &nbsp;|&nbsp; <Link href="/privacy-policy" style={{ color: '#fff', textDecoration: 'underline' }}>HIPAA Privacy Policy</Link> &nbsp;|&nbsp; <Link href="/accessibility-statement" style={{ color: '#fff', textDecoration: 'underline' }}>Accessibility Statement</Link>
+        </p>
       </div>
     </footer>
   );

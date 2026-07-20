@@ -23,7 +23,7 @@ export default function NutritionalCounselingPage() {
       {/* Banner Section matching CEO theme */}
       <div className="container">
         <section className={styles.hero}>
-          <img src="/images/provider_hero.png" alt="Nutritional Counseling Banner" className={styles.heroBg} />
+          <img src="/images/nutritional_hero.png" alt="Nutritional Counseling Banner" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Nutritional Counseling</h1>
@@ -80,7 +80,10 @@ export default function NutritionalCounselingPage() {
                 className={styles.polaroidImage} 
               />
             </div>
-            <ProgramContactSidebar />
+            <ProgramContactSidebar 
+              title="For More Information" 
+              description="To learn more about our nutritional counseling, weight management programs, and healthy lifestyle guidance, please contact our team." 
+            />
           </div>
 
         </section>

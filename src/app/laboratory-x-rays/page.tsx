@@ -20,7 +20,7 @@ export default function LaboratoryXRaysPage() {
           />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>LABORATORY <span>&</span> X-RAYS</h1>
+            <h1 className={styles.heroTitle}>Laboratory <span>&amp;</span> X-Rays</h1>
             <p className={styles.heroSubtitle}>Understanding the importance of Testing.</p>
           </div>
         </section>

@@ -63,7 +63,10 @@ export default function WomensHealthPage() {
           </div>
 
           {/* Right Column: Sidebar */}
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our women's health services, scheduling a mammogram, or finding an OB/GYN, please contact our team." 
+          />
 
         </section>
       </div>

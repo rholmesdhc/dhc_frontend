@@ -12,7 +12,7 @@ export default function SocialServices() {
     <>
       <div className="container">
         <section className={styles.hero}>
-          <img src="/images/provider_hero.png" alt="Social Services Hero" className={styles.heroBg} />
+          <img src="/images/social_services_hero.png" alt="Social Services Hero" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Social Services</h1>

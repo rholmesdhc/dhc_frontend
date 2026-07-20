@@ -12,7 +12,7 @@ export default function RyanWhiteProgram() {
     <>
       <div className="container">
         <section className={styles.hero}>
-          <img src="/images/provider_hero.png" alt="Ryan White HIV/AIDS Program Hero" className={styles.heroBg} />
+          <img src="/images/ryan_white_hero.png" alt="Ryan White HIV/AIDS Program Hero" className={styles.heroBg} />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Ryan White HIV/AIDS Program</h1>
@@ -52,7 +52,10 @@ export default function RyanWhiteProgram() {
           </p>
         </div>
           </div>
-          <ProgramContactSidebar />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about the Ryan White HIV/AIDS Program, testing services, case management, or medication assistance, please contact our team." 
+          />
         </div>
       </section>
     </>

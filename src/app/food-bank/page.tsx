@@ -130,7 +130,11 @@ export default function FoodBank() {
         </div>
 
           </div>
-          <ProgramContactSidebar hideLocationHours={true} />
+          <ProgramContactSidebar 
+            title="For More Information" 
+            description="To learn more about our hunger relief initiatives, blessing boxes, or to get involved with local food pantry donations, please contact our team." 
+            hideLocationHours={true} 
+          />
         </div>
       </div>
     </main>

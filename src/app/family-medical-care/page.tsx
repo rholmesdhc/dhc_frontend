@@ -22,7 +22,7 @@ export default function FamilyMedicalCarePage() {
           />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>FAMILY MEDICAL CARE</h1>
+            <h1 className={styles.heroTitle}>Family Medical Care</h1>
             <p className={styles.heroSubtitle}>Uniquely Trained to Care.</p>
             <br />
             <p className={styles.heroSubtitle}>Chief Medical Officer: Dr. Marketta Blue</p>

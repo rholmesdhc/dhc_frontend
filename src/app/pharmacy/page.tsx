@@ -22,7 +22,7 @@ export default function PharmacyPage() {
           />
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>PHARMACY</h1>
+            <h1 className={styles.heroTitle}>Pharmacy</h1>
             <p className={styles.heroSubtitle}>Dispensing needed Medications.</p>
             <br />
             <p className={styles.heroSubtitle}>Pharmacy Director - Remonica Jackson PharmD</p>
