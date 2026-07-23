@@ -62,8 +62,8 @@ export default function WellnessCenterPage() {
           <ProgramContactSidebar 
             title="For More Information"
             description="To learn more about our fitness programs, membership options, and wellness classes, please contact our team directly."
-            phoneDisplay="662-741-8915"
-            phoneHref="tel:6627418915"
+            phoneDisplay="662-741-8916"
+            phoneHref="tel:6627418916"
             customLocations={[
               {
                 name: "Location & Hours",

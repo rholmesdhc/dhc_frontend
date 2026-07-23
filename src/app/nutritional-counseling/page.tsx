@@ -71,15 +71,8 @@ export default function NutritionalCounselingPage() {
 
           </div>
 
-          {/* Right Polaroid Photo Column */}
+          {/* Right Column */}
           <div className={styles.rightColumn}>
-            <div className={styles.polaroidWrapper} style={{ marginBottom: '30px' }}>
-              <img 
-                src="/images/nutritional-counseling/polaroid_salad.png" 
-                alt="Nutritional Plate" 
-                className={styles.polaroidImage} 
-              />
-            </div>
             <ProgramContactSidebar 
               title="For More Information" 
               description="To learn more about our nutritional counseling, weight management programs, and healthy lifestyle guidance, please contact our team." 
